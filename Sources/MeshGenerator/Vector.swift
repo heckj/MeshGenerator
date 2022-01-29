@@ -10,45 +10,77 @@ import Foundation
 import simd
 #endif
 
+/// A struct that represents a vector in 3D space.
 public struct Vector: Hashable {
+    /// The `x` coordinate.
     public let x: Double
+    /// The `y` coordinate.
     public let y: Double
+    /// The `z` coordinate.
     public let z: Double
 #if canImport(simd)
+    /// The coordinates represented as a 3 float vector with simd.
     public var simd_float3: simd_float3 {
         return simd.simd_float3(Float(x), Float(y), Float(z))
     }
+    /// The coordinates represented as a 3 double vector with simd.
     public var simd_double3: simd_double3 {
         return simd.simd_double3(x, y, z)
     }
 #endif
     
+    /// Creates a new vector
+    /// - Parameters:
+    ///   - x: The `x` coordinate.
+    ///   - y: The `y` coordinate.
+    ///   - z: The `z` coordinate.
     public init(_ x: Double, _ y: Double, _ z: Double) {
         self.x = x
         self.y = y
         self.z = z
     }
+    /// Creates a new vector
+    /// - Parameters:
+    ///   - x: The `x` coordinate.
+    ///   - y: The `y` coordinate.
+    ///   - z: The `z` coordinate.
     public init(x: Float, y: Float, z: Float) {
         self.x = Double(x)
         self.y = Double(y)
         self.z = Double(z)
     }
+    /// Creates a new vector
+    /// - Parameters:
+    ///   - x: The `x` coordinate.
+    ///   - y: The `y` coordinate.
+    ///   - z: The `z` coordinate.
     public init(x: Int, y: Int, z: Int) {
         self.x = Double(x)
         self.y = Double(y)
         self.z = Double(z)
     }
+    /// Creates a new vector
+    /// - Parameters:
+    ///   - x: The `x` coordinate.
+    ///   - y: The `y` coordinate.
+    ///   - z: The `z` coordinate.
     public init(x: Double, y: Double, z: Double) {
         self.x = x
         self.y = y
         self.z = z
     }
 #if canImport(simd)
+    /// Creates a new vector
+    /// - Parameters:
+    ///   - simdValue: The coordinate values..
     public init(_ simdValue: simd_double3) {
         self.x = simdValue.x
         self.y = simdValue.y
         self.z = simdValue.z
     }
+    /// Creates a new vector
+    /// - Parameters:
+    ///   - simdValue: The coordinate values..
     public init(_ simdValue: simd_float3) {
         self.x = Double(simdValue.x)
         self.y = Double(simdValue.y)
@@ -60,6 +92,7 @@ public struct Vector: Hashable {
     /// A zero-length vector.
     public static let zero = Vector(0, 0, 0)
     
+    /// The length of the vector.
     public var length: Double {
 #if canImport(simd)
         return simd_length(self.simd_double3)
@@ -69,7 +102,7 @@ public struct Vector: Hashable {
     }
     
     /// Computes the dot-product of this vector and another you provide.
-    /// - Parameter another: The vector against which to compute a dot product.
+    /// - Parameter other: The vector against which to compute a dot product.
     /// - Returns: A double that indicates the value to which one vector applies to another.
     public func dot(_ another: Vector) -> Double {
 #if canImport(simd)
@@ -80,7 +113,7 @@ public struct Vector: Hashable {
     }
     
     /// Computes the cross-product of this vector and another you provide.
-    /// - Parameter a: The vector against which to compute a cross product.
+    /// - Parameter other: The vector against which to compute a cross product.
     /// - Returns: Returns a vector that is orthogonal to the two vectors used to compute the cross product.
     public func cross(_ other: Vector) -> Vector {
 #if canImport(simd)
