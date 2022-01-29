@@ -10,4 +10,7 @@ Vertices, Polygons, and Meshes to support procedurally generating 3D surface mes
 
 ### The Whole Kit and Kaboodle
 
-- ``MeshGenerator/MeshGenerator``
+- ``MeshGenerator/Vector``
+- ``MeshGenerator/TextureCoordinates``
+- ``MeshGenerator/Vertex``
+- ``MeshGenerator/Polygon``
