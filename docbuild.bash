@@ -24,6 +24,7 @@ xcrun docc convert Sources/MeshGenerator/MeshGenerator.docc \
 
 # Generate a list of all the identifiers for DocC curation
 #
+
 cat docs/linkable-entities.json| jq '.[].referenceURL' -r > all_identifiers.txt
 sort all_identifiers.txt | sed -e 's/doc:\/\/MeshGenerator\/documentation\///g' \
 | sed -e 's/^/- ``/g' | sed -e 's/$/``/g' > all_symbols.txt
