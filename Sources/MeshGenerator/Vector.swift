@@ -19,12 +19,14 @@ public struct Vector: Hashable {
     /// The `z` coordinate.
     public let z: Double
     #if canImport(simd)
-        /// The coordinates represented as a 3 float vector with simd.
+        /// The coordinates represented as a 3 float vector with `simd` from the Accelerate framework.
+        ///
+        /// This value may loose precision from the Vector's internal values, which are stored and processed as `Double`.
         public var simd_float3: simd_float3 {
             return simd.simd_float3(Float(x), Float(y), Float(z))
         }
 
-        /// The coordinates represented as a 3 double vector with simd.
+        /// The coordinates represented as a 3 double vector with with `simd` from the Accelerate framework.
         public var simd_double3: simd_double3 {
             return simd.simd_double3(x, y, z)
         }

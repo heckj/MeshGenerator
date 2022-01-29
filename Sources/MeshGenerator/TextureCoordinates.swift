@@ -17,12 +17,12 @@ public struct TextureCoordinates: Hashable {
     /// The `v` coordinate.
     public let v: Double
     #if canImport(simd)
-        /// The coordinates represented as a 2 float vector with simd.
+        /// The coordinates represented as a 2 float vector with `simd` from the Accelerate framework.
         public var simd_float2: simd_float2 {
             return simd.simd_float2(Float(u), Float(v))
         }
 
-        /// The coordinates represented as a 2 double vector with simd.
+        /// The coordinates represented as a 2 double vector with `simd` from the Accelerate framework.
         public var simd_double2: simd_double2 {
             return simd.simd_double2(u, v)
         }
