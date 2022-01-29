@@ -4,6 +4,7 @@
 
 .swiftpm
 Package.resolved
+.docc-build/
 
 ## User settings
 xcuserdata/
