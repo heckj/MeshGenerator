@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleName</key>
+	<string>com.github.heckj.MeshGenerator</string>
+	<key>CFBundleDisplayName</key>
+	<string>MeshGenerator</string>
+	<key>CDDefaultCodeListingLanguage</key>
+	<string>swift</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleIconFile</key>
+	<string>DocumentationIcon</string>
+	<key>CFBundleIconName</key>
+	<string>DocumentationIcon</string>
+	<key>CFBundlePackageType</key>
+	<string>DOCS</string>
+	<key>CDDefaultModuleKind</key>
+	<string>Library</string>
+</dict>
+</plist>
