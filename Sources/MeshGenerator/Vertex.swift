@@ -1,6 +1,6 @@
 //
 //  Vertex.swift
-//  
+//
 //
 //  Created by Joseph Heck on 1/29/22.
 //
@@ -17,20 +17,22 @@ public struct Vertex {
     public let normal: Vector
     /// The texture coordinates that this vertex maps to.
     public let tex: TextureCoordinates
-    
+
     /// The `x` coordinate position of the vertex.
     public var x: Double {
         return position.x
     }
+
     /// The `y` coordinate position of the vertex.
     public var y: Double {
         return position.y
     }
+
     /// The `z` coordinate position of the vertex.
     public var z: Double {
         return position.z
     }
-    
+
     /// Creates a new vertex.
     /// - Parameters:
     ///   - position: The position of the vertex.
@@ -58,7 +60,6 @@ public struct Vertex {
     ///   - normal: The direction the vertex is facing.
     ///   - tex: The texture coordinates that this vertex maps to.
     public init(x: Double, y: Double, z: Double, normal: Vector? = nil, tex: TextureCoordinates? = nil) {
-        self.init(position: Vector(x,y,z), normal: normal, tex: tex)
+        self.init(position: Vector(x, y, z), normal: normal, tex: tex)
     }
-
 }

@@ -1,15 +1,14 @@
 //
 //  VectorTests.swift
-//  
+//
 //
 //  Created by Joseph Heck on 1/29/22.
 //
 
-import XCTest
 import MeshGenerator
+import XCTest
 
 class VectorTests: XCTestCase {
-
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -30,11 +29,10 @@ class VectorTests: XCTestCase {
         let length = (2.0 * 2.0 + 5.0 * 5.0 + 3.0 * 3.0).squareRoot()
         XCTAssertEqual(vector.length, length)
     }
-    
+
     func testNormalized() {
         let vector = Vector(2, 5, 3)
         XCTAssertNotEqual(vector.length, 1)
         XCTAssertEqual(vector.normalized().length, 1)
     }
-
 }
