@@ -130,10 +130,10 @@ public extension LineSegment {
     
     /// Returns a vector that indicates if the points that make up two line segments intersect.
     /// - Parameters:
-    ///   - p1: The starting location of the first line segment.
-    ///   - p2: The ending location of the first line segment.
-    ///   - p3: The starting location of the second line segment.
-    ///   - p4: The ending location of the second line segment.
+    ///   - p0: The starting location of the first line segment.
+    ///   - p1: The ending location of the first line segment.
+    ///   - p2: The starting location of the second line segment.
+    ///   - p3: The ending location of the second line segment.
     /// - Returns: A vector that describes the point of intersection, or `nil` if there is no intersection.
     static func lineIntersection(
         _ p0: Vector,
@@ -159,19 +159,6 @@ public extension LineSegment {
         }
         return p0.isApproximatelyEqual(to: p1) ? p0 : nil
     }
-
-    func lineSegmentsIntersection(
-        _ p0: Vector,
-        _ p1: Vector,
-        _ p2: Vector,
-        _ p3: Vector
-    ) -> Vector? {
-        guard let pi = LineSegment.lineIntersection(p0, p1, p2, p3) else {
-            return nil // lines don't intersect
-        }
-        return Bounds(p0, p1).containsPoint(pi) && Bounds(p2, p3).containsPoint(pi) ? pi : nil
-    }
-
     
     /// The direction of the line segment as a normalized vector.
     var direction: Vector {
@@ -197,7 +184,7 @@ public extension LineSegment {
     /// - Parameter segment: The line segment to compare.
     /// - Returns: The point of intersection, or `nil` if the segments don't intersect.
     func intersection(with segment: LineSegment) -> Vector? {
-        lineSegmentsIntersection(start, end, segment.start, segment.end)
+        LineSegment.lineIntersection(start, end, segment.start, segment.end)
     }
 
     /// Returns a Boolean value that indicates whether line segement intersects.
