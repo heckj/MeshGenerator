@@ -3,6 +3,8 @@
 //
 //
 //  Created by Joseph Heck on 1/29/22.
+//  Copyright © 2022 Joseph Heck. All rights reserved.
+//
 //  Portions of the code were created by Nick Lockwood on 03/07/2018.
 //  Copyright © 2018 Nick Lockwood. All rights reserved.
 //

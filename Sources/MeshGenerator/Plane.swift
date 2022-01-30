@@ -1,6 +1,6 @@
 //
 //  Plane.swift
-//  Euclid
+//  
 //
 //  Created by Nick Lockwood on 03/07/2018.
 //  Copyright © 2018 Nick Lockwood. All rights reserved.

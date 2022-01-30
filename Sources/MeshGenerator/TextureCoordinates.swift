@@ -3,6 +3,7 @@
 //
 //
 //  Created by Joseph Heck on 1/29/22.
+//  Copyright © 2022 Joseph Heck. All rights reserved.
 //
 
 import Foundation
