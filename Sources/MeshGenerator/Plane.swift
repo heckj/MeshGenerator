@@ -83,7 +83,7 @@ public extension Plane {
     /// The direction of the plane normal is based on the assumption that the points are wind in an anti-clockwise direction.
     init?(points: [Vector]) {
         guard !points.isEmpty,
-              points.count > 3,
+              points.count > 2,
               points.count < 4,
               !Vertex.pointsAreDegenerate(points),
               Vertex.pointsAreConvex(points) else {
@@ -161,17 +161,5 @@ internal extension Plane {
     // Approximate equality
     func isEqual(to other: Plane, withPrecision p: Double = Vector.epsilon) -> Bool {
         abs(w - other.w) < p && normal.isApproximatelyEqual(to: other.normal, withPrecision: p)
-    }
-}
-
-// An enum of relationships between a group of points and a plane
-enum PlaneComparison: Int {
-    case coplanar = 0
-    case front = 1
-    case back = 2
-    case spanning = 3
-
-    func union(_ other: PlaneComparison) -> PlaneComparison {
-        PlaneComparison(rawValue: rawValue | other.rawValue)!
     }
 }
