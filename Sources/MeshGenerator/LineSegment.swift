@@ -66,7 +66,19 @@ extension LineSegment: Comparable {
 
 public extension LineSegment {
     
-    func shortestLineBetween(
+    /// Calculates the shortest distance between two lines within 3D space.
+    ///
+    /// If the lines are intersecting, the points returned will be identical.
+    /// For more information about the technique used, see
+    /// [The shortest line between two lines in 3D](http://paulbourke.net/geometry/pointlineplane/) by [Paul Bourke](http://paulbourke.net/geometry/)
+    ///
+    /// - Parameters:
+    ///   - p1: The starting location of the first line segment.
+    ///   - p2: The ending location of the first line segment.
+    ///   - p3: The starting location of the second line segment.
+    ///   - p4: The ending location of the second line segment.
+    /// - Returns: A tuple of vectors that represents the endpoints of the shortest line, or nil if the lines are coincident or parallel.
+    static func shortestLineBetween(
         _ p1: Vector,
         _ p2: Vector,
         _ p3: Vector,
@@ -98,19 +110,25 @@ public extension LineSegment {
 
         return (p1 + p21 * mua, p3 + p43 * mub)
     }
-
-    func vectorFromPointToLine(
-        _ point: Vector,
-        _ lineOrigin: Vector,
-        _ lineDirection: Vector
+    
+    /// Returns a vector that represents the point on the infinite line you define that results in the shortest length.
+    /// - Parameters:
+    ///   - point: The point to calculate from.
+    ///   - lineOrigin: A point on an infinite line
+    ///   - lineDirection: A normalized vector describing the direction of the line.
+    /// - Returns: A vector that represents the point nearest to the point you provide.
+    static func vectorFromPointToLine(
+        point: Vector,
+        lineOrigin: Vector,
+        lineDirection: Vector
     ) -> Vector {
         // See "Vector formulation" at https://en.wikipedia.org/wiki/Distance_from_a_point_to_a_line
         assert(lineDirection.isNormalized)
         let d = point - lineOrigin
         return lineDirection * d.dot(lineDirection) - d
     }
-
-    func lineIntersection(
+    
+    static func lineIntersection(
         _ p0: Vector,
         _ p1: Vector,
         _ p2: Vector,
@@ -128,7 +146,7 @@ public extension LineSegment {
         _ p2: Vector,
         _ p3: Vector
     ) -> Vector? {
-        guard let pi = lineIntersection(p0, p1, p2, p3) else {
+        guard let pi = LineSegment.lineIntersection(p0, p1, p2, p3) else {
             return nil // lines don't intersect
         }
         return Bounds(p0, p1).containsPoint(pi) && Bounds(p2, p3).containsPoint(pi) ? pi : nil
@@ -148,7 +166,7 @@ public extension LineSegment {
     /// Returns a Boolean value that indicates whether the point is on the line segment.
     /// - Parameter p: The point to compare.
     func containsPoint(_ p: Vector) -> Bool {
-        let v = vectorFromPointToLine(p, start, direction)
+        let v = LineSegment.vectorFromPointToLine(point: p, lineOrigin: start, lineDirection: direction)
         guard v.length < Vector.epsilon else {
             return false
         }

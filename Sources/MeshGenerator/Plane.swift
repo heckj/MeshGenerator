@@ -74,15 +74,26 @@ public extension Plane {
         guard length.isFinite, length > Vector.epsilon else {
             return nil
         }
-        self.init(unchecked: normal / length, pointOnPlane: pointOnPlane)
+        self.init(unchecked: normal.normalized(), pointOnPlane: pointOnPlane)
     }
 
     /// Creates a plane from a set of coplanar points describing a polygon.
     ///
-    /// The polygon can be convex or concave. The direction of the plane normal is
-    /// based on the assumption that the points are wind in an anti-clockwise direction.
+    /// The polygon must be convex, and either a trianle or quad (3 or 4 points).
+    /// The direction of the plane normal is based on the assumption that the points are wind in an anti-clockwise direction.
     init?(points: [Vector]) {
-        self.init(points: points, convex: nil)
+        guard !points.isEmpty,
+              points.count > 3,
+              points.count < 4,
+              !Vertex.pointsAreDegenerate(points),
+              Vertex.pointsAreConvex(points) else {
+            return nil
+        }
+        self.init(unchecked: points)
+        // Check all points lie on this plane
+        if points.contains(where: { !containsPoint($0) }) {
+            return nil
+        }
     }
 
     /// Returns the flip-side of the plane.
@@ -140,20 +151,10 @@ internal extension Plane {
         self.init(unchecked: normal, w: normal.dot(pointOnPlane))
     }
 
-    init?(points: [Vector], convex: Bool?) {
-        guard !points.isEmpty, !Vertex.pointsAreDegenerate(points) else {
-            return nil
-        }
-        self.init(unchecked: points, convex: convex)
-        // Check all points lie on this plane
-        if points.contains(where: { !containsPoint($0) }) {
-            return nil
-        }
-    }
-
-    init(unchecked points: [Vector], convex: Bool?) {
+    init(unchecked points: [Vector]) {
         assert(!Vertex.pointsAreDegenerate(points))
-        let normal = faceNormalForPolygonPoints(points, convex: convex)
+        assert(Vertex.pointsAreConvex(points))
+        let normal = Polygon.faceNormalForPolygonPoints(points) ?? Vector(0,0,1)
         self.init(unchecked: normal, pointOnPlane: points[0])
     }
 

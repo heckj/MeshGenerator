@@ -94,6 +94,11 @@ public struct Vertex: Hashable, Equatable {
         self.init(position: Vector(x, y, z), normal: normal, tex: tex)
     }
     
+    /// Returns a Boolean value that indicates whether the list of vertices results in a degenerate polygon.
+    ///
+    /// A degenerate polygon is one in which some vertex lies on an edge joining two other vertices.
+    /// This can happen in one of two ways: either the vertices and can be colinear or the vertices and can overlap (fail to be distinct).
+    /// - Parameter points: The vertices to analyze.
     public static func verticesAreDegenerate(_ vertices: [Vertex]) -> Bool {
         guard vertices.count > 2 else {
             return true
@@ -101,22 +106,31 @@ public struct Vertex: Hashable, Equatable {
         let positions = vertices.map { $0.position }
         return pointsAreDegenerate(positions) || pointsAreSelfIntersecting(positions)
     }
-
+    
+    /// Returns a Boolean value that indicates the order of the collection of vertices results in a convex polygon.
+    /// - Parameter vertices: The list of vertices.
     public static func verticesAreConvex(_ vertices: [Vertex]) -> Bool {
         guard vertices.count > 3 else {
             return vertices.count > 2
         }
         return pointsAreConvex(vertices.map { $0.position })
     }
-
+    
+    /// Returns a Boolean value that indicates whether all vertices reside on the same plane.
+    /// - Parameter vertices: The vertices to analyze.
     public static func verticesAreCoplanar(_ vertices: [Vertex]) -> Bool {
         if vertices.count < 4 {
             return true
         }
         return pointsAreCoplanar(vertices.map { $0.position })
     }
-
-    static func pointsAreDegenerate(_ points: [Vector]) -> Bool {
+    
+    /// Returns a Boolean value that indicates whether the list of points would result in a degenerate polygon.
+    ///
+    /// A degenerate polygon is one in which some vertex lies on an edge joining two other vertices.
+    /// This can happen in one of two ways: either the vertices and can be colinear or the vertices and can overlap (fail to be distinct).
+    /// - Parameter points: The points to analyze.
+    public static func pointsAreDegenerate(_ points: [Vector]) -> Bool {
         let count = points.count
         guard count > 2, var a = points.last else {
             return false
@@ -138,7 +152,10 @@ public struct Vertex: Hashable, Equatable {
         return false
     }
     
-    static func pointsAreConvex(_ points: [Vector]) -> Bool {
+    /// Returns a Boolean value that indicates the order of the collection of points results in a convex polygon.
+    ///
+    /// - Parameter vertices: The list of points.
+    public static func pointsAreConvex(_ points: [Vector]) -> Bool {
         let count = points.count
         guard count > 3, let a = points.last else {
             return count > 2
@@ -167,9 +184,10 @@ public struct Vertex: Hashable, Equatable {
         return true
     }
     
-    // Test if path is self-intersecting
-    // TODO: optimize by using http://www.webcitation.org/6ahkPQIsN
-    static func pointsAreSelfIntersecting(_ points: [Vector]) -> Bool {
+    /// Returns a Boolean value that indicates the order of the collection of points results in line segments that intersect with each other.
+    /// - Parameter points: The list of points
+    public static func pointsAreSelfIntersecting(_ points: [Vector]) -> Bool {
+        // TODO: optimize by using http://www.webcitation.org/6ahkPQIsN
         guard points.count > 2 else {
             // A triangle can't be self-intersecting
             return false
@@ -194,8 +212,10 @@ public struct Vertex: Hashable, Equatable {
         }
         return false
     }
-
-    static func pointsAreCoplanar(_ points: [Vector]) -> Bool {
+    
+    /// Returns a Boolean value that indicates that the list of points all reside on the same plane.
+    /// - Parameter points: The list of points.
+    public static func pointsAreCoplanar(_ points: [Vector]) -> Bool {
         if points.count < 4 {
             return true
         }
