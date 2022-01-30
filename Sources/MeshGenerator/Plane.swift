@@ -84,8 +84,9 @@ public extension Plane {
     init?(points: [Vector]) {
         guard !points.isEmpty,
               points.count > 2,
-              points.count < 4,
+              points.count < 5,
               !Vertex.pointsAreDegenerate(points),
+              Vertex.pointsAreCoplanar(points),
               Vertex.pointsAreConvex(points) else {
             return nil
         }

@@ -36,7 +36,7 @@ import Foundation
 ///
 /// Polygon supports 3 or 4 vertices (triangles or quads), and requires that vertices specified as a quad be coplanar and convex.
 public struct Polygon {
-    typealias Material = AnyHashable
+    public typealias Material = AnyHashable
     /// The class for the storage of the relevant values and objects that make up the Polygon.
     private var storage: Storage
     
@@ -51,15 +51,14 @@ public struct Polygon {
     ///
     /// A polygon can be convex or concave, but vertices must be coplanar and non-degenerate.
     /// Vertices are assumed to be in anti-clockwise order for the purpose of deriving the plane.
-    init?(_ vertices: [Vertex], material: Material? = nil) {
+    public init?(_ vertices: [Vertex], material: Material? = nil) {
         let positions = vertices.map { $0.position }
-        let isConvex = Vertex.pointsAreConvex(positions)
+        
         guard positions.count > 2,
               positions.count < 5,
-              !Vertex.pointsAreSelfIntersecting(positions),
-              isConvex == true,
-              // Note: Plane init includes the check for degeneracy in the vertices
-              let plane = Plane(points: positions)
+              let plane = Plane(points: positions),
+                // Note: Plane init includes the check for degeneracy, coplanar, and convex in the vertices
+              !Vertex.pointsAreSelfIntersecting(positions)
         else {
             return nil
         }
@@ -74,7 +73,10 @@ public struct Polygon {
     /// Creates a polygon from a set of vertex positions.
     ///
     /// Vertex normals will be set to match face normal.
-    init?(_ vertices: [Vector], material: Material? = nil) {
+    /// - Parameters:
+    ///   - vertices: The points making up the face of a polygon.
+    ///   - material: The material to use for rendering the polygon.
+    public init?(_ vertices: [Vector], material: Material? = nil) {
         self.init(vertices.map { Vertex(position: $0) }, material: material)
     }
     
@@ -85,7 +87,6 @@ public struct Polygon {
     ///
     /// - Parameters:
     ///   - points: The points making up the face of a polygon.
-    ///   - convex: A Boolean value that indicates the points provided are convex.
     public static func faceNormalForPolygonPoints(_ points: [Vector]) -> Vector? {
         guard points.count > 2,
               points.count < 4 else {
