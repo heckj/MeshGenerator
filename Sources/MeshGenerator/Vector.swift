@@ -31,6 +31,11 @@ public struct Vector: Hashable {
             return simd.simd_double3(x, y, z)
         }
     #endif
+    
+    /// Tolerance for determining minimum or nearly-equivalent lengths for vectors.
+    ///
+    /// The built-in value for this library is `1e-8`.
+    public static let epsilon = 1e-8
 
     /// Creates a new vector
     /// - Parameters:
@@ -107,6 +112,26 @@ public struct Vector: Hashable {
             return (dot(self)).squareRoot()
         #endif
     }
+    
+    /// The square of the length.
+    ///
+    /// Use `lengthSquared` over `length` if you're able for repeated calculations, because this is a faster computation.
+    public var lengthSquared: Double {
+        #if canImport(simd)
+            return simd_length_squared(simd_double3)
+        #else
+            return (dot(self))
+        #endif
+    }
+    
+    /// A Boolean value indicating that the length of the vector is `1`.
+    public var isNormalized: Bool {
+        #if canImport(simd)
+            abs(simd_length_squared(self.simd_double3) - 1.0) < Vector.epsilon
+        #else
+            abs(dot(self) - 1) < Vector.epsilon
+        #endif
+    }
 
     /// Computes the dot-product of this vector and another you provide.
     /// - Parameter other: The vector against which to compute a dot product.
@@ -139,6 +164,11 @@ public struct Vector: Hashable {
         Vector(lhs.x / rhs, lhs.y / rhs, lhs.z / rhs)
     }
 
+    /// Returns a vector with its components divided by the value you provide.
+    static func * (lhs: Vector, rhs: Double) -> Vector {
+        Vector(lhs.x * rhs, lhs.y * rhs, lhs.z * rhs)
+    }
+
     /// Returns a vector with the values inverted.
     static prefix func - (rhs: Vector) -> Vector {
         Vector(-rhs.x, -rhs.y, -rhs.z)
@@ -165,6 +195,45 @@ public struct Vector: Hashable {
         let length = self.length
         return length == 0 ? .zero : self / length
     }
+    
+    /// Returns the maximum value for any of the coordinates within the vector.
+    public func max() -> Double {
+        Swift.max(x, y, z)
+        
+    }
+    /// Returns the minimum value for any of the coordinates within the vector.
+    public func min() -> Double {
+        Swift.min(x, y, z)
+    }
+    
+    /// Returns a new vector that represents the mininum value for each of the components of the two vectors.
+    public func min(_ rhs: Vector) -> Vector {
+        Vector(Swift.min(self.x, rhs.x), Swift.min(self.y, rhs.y), Swift.min(self.z, rhs.z))
+    }
+
+    /// Returns a new vector that represents the maximum value for each of the components of the two vectors.
+    public func max(_ rhs: Vector) -> Vector {
+        Vector(Swift.max(self.x, rhs.x), Swift.max(self.y, rhs.y), Swift.max(self.z, rhs.z))
+    }
+    
+    /// Returns the distance to another point in space.
+    /// - Parameter other: The point in space to compare.
+    public func distance(from other: Vector) -> Double {
+        (self-other).length
+    }
+    
+    /// Returns a Boolean value that indicates whether the two vectors are equivalent within a known level of precision.
+    /// - Parameters:
+    ///   - other: The vector to compare.
+    ///   - p: The precision to use in determining if the values are close enough to be considered equal, defaulting to ``MeshGenerator/Vector/epsilon``.
+    public func isApproximatelyEqual(to other: Vector, withPrecision p: Double = epsilon) -> Bool {
+        self == other || (
+            x.isApproximatelyEqual(to: other.x, withPrecision: p) &&
+                y.isApproximatelyEqual(to: other.y, withPrecision: p) &&
+                z.isApproximatelyEqual(to: other.z, withPrecision: p)
+        )
+    }
+
 }
 
 extension Vector: Comparable {
@@ -181,5 +250,11 @@ extension Vector: Comparable {
             return false
         }
         return lhs.z < rhs.z
+    }
+}
+
+extension Double {
+    func isApproximatelyEqual(to other: Double, withPrecision p: Double) -> Bool {
+        abs(self - other) < p
     }
 }
