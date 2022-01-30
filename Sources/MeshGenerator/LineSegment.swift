@@ -128,12 +128,32 @@ public extension LineSegment {
         return lineDirection * d.dot(lineDirection) - d
     }
     
+    /// Returns a vector that indicates if the points that make up two line segments intersect.
+    /// - Parameters:
+    ///   - p1: The starting location of the first line segment.
+    ///   - p2: The ending location of the first line segment.
+    ///   - p3: The starting location of the second line segment.
+    ///   - p4: The ending location of the second line segment.
+    /// - Returns: A vector that describes the point of intersection, or `nil` if there is no intersection.
     static func lineIntersection(
         _ p0: Vector,
         _ p1: Vector,
         _ p2: Vector,
         _ p3: Vector
     ) -> Vector? {
+        let ls1 = (p0-p1).normalized()
+        let ls2 = (p2-p3).normalized()
+        if (ls1.isApproximatelyEqual(to: ls2) || ls1.isApproximatelyEqual(to: -ls2)) {
+            // lines are parallel, so shortestLineBetween
+            // won't work - denominator goes to 0.
+            if Bounds(p0, p1).containsPoint(p2) {
+                return p2
+            } else if Bounds(p0, p1).containsPoint(p3) {
+                return p3
+            } else {
+                return nil
+            }
+        }
         guard let (p0, p1) = shortestLineBetween(p0, p1, p2, p3) else {
             return nil
         }
