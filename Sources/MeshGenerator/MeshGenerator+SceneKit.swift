@@ -30,7 +30,6 @@
 //
 
 #if canImport(SceneKit)
-
     import SceneKit
 
     public extension SCNVector3 {

@@ -43,10 +43,10 @@ func directionalFin() -> SCNNode? {
         let mesh = Mesh([back, bottom, left, right])
         // Geometry from the mesh:
         // let geo = SCNGeometry(mesh))
-        
+
         // Bounding Box geometry from the mesh:
         // let geo = SCNGeometry(mesh.bounds)
-        
+
         // Wireframe geometry from the mesh:
         let geo = SCNGeometry(wireframe: mesh)
         geo.materials = [SCNMaterial(.red)]
@@ -55,7 +55,6 @@ func directionalFin() -> SCNNode? {
     }
     return nil
 }
-
 
 @available(macOS 12.0, iOS 15.0, *)
 struct SwiftUIView_Previews: PreviewProvider {
