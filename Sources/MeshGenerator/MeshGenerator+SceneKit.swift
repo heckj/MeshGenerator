@@ -95,11 +95,6 @@
 
         /// Creates an SCNGeometry using the default tessellation method
         convenience init(_ mesh: Mesh, materialLookup: SCNMaterialProvider? = nil) {
-            self.init(triangles: mesh, materialLookup: materialLookup)
-        }
-
-        /// Creates an SCNGeometry from a Mesh using triangles
-        convenience init(triangles mesh: Mesh, materialLookup: SCNMaterialProvider? = nil) {
             var elementData = [Data]()
             var vertexData = Data()
             var materials = [SCNMaterial]()
@@ -166,83 +161,6 @@
                         data: indexData,
                         primitiveType: .triangles,
                         primitiveCount: indexData.count / 12,
-                        bytesPerIndex: 4
-                    )
-                }
-            )
-            self.materials = materials
-        }
-
-        /// Creates an SCNGeometry from a Mesh using convex polygons
-        @available(OSX 10.12, iOS 10.0, tvOS 10.0, *)
-        convenience init(polygons mesh: Mesh, materialLookup: SCNMaterialProvider? = nil) {
-            var elementData = [(Int, Data)]()
-            var vertexData = Data()
-            var materials = [SCNMaterial]()
-            var indicesByVertex = [Vertex: UInt32]()
-            let materialLookup = materialLookup ?? defaultMaterialLookup
-            for (material, polygons) in mesh.polygonsByMaterial {
-                var indexData = Data()
-                func addVertex(_ vertex: Vertex) {
-                    if let index = indicesByVertex[vertex] {
-                        indexData.append(index)
-                        return
-                    }
-                    let index = UInt32(indicesByVertex.count)
-                    indicesByVertex[vertex] = index
-                    indexData.append(index)
-                    vertexData.append(vertex.position)
-                    vertexData.append(vertex.normal)
-                    vertexData.append(vertex.tex.u)
-                    vertexData.append(vertex.tex.v)
-                }
-                materials.append(materialLookup(material) ?? SCNMaterial())
-                for triangle in polygons {
-                    indexData.append(UInt32(triangle.vertices.count))
-                    triangle.vertices.forEach(addVertex)
-                }
-                elementData.append((polygons.count, indexData))
-            }
-            let vertexStride = 12 + 12 + 8
-            let vertexCount = vertexData.count / vertexStride
-            self.init(
-                sources: [
-                    SCNGeometrySource(
-                        data: vertexData,
-                        semantic: .vertex,
-                        vectorCount: vertexCount,
-                        usesFloatComponents: true,
-                        componentsPerVector: 3,
-                        bytesPerComponent: 4,
-                        dataOffset: 0,
-                        dataStride: vertexStride
-                    ),
-                    SCNGeometrySource(
-                        data: vertexData,
-                        semantic: .normal,
-                        vectorCount: vertexCount,
-                        usesFloatComponents: true,
-                        componentsPerVector: 3,
-                        bytesPerComponent: 4,
-                        dataOffset: 12,
-                        dataStride: vertexStride
-                    ),
-                    SCNGeometrySource(
-                        data: vertexData,
-                        semantic: .texcoord,
-                        vectorCount: vertexCount,
-                        usesFloatComponents: true,
-                        componentsPerVector: 2,
-                        bytesPerComponent: 4,
-                        dataOffset: 24,
-                        dataStride: vertexStride
-                    ),
-                ],
-                elements: elementData.map { count, indexData in
-                    SCNGeometryElement(
-                        data: indexData,
-                        primitiveType: .polygon,
-                        primitiveCount: count,
                         bytesPerIndex: 4
                     )
                 }
@@ -428,4 +346,10 @@
         typealias MaterialProvider = (SCNMaterial) -> Material?
     }
 
+    public extension SCNMaterial {
+        convenience init(_ rep: ColorRepresentation) {
+            self.init()
+            diffuse.contents = CGColor(red: rep.red, green: rep.green, blue: rep.blue, alpha: rep.alpha)
+        }
+    }
 #endif

@@ -70,12 +70,32 @@ public struct Triangle: Hashable {
 
     /// Creates a triangle from a set of vertex positions.
     ///
-    /// Vertex normals will be set to match face normal.
+    /// Vertex normals will be set to match face normal based on the positions being listed in a counter-clockwise direction..
     /// - Parameters:
     ///   - vertices: The points making up the face of a polygon.
     ///   - material: The material to use for rendering the polygon.
     public init?(_ vertices: [Vector], material: Material? = nil) {
         self.init(vertices.map { Vertex(position: $0) }, material: material)
+    }
+
+    /// Creates a triangle from a tuple of three vector positions.
+    ///
+    /// Vertex normals will be set to match face normal based on the positions being listed in a counter-clockwise direction.
+    /// - Parameters:
+    ///   - vertices: The points making up the face of a polygon.
+    ///   - material: The material to use for rendering the polygon.
+    public init?(_ vertices: (Vector, Vector, Vector), material _: Material? = nil) {
+        self.init([Vertex(position: vertices.0), Vertex(position: vertices.1), Vertex(position: vertices.2)])
+    }
+
+    /// Creates a triangle from a tuple of three vector positions.
+    ///
+    /// Vertex normals will be set to match face normal based on the positions being listed in a counter-clockwise direction.
+    /// - Parameters:
+    ///   - vertices: The points making up the face of a polygon.
+    ///   - material: The material to use for rendering the polygon.
+    public init?(_ v1: Vector, _ v2: Vector, _ v3: Vector, material _: Material? = nil) {
+        self.init([Vertex(position: v1), Vertex(position: v2), Vertex(position: v3)])
     }
 
     /// Indicates whether the triangle includes texture coordinates.

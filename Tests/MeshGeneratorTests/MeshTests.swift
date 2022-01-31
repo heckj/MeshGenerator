@@ -28,7 +28,7 @@ class MeshTests: XCTestCase {
         // @testable MeshGenerator tests
         XCTAssertTrue(m.isConvex)
     }
-    
+
     func testSingleTriangleMesh() throws {
         let v1 = Vector(0, 0, 0)
         let v2 = Vector(0, 1, 0)
@@ -36,15 +36,15 @@ class MeshTests: XCTestCase {
 
         let polygon = Triangle([v1, v2, v3])
         let tri = Mesh([polygon!])
-        
+
         XCTAssertFalse(tri.isWatertight)
-        
+
         XCTAssertEqual(tri.materials.count, 1)
         XCTAssertEqual(tri.polygons.count, 1)
         XCTAssertEqual(tri.polygonsByMaterial.count, 1)
         XCTAssertEqual(tri.uniqueEdges.count, 3)
         XCTAssertEqual(tri.bounds,
-                       Bounds(min: .zero, max: Vector(1,1,0)))
+                       Bounds(min: .zero, max: Vector(1, 1, 0)))
         // @testable MeshGenerator tests
         XCTAssertFalse(tri.isConvex)
     }

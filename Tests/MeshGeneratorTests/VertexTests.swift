@@ -38,5 +38,4 @@ class VertexTests: XCTestCase {
         XCTAssertEqual(newV.normal, Vector(0, 0, 1))
         XCTAssertEqual(newV.tex, .zero)
     }
-    
 }
