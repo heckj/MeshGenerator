@@ -17,4 +17,4 @@ Vertices, Polygons, and Meshes to support procedurally generating 3D surface mes
 - ``MeshGenerator/LineSegment``
 - ``MeshGenerator/Plane``
 - ``MeshGenerator/Bounds``
-
+- ``MeshGenerator/ColorRepresentation``

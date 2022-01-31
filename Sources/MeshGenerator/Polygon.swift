@@ -36,7 +36,7 @@ import Foundation
 /// A struct that represents a unique polygon.
 ///
 /// Polygon supports 3 or 4 vertices (triangles or quads), and requires that vertices specified as a quad be coplanar and convex.
-public struct Polygon {
+public struct Polygon: Hashable {
     public typealias Material = AnyHashable
     /// The class for the storage of the relevant values and objects that make up the Polygon.
     private var storage: Storage
@@ -45,6 +45,8 @@ public struct Polygon {
     public var vertices: [Vertex] { storage.vertices }
     /// The plane that describes the polygon's face.
     var plane: Plane { storage.plane }
+    /// The material associated with the polygon.
+    var material: Material? { storage.material }
     /// The bounds of the polygon.
     public var bounds: Bounds { Bounds(points: vertices.map { $0.position }) }
     
@@ -81,10 +83,33 @@ public struct Polygon {
         self.init(vertices.map { Vertex(position: $0) }, material: material)
     }
     
+    /// Indicates whether the polygon includes texture coordinates.
+    var hasTexcoords: Bool {
+        vertices.contains(where: { $0.tex != .zero })
+    }
+
+    /// Creates a new polygon with material you provide.
+    /// - Parameter normal: The normal to apply to the vertex.
+    public func with(material: Material?) -> Polygon {
+        return Polygon(unchecked: vertices, plane: plane, material: material)
+    }
+
+    /// Returns a set of polygon edges.
+    ///
+    /// The direction of each edge is normalized relative to the origin to facilitate edge-equality comparisons.
+    var undirectedEdges: Set<LineSegment> {
+        var p0 = vertices.last!.position
+        return Set(vertices.map {
+            let p1 = $0.position
+            defer { p0 = p1 }
+            return LineSegment(normalized: p0, p1)
+        })
+    }
+
     /// Returns a vector that is the face normal direction for the list of points you provide.
     ///
     /// The points must represent a triangle or quad (3 or 4 points), be coplanar, convex, and non-degenerate.
-    /// The points are assumed to be ordered in a counter-clockwise direction.
+    /// The points are assumed to be ordered in a counter-clockwise direction for the purposes of computing the direction of the normal.
     ///
     /// - Parameters:
     ///   - points: The points making up the face of a polygon.
@@ -103,6 +128,48 @@ public struct Polygon {
             return faceNormalForConvexPoints(points)
         }
     }
+    
+    /// Flips the polygon along its plane.
+    func inverted() -> Polygon {
+        Polygon(
+            unchecked: vertices.reversed().map { $0.inverted() },
+            plane: plane.inverted(),
+            material: material
+        )
+    }
+
+//    /// Converts a concave polygon into 2 or more convex polygons using the "ear clipping" method.
+//    func tessellate() -> [Polygon] {
+//        if isConvex {
+//            return [self]
+//        }
+//        var polygons = triangulate()
+//        var i = polygons.count - 1
+//        while i > 0 {
+//            let a = polygons[i]
+//            let b = polygons[i - 1]
+//            if let merged = a.merge(unchecked: b, ensureConvex: true) {
+//                polygons[i - 1] = merged
+//                polygons.remove(at: i)
+//            }
+//            i -= 1
+//        }
+//        return polygons
+//    }
+
+//    /// Tessellates polygon into triangles using the "ear clipping" method.
+//    func triangulate() -> [Polygon] {
+//        guard vertices.count > 3 else {
+//            return [self]
+//        }
+//        return triangulateVertices(
+//            vertices,
+//            plane: plane,
+//            isConvex: isConvex,
+//            material: material,
+//            id: id
+//        )
+//    }
 }
 
 internal extension Polygon {
@@ -160,6 +227,109 @@ internal extension Polygon {
             }
             return normal2.normalized()
         }
+    }
+}
+
+internal extension Collection where Element == Polygon {
+    /// Return a set of all unique edges across all the polygons
+    var uniqueEdges: Set<LineSegment> {
+        var edges = Set<LineSegment>()
+        forEach { edges.formUnion($0.undirectedEdges) }
+        return edges
+    }
+
+    /// Check if polygons form a watertight mesh, i.e. every edge is attached to at least 2 polygons.
+    /// Note: doesn't verify that mesh is not self-intersecting or inside-out.
+    var areWatertight: Bool {
+        var edgeCounts = [LineSegment: Int]()
+        for polygon in self {
+            for edge in polygon.undirectedEdges {
+                edgeCounts[edge, default: 0] += 1
+            }
+        }
+        return edgeCounts.values.allSatisfy { $0 >= 2 && $0 % 2 == 0 }
+    }
+
+//    /// Insert missing vertices needed to prevent hairline cracks
+//    func makeWatertight() -> [Polygon] {
+//        var polygonsByEdge = [LineSegment: Int]()
+//        for polygon in self {
+//            for edge in polygon.undirectedEdges {
+//                polygonsByEdge[edge, default: 0] += 1
+//            }
+//        }
+//        var points = Set<Vector>()
+//        let edges = polygonsByEdge.filter { !$0.value.isMultiple(of: 2) }.keys
+//        for edge in edges.sorted() {
+//            points.insert(edge.start)
+//            points.insert(edge.end)
+//        }
+//        var polygons = Array(self)
+//        let sortedPoints = points.sorted()
+//        for i in polygons.indices {
+//            let bounds = polygons[i].bounds.inset(by: -Vector.epsilon)
+//            for point in sortedPoints where bounds.containsPoint(point) {
+//                _ = polygons[i].insertEdgePoint(point)
+//            }
+//        }
+//        return polygons
+//    }
+
+    /// Flip each polygon along its plane
+    func inverted() -> [Polygon] {
+        map { $0.inverted() }
+    }
+
+//    /// Decompose each concave polygon into 2 or more convex polygons
+//    func tessellate() -> [Polygon] {
+//        flatMap { $0.tessellate() }
+//    }
+//
+//    /// Decompose each polygon into triangles
+//    func triangulate() -> [Polygon] {
+//        flatMap { $0.triangulate() }
+//    }
+
+//    /// Merge coplanar polygons that share one or more edges
+//    /// Note: polygons must be sorted by plane prior to calling this method
+//    func detessellate(ensureConvex: Bool = false) -> [Polygon] {
+//        var polygons = Array(self)
+//        assert(polygons.areSortedByPlane)
+//        var i = 0
+//        var firstPolygonInPlane = 0
+//        while i < polygons.count {
+//            var j = i + 1
+//            let a = polygons[i]
+//            while j < polygons.count {
+//                let b = polygons[j]
+//                guard a.plane.isEqual(to: b.plane) else {
+//                    firstPolygonInPlane = j
+//                    i = firstPolygonInPlane - 1
+//                    break
+//                }
+//                if let merged = a.merge(b, ensureConvex: ensureConvex) {
+//                    polygons[i] = merged
+//                    polygons.remove(at: j)
+//                    i = firstPolygonInPlane - 1
+//                    break
+//                }
+//                j += 1
+//            }
+//            i += 1
+//        }
+//        return polygons
+//    }
+
+    /// Sort polygons by plane
+    func sortedByPlane() -> [Polygon] {
+        sorted(by: { $0.plane < $1.plane })
+    }
+
+    /// Returns a dictionary of polygons, keyed to the material used by the polygon.
+    func groupedByMaterial() -> [Polygon.Material?: [Polygon]] {
+        var polygonsByMaterial = [Polygon.Material?: [Polygon]]()
+        forEach { polygonsByMaterial[$0.material, default: []].append($0) }
+        return polygonsByMaterial
     }
 }
 

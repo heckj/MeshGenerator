@@ -15,6 +15,8 @@ public struct Bounds {
     public let min: Vector
     public let max: Vector
     
+    static let empty = Bounds()
+
     /// Create a bounds with min and max points.
     ///
     /// If `max` < `min`, the bounds is considered to be empty.
@@ -45,21 +47,19 @@ public struct Bounds {
         self.max = max
     }
     
-//    /// Creates bounds from an array of polygons.
-//    /// - Parameter polygons: The list of ``MeshGenerator/Polygon``.
-//    init(polygons: [Polygon]) {
-//        var min = Vector(.infinity, .infinity, .infinity)
-//        var max = Vector(-.infinity, -.infinity, -.infinity)
-////        for p in polygons {
-////            for v in p.vertices {
-////                min = Euclid.min(min, v.position)
-////                max = Euclid.max(max, v.position)
-////            }
-////        }
-//        self.min = min
-//        self.max = max
-//    }
-    
+    init(polygons: [Polygon]) {
+        var min = Vector(.infinity, .infinity, .infinity)
+        var max = Vector(-.infinity, -.infinity, -.infinity)
+        for p in polygons {
+            for v in p.vertices {
+                min = min.min(v.position)
+                max = max.max(v.position)
+            }
+        }
+        self.min = min
+        self.max = max
+    }
+
     /// Whether the maximum is greater than the minimum.
     public var hasNegativeVolume: Bool {
         max.x < min.x || max.y < min.y || max.z < min.z

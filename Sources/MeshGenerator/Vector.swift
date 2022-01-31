@@ -161,16 +161,23 @@ public struct Vector: Hashable {
     }
 
     /// Returns a vector with its components divided by the value you provide.
+    /// - Parameters:
+    ///   - lhs: The first vector.
+    ///   - rhs: The second vector.
     static func / (lhs: Vector, rhs: Double) -> Vector {
         Vector(lhs.x / rhs, lhs.y / rhs, lhs.z / rhs)
     }
 
     /// Returns a vector with its components divided by the value you provide.
+    /// - Parameters:
+    ///   - lhs: The first vector.
+    ///   - rhs: The second vector.
     static func * (lhs: Vector, rhs: Double) -> Vector {
         Vector(lhs.x * rhs, lhs.y * rhs, lhs.z * rhs)
     }
 
     /// Returns a vector with the values inverted.
+    /// - Parameter rhs: The vector to invert.
     static prefix func - (rhs: Vector) -> Vector {
         Vector(-rhs.x, -rhs.y, -rhs.z)
     }
@@ -208,11 +215,13 @@ public struct Vector: Hashable {
     }
     
     /// Returns a new vector that represents the mininum value for each of the components of the two vectors.
+    /// - Parameter rhs: The vector to compare.
     public func min(_ rhs: Vector) -> Vector {
         Vector(Swift.min(self.x, rhs.x), Swift.min(self.y, rhs.y), Swift.min(self.z, rhs.z))
     }
 
     /// Returns a new vector that represents the maximum value for each of the components of the two vectors.
+    /// - Parameter rhs: The vector to compare.
     public func max(_ rhs: Vector) -> Vector {
         Vector(Swift.max(self.x, rhs.x), Swift.max(self.y, rhs.y), Swift.max(self.z, rhs.z))
     }
@@ -233,6 +242,15 @@ public struct Vector: Hashable {
                 y.isApproximatelyEqual(to: other.y, withPrecision: p) &&
                 z.isApproximatelyEqual(to: other.z, withPrecision: p)
         )
+    }
+
+    /// Linearly interpolate between this vector and another you provide.
+    /// - Parameters:
+    ///   - a: The vector to interpolate towards.
+    ///   - t: A value, typically between `0` and `1`, to indicate the position  to interpolate between the two vectors.
+    /// - Returns: A vector interpolated to the position you provide.
+    func lerp(_ a: Vector, _ t: Double) -> Vector {
+        self + (a - self) * t
     }
 
 }

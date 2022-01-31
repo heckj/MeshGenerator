@@ -96,6 +96,23 @@ public struct Vertex: Hashable, Equatable {
         self.init(position: Vector(x, y, z), normal: normal, tex: tex)
     }
     
+    /// Invert all orientation-specific data (e.g. vertex normal). Called when the
+    /// orientation of a polygon is flipped.
+    func inverted() -> Vertex {
+        Vertex(position: position, normal: -normal, tex: tex)
+    }
+
+    /// Linearly interpolate between two vertices.
+    ///
+    /// Interpolation is applied to the position, texture coordinate and normal.
+    func lerp(_ other: Vertex, _ t: Double) -> Vertex {
+        Vertex(
+            position: position.lerp(other.position, t),
+            normal: normal.lerp(other.normal, t),
+            tex: tex.lerp(other.tex, t)
+        )
+    }
+
     /// Returns a Boolean value that indicates whether the list of vertices results in a degenerate polygon.
     ///
     /// A degenerate polygon is one in which some vertex lies on an edge joining two other vertices.

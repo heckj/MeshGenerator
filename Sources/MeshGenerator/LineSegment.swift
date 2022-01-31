@@ -4,6 +4,7 @@
 //
 //  Created by Joseph Heck on 1/29/22.
 //  Copyright © 2022 Joseph Heck. All rights reserved.
+//
 //  Portions of this code Created by Nick Lockwood on 03/07/2018.
 //  Copyright © 2018 Nick Lockwood. All rights reserved.
 //
@@ -49,6 +50,21 @@ public struct LineSegment: Hashable {
         }
         self.start = start
         self.end = end
+    }
+}
+internal extension LineSegment {
+    init(unchecked start: Vector, _ end: Vector) {
+        assert(start != end)
+        self.start = start
+        self.end = end
+    }
+
+    init(normalized start: Vector, _ end: Vector) {
+        if start < end {
+            self.init(unchecked: start, end)
+        } else {
+            self.init(unchecked: end, start)
+        }
     }
 }
 
