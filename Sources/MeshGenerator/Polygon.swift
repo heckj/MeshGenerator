@@ -140,26 +140,27 @@ public struct Polygon: Hashable {
 
     /// Returns a Boolean value that indicates whether a point lies inside the polygon.
     func containsPoint(_ p: Vector) -> Bool {
-        guard plane.containsPoint(p) else {
-            return false
-        }
-        // https://stackoverflow.com/questions/217578/how-can-i-determine-whether-a-2d-point-is-within-a-polygon#218081
-        let flatteningPlane = FlatteningPlane(normal: plane.normal)
-        let points = vertices.map { flatteningPlane.flattenPoint($0.position) }
-        let p = flatteningPlane.flattenPoint(p)
-        let count = points.count
-        var c = false
-        var j = count - 1
-        for i in 0 ..< count {
-            if (points[i].y > p.y) != (points[j].y > p.y),
-               p.x < (points[j].x - points[i].x) * (p.y - points[i].y) /
-               (points[j].y - points[i].y) + points[i].x
-            {
-                c = !c
-            }
-            j = i
-        }
-        return c
+        return plane.containsPoint(p)
+//        guard plane.containsPoint(p) else {
+//            return false
+//        }
+//        // https://stackoverflow.com/questions/217578/how-can-i-determine-whether-a-2d-point-is-within-a-polygon#218081
+//        let flatteningPlane = FlatteningPlane(normal: plane.normal)
+//        let points = vertices.map { flatteningPlane.flattenPoint($0.position) }
+//        let p = flatteningPlane.flattenPoint(p)
+//        let count = points.count
+//        var c = false
+//        var j = count - 1
+//        for i in 0 ..< count {
+//            if (points[i].y > p.y) != (points[j].y > p.y),
+//               p.x < (points[j].x - points[i].x) * (p.y - points[i].y) /
+//               (points[j].y - points[i].y) + points[i].x
+//            {
+//                c = !c
+//            }
+//            j = i
+//        }
+//        return c
     }
 
 //    /// Converts a concave polygon into 2 or more convex polygons using the "ear clipping" method.
@@ -253,120 +254,120 @@ internal extension Polygon {
         }
     }
     
-    static func triangulateVertices(
-        _ vertices: [Vertex],
-        plane: Plane?,
-        isConvex: Bool?,
-        material: Mesh.Material?,
-        id: Int
-    ) -> [Polygon] {
-        var vertices = vertices
-        guard vertices.count > 3 else {
-            assert(vertices.count > 2)
-            return [Polygon(
-                unchecked: vertices,
-                plane: plane,
-                material: material
-            )]
-        }
-        var triangles = [Polygon]()
-        func addTriangle(_ vertices: [Vertex]) -> Bool {
-            guard !Vertex.verticesAreDegenerate(vertices) else {
-                return false
-            }
-            triangles.append(Polygon(
-                unchecked: vertices,
-                plane: plane,
-                material: material
-            ))
-            return true
-        }
-        let positions = vertices.map { $0.position }
-        if isConvex ?? Vertex.pointsAreConvex(positions) {
-            let v0 = vertices[0]
-            var v1 = vertices[1]
-            for v2 in vertices[2...] {
-                _ = addTriangle([v0, v1, v2])
-                v1 = v2
-            }
-            return triangles
-        }
-
-        // Note: this solves a problem when anticlockwise-ordered concave polygons
-        // would be incorrectly triangulated. However it's not clear why this is
-        // necessary, or if it will do the correct thing in all circumstances
-        let flatteningPlane = FlatteningPlane(
-            normal: plane?.normal ??
-                faceNormalForPolygonPoints(positions, convex: false)
-        )
-        let flattenedPoints = vertices.map { flatteningPlane.flattenPoint($0.position) }
-        let isClockwise = flattenedPointsAreClockwise(flattenedPoints)
-        if !isClockwise {
-            guard flattenedPointsAreClockwise(flattenedPoints.reversed()) else {
-                // Points are self-intersecting, or otherwise degenerate
-                return []
-            }
-            return triangulateVertices(
-                vertices.reversed().map { $0.inverted() },
-                plane: plane?.inverted(),
-                isConvex: isConvex,
-                material: material,
-                id: id
-            ).inverted()
-        }
-
-        var i = 0
-        var attempts = 0
-        func removeVertex() {
-            attempts = 0
-            vertices.remove(at: i)
-            if i == vertices.count {
-                i = 0
-            }
-        }
-        while vertices.count > 3 {
-            let p0 = vertices[(i - 1 + vertices.count) % vertices.count]
-            let p1 = vertices[i]
-            let p2 = vertices[(i + 1) % vertices.count]
-            // check for colinear points
-            let p0p1 = p0.position - p1.position, p2p1 = p2.position - p1.position
-            if p0p1.cross(p2p1).length < Vector.epsilon {
-                // vertices are colinear, so we can't form a triangle
-                if p0p1.dot(p2p1) > 0 {
-                    // center point makes path degenerate - remove it
-                    removeVertex()
-                } else {
-                    // try next point instead
-                    i += 1
-                    if i == vertices.count {
-                        i = 0
-                        attempts += 1
-                        if attempts > 2 {
-                            return triangles
-                        }
-                    }
-                }
-                continue
-            }
-            let triangle = Polygon([p0, p1, p2])
-            if triangle == nil || vertices.contains(where: {
-                !triangle!.vertices.contains($0) && triangle!.containsPoint($0.position)
-            }) || plane.map({ triangle!.plane.normal.dot($0.normal) <= 0 }) ?? false {
-                i += 1
-                if i == vertices.count {
-                    i = 0
-                    attempts += 1
-                    if attempts > 2 {
-                        return triangles
-                    }
-                }
-            } else if addTriangle(triangle!.vertices) {
-                removeVertex()
-            }
-        }
-        _ = addTriangle(vertices)
-        return triangles
-    }
+//    static func triangulateVertices(
+//        _ vertices: [Vertex],
+//        plane: Plane?,
+//        isConvex: Bool?,
+//        material: Mesh.Material?,
+//        id: Int
+//    ) -> [Polygon] {
+//        var vertices = vertices
+//        guard vertices.count > 3 else {
+//            assert(vertices.count > 2)
+//            return [Polygon(
+//                unchecked: vertices,
+//                plane: plane,
+//                material: material
+//            )]
+//        }
+//        var triangles = [Polygon]()
+//        func addTriangle(_ vertices: [Vertex]) -> Bool {
+//            guard !Vertex.verticesAreDegenerate(vertices) else {
+//                return false
+//            }
+//            triangles.append(Polygon(
+//                unchecked: vertices,
+//                plane: plane,
+//                material: material
+//            ))
+//            return true
+//        }
+//        let positions = vertices.map { $0.position }
+//        if isConvex ?? Vertex.pointsAreConvex(positions) {
+//            let v0 = vertices[0]
+//            var v1 = vertices[1]
+//            for v2 in vertices[2...] {
+//                _ = addTriangle([v0, v1, v2])
+//                v1 = v2
+//            }
+//            return triangles
+//        }
+//
+//        // Note: this solves a problem when anticlockwise-ordered concave polygons
+//        // would be incorrectly triangulated. However it's not clear why this is
+//        // necessary, or if it will do the correct thing in all circumstances
+//        let flatteningPlane = FlatteningPlane(
+//            normal: plane?.normal ??
+//                faceNormalForPolygonPoints(positions, convex: false)
+//        )
+//        let flattenedPoints = vertices.map { flatteningPlane.flattenPoint($0.position) }
+//        let isClockwise = flattenedPointsAreClockwise(flattenedPoints)
+//        if !isClockwise {
+//            guard flattenedPointsAreClockwise(flattenedPoints.reversed()) else {
+//                // Points are self-intersecting, or otherwise degenerate
+//                return []
+//            }
+//            return triangulateVertices(
+//                vertices.reversed().map { $0.inverted() },
+//                plane: plane?.inverted(),
+//                isConvex: isConvex,
+//                material: material,
+//                id: id
+//            ).inverted()
+//        }
+//
+//        var i = 0
+//        var attempts = 0
+//        func removeVertex() {
+//            attempts = 0
+//            vertices.remove(at: i)
+//            if i == vertices.count {
+//                i = 0
+//            }
+//        }
+//        while vertices.count > 3 {
+//            let p0 = vertices[(i - 1 + vertices.count) % vertices.count]
+//            let p1 = vertices[i]
+//            let p2 = vertices[(i + 1) % vertices.count]
+//            // check for colinear points
+//            let p0p1 = p0.position - p1.position, p2p1 = p2.position - p1.position
+//            if p0p1.cross(p2p1).length < Vector.epsilon {
+//                // vertices are colinear, so we can't form a triangle
+//                if p0p1.dot(p2p1) > 0 {
+//                    // center point makes path degenerate - remove it
+//                    removeVertex()
+//                } else {
+//                    // try next point instead
+//                    i += 1
+//                    if i == vertices.count {
+//                        i = 0
+//                        attempts += 1
+//                        if attempts > 2 {
+//                            return triangles
+//                        }
+//                    }
+//                }
+//                continue
+//            }
+//            let triangle = Polygon([p0, p1, p2])
+//            if triangle == nil || vertices.contains(where: {
+//                !triangle!.vertices.contains($0) && triangle!.containsPoint($0.position)
+//            }) || plane.map({ triangle!.plane.normal.dot($0.normal) <= 0 }) ?? false {
+//                i += 1
+//                if i == vertices.count {
+//                    i = 0
+//                    attempts += 1
+//                    if attempts > 2 {
+//                        return triangles
+//                    }
+//                }
+//            } else if addTriangle(triangle!.vertices) {
+//                removeVertex()
+//            }
+//        }
+//        _ = addTriangle(vertices)
+//        return triangles
+//    }
 
 }
 

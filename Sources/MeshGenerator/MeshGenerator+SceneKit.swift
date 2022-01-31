@@ -145,9 +145,10 @@ public extension SCNGeometry {
             }
             materials.append(materialLookup(material) ?? SCNMaterial())
             for polygon in polygons {
-                for triangle in polygon.triangulate() {
-                    triangle.vertices.forEach(addVertex)
-                }
+                polygon.vertices.forEach(addVertex)
+//                for triangle in polygon.triangulate() {
+//                    triangle.vertices.forEach(addVertex)
+//                }
             }
             elementData.append(indexData)
         }
