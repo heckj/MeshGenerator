@@ -57,11 +57,8 @@ public struct Polygon: Hashable {
     public init?(_ vertices: [Vertex], material: Material? = nil) {
         let positions = vertices.map { $0.position }
         
-        guard positions.count > 2,
-              positions.count < 5,
-              let plane = Plane(points: positions),
-                // Note: Plane init includes the check for degeneracy, coplanar, and convex in the vertices
-              !Vertex.pointsAreSelfIntersecting(positions)
+        guard positions.count == 3,
+              let plane = Plane(points: positions)
         else {
             return nil
         }
@@ -114,19 +111,18 @@ public struct Polygon: Hashable {
     /// - Parameters:
     ///   - points: The points making up the face of a polygon.
     public static func faceNormalForPolygonPoints(_ points: [Vector]) -> Vector? {
-        guard points.count > 2,
-              points.count < 4 else {
+        guard points.count == 3 else {
                   return nil
               }
-        switch points.count {
-        case 3:
+//        switch points.count {
+//        case 3:
             return faceNormalForConvexPoints(points)
-        default:
-            guard Vertex.pointsAreCoplanar(points), Vertex.pointsAreConvex(points) else {
-                return nil
-            }
-            return faceNormalForConvexPoints(points)
-        }
+//        default:
+//            guard Vertex.pointsAreCoplanar(points), Vertex.pointsAreConvex(points) else {
+//                return nil
+//            }
+//            return faceNormalForConvexPoints(points)
+//        }
     }
     
     /// Flips the polygon along its plane.
@@ -216,8 +212,8 @@ internal extension Polygon {
         sanitizeNormals: Bool = false,
         material: Material?
     ) {
-        assert(!Vertex.verticesAreDegenerate(vertices))
-        assert(Vertex.verticesAreConvex(vertices) == true)
+//        assert(!Vertex.verticesAreDegenerate(vertices))
+//        assert(Vertex.verticesAreConvex(vertices) == true)
         assert(sanitizeNormals || vertices.allSatisfy { $0.normal != .zero })
         let plane = plane ?? Plane(unchecked: vertices.map { $0.position })
         self.storage = Storage(

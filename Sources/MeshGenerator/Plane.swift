@@ -83,11 +83,7 @@ public extension Plane {
     /// The direction of the plane normal is based on the assumption that the points are wind in an anti-clockwise direction.
     init?(points: [Vector]) {
         guard !points.isEmpty,
-              points.count > 2,
-              points.count < 5,
-              !Vertex.pointsAreDegenerate(points),
-              Vertex.pointsAreCoplanar(points),
-              Vertex.pointsAreConvex(points) else {
+              points.count == 3 else {
             return nil
         }
         self.init(unchecked: points)
@@ -153,8 +149,8 @@ internal extension Plane {
     }
 
     init(unchecked points: [Vector]) {
-        assert(!Vertex.pointsAreDegenerate(points))
-        assert(Vertex.pointsAreConvex(points))
+//        assert(!Vertex.pointsAreDegenerate(points))
+//        assert(Vertex.pointsAreConvex(points))
         let normal = Polygon.faceNormalForPolygonPoints(points) ?? Vector(0,0,1)
         self.init(unchecked: normal, pointOnPlane: points[0])
     }
