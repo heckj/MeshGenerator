@@ -7,6 +7,10 @@ Package.resolved
 .docc-build/
 .vscode
 
+.DS_Store
+all_identifiers.txt
+all_symbols.txt
+
 ## User settings
 xcuserdata/
 

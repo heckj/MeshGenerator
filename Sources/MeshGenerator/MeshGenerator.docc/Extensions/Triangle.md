@@ -4,4 +4,5 @@
 
 ### <!--@START_MENU_TOKEN@-->Group<!--@END_MENU_TOKEN@-->
 
-- ``MeshGenerator/Polygon/init(_:material:)``
+- ``MeshGenerator/Triangle/init(_:material:)-6xdqt``
+- ``MeshGenerator/Triangle/init(_:material:)-8wp0v``
