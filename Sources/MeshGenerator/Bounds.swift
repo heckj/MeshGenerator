@@ -11,7 +11,7 @@ import Foundation
 /// A struct the represents the bounding volume in 3D space.
 ///
 /// The bounds are defined as two ``MeshGenerator/Vector`` instances, that define the opposite corners of an axially aligned box.
-public struct Bounds {
+public struct Bounds: Hashable {
     public let min: Vector
     public let max: Vector
 

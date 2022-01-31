@@ -197,12 +197,9 @@
                     vertexData.append(vertex.tex.v)
                 }
                 materials.append(materialLookup(material) ?? SCNMaterial())
-//            let polygons = polygons.tessellate()
-                for polygon in polygons {
-                    indexData.append(UInt32(polygon.vertices.count))
-                }
-                for polygon in polygons {
-                    polygon.vertices.forEach(addVertex)
+                for triangle in polygons {
+                    indexData.append(UInt32(triangle.vertices.count))
+                    triangle.vertices.forEach(addVertex)
                 }
                 elementData.append((polygons.count, indexData))
             }
