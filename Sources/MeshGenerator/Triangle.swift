@@ -38,7 +38,7 @@ public struct Triangle: Hashable {
     public typealias Material = AnyHashable
     /// The class for the storage of the relevant values and objects that make up the triangle.
     private var storage: Storage
-    
+
     /// The collection of vertices that make up the triangle.
     public var vertices: [Vertex] { storage.vertices }
     /// The plane that describes the triangle's face.
@@ -47,14 +47,14 @@ public struct Triangle: Hashable {
     var material: Material? { storage.material }
     /// The bounds of the triangle.
     public var bounds: Bounds { Bounds(points: vertices.map { $0.position }) }
-    
+
     /// Creates a triangle from a set of vertices.
     ///
     /// A polygon can be convex or concave, but vertices must be coplanar and non-degenerate.
     /// Vertices are assumed to be in anti-clockwise order for the purpose of deriving the plane.
     public init?(_ vertices: [Vertex], material: Material? = nil) {
         let positions = vertices.map { $0.position }
-        
+
         guard positions.count == 3,
               let plane = Plane(points: positions)
         else {
@@ -77,7 +77,7 @@ public struct Triangle: Hashable {
     public init?(_ vertices: [Vector], material: Material? = nil) {
         self.init(vertices.map { Vertex(position: $0) }, material: material)
     }
-    
+
     /// Indicates whether the triangle includes texture coordinates.
     var hasTexcoords: Bool {
         vertices.contains(where: { $0.tex != .zero })
@@ -133,7 +133,7 @@ internal extension Triangle {
     ) {
         assert(sanitizeNormals || vertices.allSatisfy { $0.normal != .zero })
         let plane = plane ?? Plane(unchecked: vertices.map { $0.position })
-        self.storage = Storage(
+        storage = Storage(
             vertices: vertices.map {
                 $0.with(normal: $0.normal == .zero ? plane.normal : $0.normal)
             },
@@ -141,7 +141,7 @@ internal extension Triangle {
             material: material
         )
     }
-    
+
     /// Computes a normal for the provided points for a triangle or quad polygon.
     ///
     /// The points are assumed to be in counter-clockwise order for the purpose of deriving the plane.

@@ -78,11 +78,11 @@ public struct Vertex: Hashable, Equatable {
             self.tex = .zero
         }
     }
-    
+
     /// Creates a new vertex with normal vector you provide.
     /// - Parameter normal: The normal to apply to the vertex.
     public func with(normal: Vector) -> Vertex {
-        return Vertex(position: self.position, normal: normal, tex: tex)
+        return Vertex(position: position, normal: normal, tex: tex)
     }
 
     /// Creates a new vertex.
@@ -95,7 +95,7 @@ public struct Vertex: Hashable, Equatable {
     public init(x: Double, y: Double, z: Double, normal: Vector? = nil, tex: TextureCoordinates? = nil) {
         self.init(position: Vector(x, y, z), normal: normal, tex: tex)
     }
-    
+
     /// Invert all orientation-specific data (e.g. vertex normal). Called when the
     /// orientation of a polygon is flipped.
     func inverted() -> Vertex {
@@ -125,7 +125,7 @@ public struct Vertex: Hashable, Equatable {
 //        let positions = vertices.map { $0.position }
 //        return pointsAreDegenerate(positions) || pointsAreSelfIntersecting(positions)
 //    }
-    
+
 //    /// Returns a Boolean value that indicates the order of the collection of vertices results in a convex polygon.
 //    /// - Parameter vertices: The list of vertices.
 //    public static func verticesAreConvex(_ vertices: [Vertex]) -> Bool {
@@ -134,7 +134,7 @@ public struct Vertex: Hashable, Equatable {
 //        }
 //        return pointsAreConvex(vertices.map { $0.position })
 //    }
-    
+
 //    /// Returns a Boolean value that indicates whether all vertices reside on the same plane.
 //    /// - Parameter vertices: The vertices to analyze.
 //    public static func verticesAreCoplanar(_ vertices: [Vertex]) -> Bool {
@@ -143,7 +143,7 @@ public struct Vertex: Hashable, Equatable {
 //        }
 //        return pointsAreCoplanar(vertices.map { $0.position })
 //    }
-    
+
 //    /// Returns a Boolean value that indicates whether the list of points would result in a degenerate polygon.
 //    ///
 //    /// A degenerate polygon is one in which some vertex lies on an edge joining two other vertices.
@@ -170,7 +170,7 @@ public struct Vertex: Hashable, Equatable {
 //        }
 //        return false
 //    }
-    
+
 //    /// Returns a Boolean value that indicates the order of the collection of points results in a convex polygon.
 //    ///
 //    /// - Parameter vertices: The list of points.
@@ -202,7 +202,7 @@ public struct Vertex: Hashable, Equatable {
 //        }
 //        return true
 //    }
-    
+
 //    /// Returns a Boolean value that indicates the order of the collection of points results in line segments that intersect with each other.
 //    /// - Parameter points: The list of points
 //    public static func pointsAreSelfIntersecting(_ points: [Vector]) -> Bool {
@@ -252,5 +252,4 @@ public struct Vertex: Hashable, Equatable {
 //        }
 //        return true
 //    }
-
 }

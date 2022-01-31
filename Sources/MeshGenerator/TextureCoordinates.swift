@@ -106,7 +106,6 @@ public struct TextureCoordinates: Hashable {
         self + (a - self) * t
     }
 
-
     /// A texture coordinate at the position `(0,0)`
     public static let zero = TextureCoordinates(0, 0)
     /// A texture coordinate at the position `(1,1)`

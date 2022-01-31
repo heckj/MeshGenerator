@@ -1,6 +1,6 @@
 //
 //  Plane.swift
-//  
+//
 //
 //  Created by Nick Lockwood on 03/07/2018.
 //  Copyright © 2018 Nick Lockwood. All rights reserved.
@@ -83,7 +83,8 @@ public extension Plane {
     /// The direction of the plane normal is based on the assumption that the points are wind in an anti-clockwise direction.
     init?(points: [Vector]) {
         guard !points.isEmpty,
-              points.count == 3 else {
+              points.count == 3
+        else {
             return nil
         }
         self.init(unchecked: points)
@@ -100,7 +101,7 @@ public extension Plane {
 
     /// Returns a Boolean value that indicates whether a point is on the plane.
     func containsPoint(_ p: Vector) -> Bool {
-        abs(self.distance(from: p)) < Vector.epsilon
+        abs(distance(from: p)) < Vector.epsilon
     }
 
     /// Returns the distance of the point from a plane.

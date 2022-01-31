@@ -1,6 +1,6 @@
 //
 //  Mesh.swift
-//  
+//
 //
 //  Created by Joseph Heck on 1/30/22.
 //  Copyright © 2022 Joseph Heck. All rights reserved.
@@ -111,7 +111,7 @@ internal extension Mesh {
         isConvex: Bool,
         isWatertight: Bool?
     ) {
-        self.storage = polygons.isEmpty ? .empty : Storage(
+        storage = polygons.isEmpty ? .empty : Storage(
             polygons: polygons,
             bounds: bounds,
             isConvex: isConvex,
@@ -183,9 +183,9 @@ private extension Mesh {
         ) {
             assert(isWatertight == nil || isWatertight == polygons.areWatertight)
             self.polygons = polygons
-            self.boundsIfSet = polygons.isEmpty ? .empty : bounds
+            boundsIfSet = polygons.isEmpty ? .empty : bounds
             self.isConvex = isConvex || polygons.isEmpty
-            self.watertightIfSet = polygons.isEmpty ? true : isWatertight
+            watertightIfSet = polygons.isEmpty ? true : isWatertight
         }
     }
 }

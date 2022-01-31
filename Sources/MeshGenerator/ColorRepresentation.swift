@@ -1,6 +1,6 @@
 //
 //  ColorRepresentation.swift
-//  
+//
 //
 //  Created by Joseph Heck on 1/30/22.
 //  Copyright © 2022 Joseph Heck. All rights reserved.

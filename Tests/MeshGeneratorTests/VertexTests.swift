@@ -18,24 +18,24 @@ class VertexTests: XCTestCase {
     }
 
     func testVertexInitializer() throws {
-        let v = Vertex(position: Vector(0,0,0))
+        let v = Vertex(position: Vector(0, 0, 0))
         XCTAssertEqual(v.normal, .zero)
         XCTAssertEqual(v.tex, .zero)
     }
 
     func testVertexWith() throws {
-        let v = Vertex(position: Vector(0,0,0))
+        let v = Vertex(position: Vector(0, 0, 0))
         XCTAssertEqual(v.normal, .zero)
         XCTAssertEqual(v.tex, .zero)
-        let newV = v.with(normal: Vector(0,0,1))
-        XCTAssertEqual(newV.normal, Vector(0,0,1))
+        let newV = v.with(normal: Vector(0, 0, 1))
+        XCTAssertEqual(newV.normal, Vector(0, 0, 1))
         XCTAssertEqual(newV.tex, .zero)
     }
 
     func testVertexWithNonNormal() throws {
-        let v = Vertex(position: Vector(0,0,0))
-        let newV = v.with(normal: Vector(0,0,10))
-        XCTAssertEqual(newV.normal, Vector(0,0,1))
+        let v = Vertex(position: Vector(0, 0, 0))
+        let newV = v.with(normal: Vector(0, 0, 10))
+        XCTAssertEqual(newV.normal, Vector(0, 0, 1))
         XCTAssertEqual(newV.tex, .zero)
     }
 
@@ -50,7 +50,7 @@ class VertexTests: XCTestCase {
 //        XCTAssertFalse(Vertex.verticesAreCoplanar([v1,v2,v3,v4,v5]))
 //        XCTAssertTrue(Vertex.verticesAreCoplanar([v1,v2,v3,v4]))
 //    }
-    
+
 //    func testDegenerateVertexList() throws {
 //        let v1 = Vertex(position: Vector(0,0,0))
 //        let v2 = Vertex(position: Vector(0,1,0))
@@ -60,10 +60,10 @@ class VertexTests: XCTestCase {
 //        let quickset_good: [Vertex] = [v1,v2,v3,v4]
 //        XCTAssertTrue(Vertex.verticesAreDegenerate(quickset_bad))
 //        XCTAssertTrue(Vertex.pointsAreSelfIntersecting(quickset_bad.map({ $0.position })))
-//        
+//
 //        XCTAssertFalse(Vertex.verticesAreDegenerate(quickset_good))
 //        XCTAssertFalse(Vertex.pointsAreSelfIntersecting(quickset_good.map({ $0.position })))
-//        
+//
 //        XCTAssertTrue(Vertex.verticesAreCoplanar(quickset_bad))
 //        XCTAssertTrue(Vertex.verticesAreCoplanar(quickset_good))
 //

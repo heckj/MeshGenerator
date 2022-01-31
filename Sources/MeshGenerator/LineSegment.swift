@@ -1,6 +1,6 @@
 //
 //  LineSegment.swift
-//  
+//
 //
 //  Created by Joseph Heck on 1/29/22.
 //  Copyright © 2022 Joseph Heck. All rights reserved.
@@ -52,6 +52,7 @@ public struct LineSegment: Hashable {
         self.end = end
     }
 }
+
 internal extension LineSegment {
     init(unchecked start: Vector, _ end: Vector) {
         assert(start != end)
@@ -82,7 +83,6 @@ extension LineSegment: Comparable {
 }
 
 public extension LineSegment {
-    
     /// Calculates the shortest distance between two lines within 3D space.
     ///
     /// If the lines are intersecting, the points returned will be identical.
@@ -127,7 +127,7 @@ public extension LineSegment {
 
         return (p1 + p21 * mua, p3 + p43 * mub)
     }
-    
+
     /// Returns a vector that represents the point on the infinite line you define that results in the shortest length.
     /// - Parameters:
     ///   - point: The point to calculate from.
@@ -144,7 +144,7 @@ public extension LineSegment {
         let d = point - lineOrigin
         return lineDirection * d.dot(lineDirection) - d
     }
-    
+
     /// Returns a vector that indicates if the points that make up two line segments intersect.
     /// - Parameters:
     ///   - p0: The starting location of the first line segment.
@@ -158,9 +158,9 @@ public extension LineSegment {
         _ p2: Vector,
         _ p3: Vector
     ) -> Vector? {
-        let ls1 = (p0-p1).normalized()
-        let ls2 = (p2-p3).normalized()
-        if (ls1.isApproximatelyEqual(to: ls2) || ls1.isApproximatelyEqual(to: -ls2)) {
+        let ls1 = (p0 - p1).normalized()
+        let ls2 = (p2 - p3).normalized()
+        if ls1.isApproximatelyEqual(to: ls2) || ls1.isApproximatelyEqual(to: -ls2) {
             // lines are parallel, so shortestLineBetween
             // won't work - denominator goes to 0.
             if Bounds(p0, p1).containsPoint(p2) {
@@ -176,12 +176,12 @@ public extension LineSegment {
         }
         return p0.isApproximatelyEqual(to: p1) ? p0 : nil
     }
-    
+
     /// The direction of the line segment as a normalized vector.
     var direction: Vector {
         (end - start).normalized()
     }
-    
+
     /// The length of the line segment.
     var length: Double {
         (end - start).length

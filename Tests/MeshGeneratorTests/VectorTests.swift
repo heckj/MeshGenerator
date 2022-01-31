@@ -40,24 +40,24 @@ class VectorTests: XCTestCase {
         let vector = Vector.zero
         XCTAssertEqual(vector.normalized().length, 0)
     }
-    
+
     func testVectorMinMax() throws {
-        let a = Vector(1,2,3)
-        let b = Vector(-1,-2,-3)
-        XCTAssertEqual(a.min(b), Vector(-1,-2,-3))
-        XCTAssertEqual(a.max(b), Vector(1,2,3))
-        XCTAssertEqual(b.min(a), Vector(-1,-2,-3))
-        XCTAssertEqual(b.max(a), Vector(1,2,3))
+        let a = Vector(1, 2, 3)
+        let b = Vector(-1, -2, -3)
+        XCTAssertEqual(a.min(b), Vector(-1, -2, -3))
+        XCTAssertEqual(a.max(b), Vector(1, 2, 3))
+        XCTAssertEqual(b.min(a), Vector(-1, -2, -3))
+        XCTAssertEqual(b.max(a), Vector(1, 2, 3))
     }
 
     func testVectorComponentMinMax() throws {
-        let a = Vector(1,2,3)
+        let a = Vector(1, 2, 3)
         XCTAssertEqual(a.min(), 1)
         XCTAssertEqual(a.max(), 3)
     }
 
     func testVectorDistance() throws {
-        let a = Vector(0,0,3)
+        let a = Vector(0, 0, 3)
         let b = Vector.zero
         XCTAssertEqual(a.distance(from: b), 3)
     }

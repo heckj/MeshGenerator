@@ -32,7 +32,7 @@ public struct Vector: Hashable {
             return simd.simd_double3(x, y, z)
         }
     #endif
-    
+
     /// Tolerance for determining minimum or nearly-equivalent lengths for vectors.
     ///
     /// The built-in value for this library is `1e-8`.
@@ -113,7 +113,7 @@ public struct Vector: Hashable {
             return (dot(self)).squareRoot()
         #endif
     }
-    
+
     /// The square of the length.
     ///
     /// Use `lengthSquared` over `length` if you're able for repeated calculations, because this is a faster computation.
@@ -124,11 +124,11 @@ public struct Vector: Hashable {
             return (dot(self))
         #endif
     }
-    
+
     /// A Boolean value indicating that the length of the vector is `1`.
     public var isNormalized: Bool {
         #if canImport(simd)
-            abs(simd_length_squared(self.simd_double3) - 1.0) < Vector.epsilon
+            abs(simd_length_squared(simd_double3) - 1.0) < Vector.epsilon
         #else
             abs(dot(self) - 1) < Vector.epsilon
         #endif
@@ -203,35 +203,35 @@ public struct Vector: Hashable {
         let length = self.length
         return length == 0 ? .zero : self / length
     }
-    
+
     /// Returns the maximum value for any of the coordinates within the vector.
     public func max() -> Double {
         Swift.max(x, y, z)
-        
     }
+
     /// Returns the minimum value for any of the coordinates within the vector.
     public func min() -> Double {
         Swift.min(x, y, z)
     }
-    
+
     /// Returns a new vector that represents the mininum value for each of the components of the two vectors.
     /// - Parameter rhs: The vector to compare.
     public func min(_ rhs: Vector) -> Vector {
-        Vector(Swift.min(self.x, rhs.x), Swift.min(self.y, rhs.y), Swift.min(self.z, rhs.z))
+        Vector(Swift.min(x, rhs.x), Swift.min(y, rhs.y), Swift.min(z, rhs.z))
     }
 
     /// Returns a new vector that represents the maximum value for each of the components of the two vectors.
     /// - Parameter rhs: The vector to compare.
     public func max(_ rhs: Vector) -> Vector {
-        Vector(Swift.max(self.x, rhs.x), Swift.max(self.y, rhs.y), Swift.max(self.z, rhs.z))
+        Vector(Swift.max(x, rhs.x), Swift.max(y, rhs.y), Swift.max(z, rhs.z))
     }
-    
+
     /// Returns the distance to another point in space.
     /// - Parameter other: The point in space to compare.
     public func distance(from other: Vector) -> Double {
-        (self-other).length
+        (self - other).length
     }
-    
+
     /// Returns a Boolean value that indicates whether the two vectors are equivalent within a known level of precision.
     /// - Parameters:
     ///   - other: The vector to compare.
@@ -252,7 +252,6 @@ public struct Vector: Hashable {
     func lerp(_ a: Vector, _ t: Double) -> Vector {
         self + (a - self) * t
     }
-
 }
 
 extension Vector: Comparable {

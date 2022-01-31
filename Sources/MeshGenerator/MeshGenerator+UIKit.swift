@@ -8,17 +8,17 @@
 
 #if canImport(UIKit)
 
-import UIKit
+    import UIKit
 
-public extension UIColor {
-    convenience init(_ color: ColorRepresentation) {
-        self.init(
-            red: CGFloat(color.red),
-            green: CGFloat(color.green),
-            blue: CGFloat(color.blue),
-            alpha: CGFloat(color.alpha)
-        )
+    public extension UIColor {
+        convenience init(_ color: ColorRepresentation) {
+            self.init(
+                red: CGFloat(color.red),
+                green: CGFloat(color.green),
+                blue: CGFloat(color.blue),
+                alpha: CGFloat(color.alpha)
+            )
+        }
     }
-}
 
 #endif
