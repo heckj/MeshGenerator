@@ -39,21 +39,6 @@ public extension SCNVector3 {
     }
 }
 
-//public extension SCNQuaternion {
-//    init(_ m: Rotation) {
-//        let x = sqrt(max(0, 1 + m.m11 - m.m22 - m.m33)) / 2
-//        let y = sqrt(max(0, 1 - m.m11 + m.m22 - m.m33)) / 2
-//        let z = sqrt(max(0, 1 - m.m11 - m.m22 + m.m33)) / 2
-//        let w = sqrt(max(0, 1 + m.m11 + m.m22 + m.m33)) / 2
-//        self.init(
-//            x * (x * (m.m32 - m.m23) > 0 ? 1 : -1),
-//            y * (y * (m.m13 - m.m31) > 0 ? 1 : -1),
-//            z * (z * (m.m21 - m.m12) > 0 ? 1 : -1),
-//            -w
-//        )
-//    }
-//}
-
 private extension Data {
     mutating func append(_ int: UInt32) {
         var int = int
@@ -76,14 +61,6 @@ private extension Data {
     }
 }
 
-//public extension SCNNode {
-//    func setTransform(_ transform: Transform) {
-//        orientation = SCNQuaternion(transform.rotation)
-//        scale = SCNVector3(transform.scale)
-//        position = SCNVector3(transform.offset)
-//    }
-//}
-
 #if canImport(UIKit)
 private typealias OSColor = UIColor
 private typealias OSImage = UIImage
@@ -92,7 +69,7 @@ private typealias OSColor = NSColor
 private typealias OSImage = NSImage
 #endif
 
-private func defaultMaterialLookup(_ material: Polygon.Material?) -> SCNMaterial? {
+private func defaultMaterialLookup(_ material: Triangle.Material?) -> SCNMaterial? {
     switch material {
     case let material as SCNMaterial:
         return material
@@ -114,7 +91,7 @@ private func defaultMaterialLookup(_ material: Polygon.Material?) -> SCNMaterial
 }
 
 public extension SCNGeometry {
-    typealias SCNMaterialProvider = (Polygon.Material?) -> SCNMaterial?
+    typealias SCNMaterialProvider = (Triangle.Material?) -> SCNMaterial?
 
     /// Creates an SCNGeometry using the default tessellation method
     convenience init(_ mesh: Mesh, materialLookup: SCNMaterialProvider? = nil) {
@@ -146,9 +123,6 @@ public extension SCNGeometry {
             materials.append(materialLookup(material) ?? SCNMaterial())
             for polygon in polygons {
                 polygon.vertices.forEach(addVertex)
-//                for triangle in polygon.triangulate() {
-//                    triangle.vertices.forEach(addVertex)
-//                }
             }
             elementData.append(indexData)
         }
@@ -334,48 +308,6 @@ public extension SCNGeometry {
         }))
     }
 
-//    /// Creates a line-segment SCNGeometry from a Path
-//    convenience init(_ path: Path) {
-//        var indexData = Data()
-//        var vertexData = Data()
-//        var indicesByPoint = [Vector: UInt32]()
-//        for path in path.subpaths {
-//            for vertex in path.edgeVertices {
-//                let origin = vertex.position
-//                if let index = indicesByPoint[origin] {
-//                    indexData.append(index)
-//                    continue
-//                }
-//                let index = UInt32(indicesByPoint.count)
-//                indicesByPoint[origin] = index
-//                indexData.append(index)
-//                vertexData.append(origin)
-//            }
-//        }
-//        self.init(
-//            sources: [
-//                SCNGeometrySource(
-//                    data: vertexData,
-//                    semantic: .vertex,
-//                    vectorCount: vertexData.count / 8,
-//                    usesFloatComponents: true,
-//                    componentsPerVector: 3,
-//                    bytesPerComponent: 4,
-//                    dataOffset: 0,
-//                    dataStride: 0
-//                ),
-//            ],
-//            elements: [
-//                SCNGeometryElement(
-//                    data: indexData,
-//                    primitiveType: .line,
-//                    primitiveCount: indexData.count / 8,
-//                    bytesPerIndex: 4
-//                ),
-//            ]
-//        )
-//    }
-
     /// Creates a line-segment bounding-box SCNGeometry from a Bounds
     convenience init(_ bounds: Bounds) {
         var vertexData = Data()
@@ -489,29 +421,6 @@ public extension Vector {
     }
 }
 
-//public extension Rotation {
-//    init(_ q: SCNQuaternion) {
-//        let d = sqrt(1 - Double(q.w * q.w))
-//        guard d > epsilon else {
-//            self = .identity
-//            return
-//        }
-//        let axis = Vector(Double(q.x) / d, Double(q.y) / d, Double(q.z) / d)
-//        let rotation = 2 * Angle.acos(Double(-q.w))
-//        self.init(unchecked: axis.normalized(), angle: rotation)
-//    }
-//}
-
-//public extension Transform {
-//    static func transform(from scnNode: SCNNode) -> Transform {
-//        Transform(
-//            offset: Vector(scnNode.position),
-//            rotation: Rotation(scnNode.orientation),
-//            scale: Vector(scnNode.scale)
-//        )
-//    }
-//}
-
 public extension Bounds {
     init(_ scnBoundingBox: (min: SCNVector3, max: SCNVector3)) {
         self.init(min: Vector(scnBoundingBox.min), max: Vector(scnBoundingBox.max))
@@ -520,155 +429,6 @@ public extension Bounds {
 
 public extension Mesh {
     typealias MaterialProvider = (SCNMaterial) -> Material?
-
-    /// Load a mesh from a file using any format supported by sceneKit,  with optional material mapping
-//    init(url: URL, materialLookup: MaterialProvider? = nil) throws {
-//        var options: [SCNSceneSource.LoadingOption: Any] = [
-//            .flattenScene: true,
-//            .createNormalsIfAbsent: true,
-//        ]
-//        if #available(iOS 11, tvOS 11, macOS 10.10, *) {
-//            options[.convertToYUp] = true
-//        }
-//        let importedScene = try SCNScene(url: url, options: options)
-//        self.init(importedScene.rootNode, materialLookup: materialLookup)
-//    }
-
-//    /// Create a mesh from an SCNNode with optional material mapping
-//    init(_ scnNode: SCNNode, materialLookup: MaterialProvider? = nil) {
-//        var meshes = [Mesh]()
-//        if let mesh = scnNode.geometry.flatMap({ Mesh($0, materialLookup: materialLookup) }) {
-//            meshes.append(mesh)
-//        }
-//        meshes += scnNode.childNodes.map { Mesh($0, materialLookup: materialLookup) }
-//        self = .merge(meshes)
-//    }
-
-//    /// Create a mesh from an SCNGeometry object with optional material mapping
-//    init?(_ scnGeometry: SCNGeometry, materialLookup: MaterialProvider? = nil) {
-//        // Force properties to update
-//        let scnGeometry = scnGeometry.copy() as! SCNGeometry
-//
-//        var polygons = [Polygon]()
-//        var vertices = [Vertex]()
-//        for source in scnGeometry.sources {
-//            let count = source.vectorCount
-//            if vertices.isEmpty {
-//                vertices = Array(repeating: Vertex(.zero, .zero), count: count)
-//            } else if vertices.count != source.vectorCount {
-//                return nil
-//            }
-//            var offset = source.dataOffset
-//            let stride = source.dataStride
-//            let data = source.data
-//            switch source.semantic {
-//            case .vertex:
-//                for i in 0 ..< count {
-//                    vertices[i].position = data.vector(at: offset)
-//                    offset += stride
-//                }
-//            case .normal:
-//                for i in 0 ..< count {
-//                    vertices[i].normal = data.vector(at: offset)
-//                    offset += stride
-//                }
-//            case .texcoord:
-//                for i in 0 ..< count {
-//                    vertices[i].texcoord = Vector(
-//                        data.float(at: offset),
-//                        data.float(at: offset + 4)
-//                    )
-//                    offset += stride
-//                }
-//            default:
-//                continue
-//            }
-//        }
-//        let materialLookup = materialLookup ?? { $0 as Material }
-//        let materials = scnGeometry.materials.map(materialLookup)
-//        for (index, element) in scnGeometry.elements.enumerated() {
-//            let material = materials.isEmpty ? nil : materials[index % materials.count]
-//            let indexData = element.data
-//            let indexSize = element.bytesPerIndex
-//            func vertex(at i: Int) -> Vertex {
-//                let index = indexData.index(at: i, bytes: indexSize)
-//                return vertices[Int(index)]
-//            }
-//            switch element.primitiveType {
-//            case .triangles:
-//                for i in 0 ..< element.primitiveCount {
-//                    Polygon([
-//                        vertex(at: i * 3),
-//                        vertex(at: i * 3 + 1),
-//                        vertex(at: i * 3 + 2),
-//                    ], material: material).map {
-//                        polygons.append($0)
-//                    }
-//                }
-//            case .triangleStrip:
-//                for i in stride(from: 0, to: element.primitiveCount - 1, by: 2) {
-//                    Polygon([
-//                        vertex(at: i),
-//                        vertex(at: i + 1),
-//                        vertex(at: i + 2),
-//                    ], material: material).map {
-//                        polygons.append($0)
-//                    }
-//                    Polygon([
-//                        vertex(at: i + 3),
-//                        vertex(at: i + 2),
-//                        vertex(at: i + 1),
-//                    ], material: material).map {
-//                        polygons.append($0)
-//                    }
-//                }
-//            case let type where type.rawValue == 4: // polygon
-//                let polyCount = element.primitiveCount
-//                var index = polyCount
-//                for i in 0 ..< polyCount {
-//                    let vertexCount = indexData.index(at: i, bytes: indexSize)
-//                    var vertices = [Vertex]()
-//                    for _ in 0 ..< vertexCount {
-//                        vertices.append(vertex(at: index))
-//                        index += 1
-//                    }
-//                    Polygon(vertices, material: material).map {
-//                        polygons.append($0)
-//                    }
-//                }
-//            default:
-//                // TODO: throw detailed error message instead
-//                return nil
-//            }
-//        }
-//        let isConvex: Bool
-//        let isWatertight: Bool?
-//        switch scnGeometry {
-//        case is SCNBox,
-//             is SCNPyramid,
-//             is SCNSphere,
-//             is SCNCylinder,
-//             is SCNCone,
-//             is SCNCapsule:
-//            isConvex = true
-//            isWatertight = true
-//        default:
-//            isConvex = false
-//            isWatertight = nil
-//        }
-//        let bounds = Bounds(scnGeometry.boundingBox)
-//        self.init(
-//            unchecked: polygons,
-//            bounds: bounds,
-//            isConvex: isConvex,
-//            isWatertight: isWatertight
-//        )
-//    }
-
-//    /// Convenience function to create a mesh from an SCNGeometry with specified material
-//    init?(_ scnGeometry: SCNGeometry, material: Material?) {
-//        self.init(scnGeometry) { _ in material }
-//    }
 }
 
 #endif

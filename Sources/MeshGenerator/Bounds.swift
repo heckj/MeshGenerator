@@ -47,7 +47,7 @@ public struct Bounds {
         self.max = max
     }
     
-    init(polygons: [Polygon]) {
+    init(polygons: [Triangle]) {
         var min = Vector(.infinity, .infinity, .infinity)
         var max = Vector(-.infinity, -.infinity, -.infinity)
         for p in polygons {

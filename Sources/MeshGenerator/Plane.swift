@@ -151,7 +151,7 @@ internal extension Plane {
     init(unchecked points: [Vector]) {
 //        assert(!Vertex.pointsAreDegenerate(points))
 //        assert(Vertex.pointsAreConvex(points))
-        let normal = Polygon.faceNormalForPolygonPoints(points) ?? Vector(0,0,1)
+        let normal = Triangle.faceNormalForConvexPoints(points)
         self.init(unchecked: normal, pointOnPlane: points[0])
     }
 

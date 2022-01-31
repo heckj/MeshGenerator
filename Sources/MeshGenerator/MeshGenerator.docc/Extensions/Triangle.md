@@ -1,4 +1,4 @@
-# ``MeshGenerator/Polygon``
+# ``MeshGenerator/Triangle``
 
 ## Topics
 
