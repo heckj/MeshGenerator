@@ -8,13 +8,18 @@ Vertices, Triangles, Meshes, and supporting geometry concepts and types to suppo
 
 ## Topics
 
-### The Whole Kit and Kaboodle
+### Surface Meshes
+
+- ``MeshGenerator/Mesh``
+- ``MeshGenerator/Triangle``
+- ``MeshGenerator/Vertex``
+
+- ``MeshGenerator/ColorRepresentation``
+- ``MeshGenerator/TextureCoordinates``
+
+### Geometric Components
 
 - ``MeshGenerator/Vector``
-- ``MeshGenerator/TextureCoordinates``
-- ``MeshGenerator/Vertex``
-- ``MeshGenerator/Triangle``
 - ``MeshGenerator/LineSegment``
 - ``MeshGenerator/Plane``
 - ``MeshGenerator/Bounds``
-- ``MeshGenerator/ColorRepresentation``

@@ -2,6 +2,12 @@
 
 ## Topics
 
-### <!--@START_MENU_TOKEN@-->Group<!--@END_MENU_TOKEN@-->
+### Creating a Color Representation
 
-- ``MeshGenerator/ColorRepresentation/init(red:green:blue:alpha:)``
+- ``MeshGenerator/ColorRepresentation/init(_:_:)``
+- ``MeshGenerator/ColorRepresentation/init(_:_:_:)``
+- ``MeshGenerator/ColorRepresentation/init(_:_:_:_:)``
+
+### Comparing a Color Representation
+
+- ``MeshGenerator/ColorRepresentation/!=(_:_:)``

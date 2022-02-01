@@ -10,13 +10,6 @@ import Foundation
 
 /// A struct that represents a color using red, green, blue, and alpha values.
 ///
-/// ## Topics
-///
-/// ### Creating a Color Representation
-///
-/// - ``init(r:g:b:)``
-/// - ``init(red:green:blue:alpha:)``
-///
 public struct ColorRepresentation: Equatable, Hashable {
     let red: Double
     let green: Double
