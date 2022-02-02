@@ -27,7 +27,7 @@ func triangleNode() -> SCNNode {
     return SCNNode(geometry: SCNGeometry(tri))
 }
 
-func directionalFin() -> SCNNode? {
+func directionalFin() -> SCNNode {
     let positions: [Vector] = [
         Vector(x: 0.05, y: 0, z: 0), // 0
         Vector(x: -0.05, y: 0, z: 0), // 1
@@ -35,25 +35,22 @@ func directionalFin() -> SCNNode? {
         Vector(x: 0, y: 0, z: 0.5), // 3
     ]
 
-    if let back = Triangle(positions[0], positions[1], positions[2]),
-       let bottom = Triangle(positions[0], positions[3], positions[1]),
-       let left = Triangle(positions[0], positions[2], positions[3]),
-       let right = Triangle(positions[2], positions[1], positions[3])
-    {
-        let mesh = Mesh([back, bottom, left, right])
-        // Geometry from the mesh:
-        // let geo = SCNGeometry(mesh))
+    let back = Triangle(positions[0], positions[1], positions[2])
+   let bottom = Triangle(positions[0], positions[3], positions[1])
+   let left = Triangle(positions[0], positions[2], positions[3])
+   let right = Triangle(positions[2], positions[1], positions[3])
+    let mesh = Mesh([back, bottom, left, right])
+    // Geometry from the mesh:
+    // let geo = SCNGeometry(mesh))
 
-        // Bounding Box geometry from the mesh:
-        // let geo = SCNGeometry(mesh.bounds)
+    // Bounding Box geometry from the mesh:
+    // let geo = SCNGeometry(mesh.bounds)
 
-        // Wireframe geometry from the mesh:
-        let geo = SCNGeometry(wireframe: mesh)
-        geo.materials = [SCNMaterial(.red)]
+    // Wireframe geometry from the mesh:
+    let geo = SCNGeometry(wireframe: mesh)
+    geo.materials = [SCNMaterial(.red)]
 
-        return SCNNode(geometry: geo)
-    }
-    return nil
+    return SCNNode(geometry: geo)
 }
 
 @available(macOS 12.0, iOS 15.0, *)
@@ -117,7 +114,7 @@ struct SwiftUIView_Previews: PreviewProvider {
         cameraNode.position = SCNVector3(x: 3, y: 3, z: 3)
         cameraNode.simdLook(at: simd_float3(x: 0, y: 0, z: 0))
 
-        let tri = directionalFin()!
+        let tri = directionalFin()
         tri.geometry?.materials = [SCNMaterial(.red)]
         scene.rootNode.addChildNode(tri)
 

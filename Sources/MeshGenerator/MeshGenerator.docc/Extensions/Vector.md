@@ -13,6 +13,10 @@
 - ``MeshGenerator/Vector/init(x:y:z:)-o7gz``
 - ``MeshGenerator/Vector/zero``
 
+### Interpolating Vectors
+
+- ``MeshGenerator/Vector/lerp(_:_:)``
+
 ### Normalizing a Vector
 
 - ``MeshGenerator/Vector/normalized()``

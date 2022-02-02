@@ -85,7 +85,7 @@ public struct Vertex: Hashable, Equatable {
         return Vertex(position: position, normal: normal, tex: tex)
     }
 
-    /// Creates a new vertex.
+    /// Creates a new vertex with the individual parameters you provide.
     /// - Parameters:
     ///   - x: The `x` coordinate for the vertex.
     ///   - y: The `y` coordinate for the vertex.
@@ -96,16 +96,17 @@ public struct Vertex: Hashable, Equatable {
         self.init(position: Vector(x, y, z), normal: normal, tex: tex)
     }
 
-    /// Invert all orientation-specific data (e.g. vertex normal). Called when the
-    /// orientation of a polygon is flipped.
-    func inverted() -> Vertex {
+    /// Creates a new vertex with the value for the normal inverted.
+    ///
+    /// Call to flip the orientation of the face of the polygon.
+    public func inverted() -> Vertex {
         Vertex(position: position, normal: -normal, tex: tex)
     }
 
     /// Linearly interpolate between two vertices.
     ///
     /// Interpolation is applied to the position, texture coordinate and normal.
-    func lerp(_ other: Vertex, _ t: Double) -> Vertex {
+    public func lerp(_ other: Vertex, _ t: Double) -> Vertex {
         Vertex(
             position: position.lerp(other.position, t),
             normal: normal.lerp(other.normal, t),

@@ -249,7 +249,7 @@ public struct Vector: Hashable {
     ///   - a: The vector to interpolate towards.
     ///   - t: A value, typically between `0` and `1`, to indicate the position  to interpolate between the two vectors.
     /// - Returns: A vector interpolated to the position you provide.
-    func lerp(_ a: Vector, _ t: Double) -> Vector {
+    public func lerp(_ a: Vector, _ t: Double) -> Vector {
         self + (a - self) * t
     }
 }

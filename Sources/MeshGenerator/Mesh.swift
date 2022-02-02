@@ -34,10 +34,37 @@
 
 import Foundation
 
-/// A 3D surface that is represented by multiple polygons.
+/// A struct that represents a 3D object as a collection of polygons.
 ///
-/// A mesh surface can be convex or concave, and can have zero volume (for example, a flat shape such as a square) but shouldn't contain holes or exposed back-faces.
-/// The result of constructive solid geometry operations on meshes that have holes or exposed back-faces is undefined.
+/// With MeshGeenerator, a mesh can be used to create a SceneKit geometry.
+/// ```
+/// let positions: [Vector] = [
+/// Vector(x: 0.05, y: 0, z: 0), // 0
+/// Vector(x: -0.05, y: 0, z: 0), // 1
+/// Vector(x: 0, y: 1, z: 0), // 2
+/// Vector(x: 0, y: 0, z: 0.5), // 3
+/// ]
+///
+/// let back = Triangle(positions[0], positions[1], positions[2])
+/// let bottom = Triangle(positions[0], positions[3], positions[1])
+/// let left = Triangle(positions[0], positions[2], positions[3])
+/// let right = Triangle(positions[2], positions[1], positions[3])
+/// let mesh = Mesh([back, bottom, left, right])
+/// // Geometry from the mesh:
+/// let geo = SCNGeometry(mesh)
+/// ```
+///
+/// You can create a geometry from the bounding box of the mesh:
+/// ```
+/// // Bounding Box geometry from the mesh:
+/// let geo = SCNGeometry(mesh.bounds)
+/// ```
+///
+/// You can also create a geometry of the wireframe edges of the mesh:
+/// ```
+/// // Wireframe geometry from the mesh:
+/// let geo = SCNGeometry(wireframe: mesh)
+/// ```
 public struct Mesh: Hashable {
     private let storage: Storage
 }

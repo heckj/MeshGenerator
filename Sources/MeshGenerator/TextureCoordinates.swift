@@ -102,7 +102,7 @@ public struct TextureCoordinates: Hashable {
     ///   - a: The coordinate to interpolate towards.
     ///   - t: A value, typically between `0` and `1`, to indicate the position  to interpolate between the two coordinates.
     /// - Returns: A texture coordinate interpolated to the position you provide.
-    func lerp(_ a: TextureCoordinates, _ t: Double) -> TextureCoordinates {
+    public func lerp(_ a: TextureCoordinates, _ t: Double) -> TextureCoordinates {
         self + (a - self) * t
     }
 

@@ -11,6 +11,10 @@
 - ``MeshGenerator/TextureCoordinates/one``
 - ``MeshGenerator/TextureCoordinates/zero``
 
+### Interpolating Texture Coordinates
+
+- ``MeshGenerator/TextureCoordinates/lerp(_:_:)``
+
 ### Inspecting Texture Coordinates
 
 - ``MeshGenerator/TextureCoordinates/u``

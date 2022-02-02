@@ -7,6 +7,15 @@
 - ``MeshGenerator/Vertex/init(position:normal:tex:)``
 - ``MeshGenerator/Vertex/init(x:y:z:normal:tex:)``
 
+### Updating a Vertex
+
+- ``MeshGenerator/Vertex/with(normal:)``
+- ``MeshGenerator/Vertex/inverted()``
+
+### Interpolating Vertices
+
+- ``MeshGenerator/Vertex/lerp(_:_:)``
+
 ### Inspecting a Vertex
 
 - ``MeshGenerator/Vertex/x``
@@ -16,9 +25,6 @@
 - ``MeshGenerator/Vertex/position``
 - ``MeshGenerator/Vertex/tex``
 
-### Updating a Vertex
-
-- ``MeshGenerator/Vertex/with(normal:)``
 
 ### Comparing Vertices
 

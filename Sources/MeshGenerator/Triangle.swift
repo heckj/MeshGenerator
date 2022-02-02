@@ -84,8 +84,12 @@ public struct Triangle: Hashable {
     /// - Parameters:
     ///   - vertices: The points making up the face of a polygon.
     ///   - material: The material to use for rendering the polygon.
-    public init?(_ vertices: (Vector, Vector, Vector), material _: Material? = nil) {
-        self.init([Vertex(position: vertices.0), Vertex(position: vertices.1), Vertex(position: vertices.2)])
+    public init(_ vertices: (Vector, Vector, Vector), material: Material? = nil) {
+        self.init(unchecked: [Vertex(position: vertices.0), Vertex(position: vertices.1), Vertex(position: vertices.2)],
+                  plane: nil,
+                  sanitizeNormals: true,
+                  material: material)
+
     }
 
     /// Creates a triangle from a tuple of three vector positions.
@@ -94,8 +98,11 @@ public struct Triangle: Hashable {
     /// - Parameters:
     ///   - vertices: The points making up the face of a polygon.
     ///   - material: The material to use for rendering the polygon.
-    public init?(_ v1: Vector, _ v2: Vector, _ v3: Vector, material _: Material? = nil) {
-        self.init([Vertex(position: v1), Vertex(position: v2), Vertex(position: v3)])
+    public init(_ v1: Vector, _ v2: Vector, _ v3: Vector, material: Material? = nil) {
+        self.init(unchecked: [Vertex(position: v1), Vertex(position: v2), Vertex(position: v3)],
+                  plane: nil,
+                  sanitizeNormals: true,
+                  material: material)
     }
 
     /// Indicates whether the triangle includes texture coordinates.
