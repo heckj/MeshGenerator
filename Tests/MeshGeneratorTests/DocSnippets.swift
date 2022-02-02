@@ -72,4 +72,14 @@ class DocSnippetTests: XCTestCase {
         
     }
 
+    func testTriangleOverview1() throws {
+        let positions: [Vector] = [
+            Vector(x: 0.5, y: 0, z: 0),
+            Vector(x: -0.5, y: 0, z: 0),
+            Vector(x: 0, y: 1, z: 0)
+        ]
+        
+        let back = Triangle(positions[0], positions[1], positions[2], material: ColorRepresentation.red)
+        XCTAssertNotNil(back)
+    }
 }

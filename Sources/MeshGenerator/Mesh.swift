@@ -36,8 +36,10 @@ import Foundation
 
 /// A struct that represents a 3D object as a collection of polygons.
 ///
-/// With MeshGeenerator, a mesh can be used to create a SceneKit geometry.
+/// With `MeshGeenerator`, a mesh can be used to create a SceneKit geometry.
 /// ```
+/// import MeshGenerator
+///
 /// let positions: [Vector] = [
 /// Vector(x: 0.05, y: 0, z: 0), // 0
 /// Vector(x: -0.05, y: 0, z: 0), // 1

@@ -54,16 +54,59 @@ public struct ColorRepresentation: Equatable, Hashable {
         self.blue = blue
         self.alpha = alpha
     }
+    
+    /// A clear color.
+    ///
+    /// The values for clear are (`0,0`, `0,0`, `00`) with an alpha value of `0.0`.
+    public static var clear = ColorRepresentation(0, 0)
+    
+    /// The color black.
+    ///
+    /// The values for black are (`0.0`, `0.0`, `0.0`) with an alpha value of `1.0`.
+    public static var black = ColorRepresentation(0, 1)
 
-    static var clear = ColorRepresentation(0, 0)
-    static var black = ColorRepresentation(0, 1)
-    static var white = ColorRepresentation(1, 0)
-    static let gray = ColorRepresentation(0.5, 1)
-    static var red = ColorRepresentation(1, 0, 0)
-    static var green = ColorRepresentation(0, 1, 0)
-    static var blue = ColorRepresentation(0, 0, 1)
-    static let yellow = ColorRepresentation(1, 1, 0)
-    static let cyan = ColorRepresentation(0, 1, 1)
-    static let magenta = ColorRepresentation(1, 0, 1)
-    static let orange = ColorRepresentation(1, 0.5, 0)
+    /// The color white.
+    ///
+    /// The values for white are (`1.0`, `1.0`, `1.0`) with an alpha value of `1.0`.
+    public static var white = ColorRepresentation(1, 0)
+
+    /// The color gray.
+    ///
+    /// The values for gray are  (`0.5`, `0.5`, `0.5`) with an alpha value of `1.0`.
+    public static let gray = ColorRepresentation(0.5, 1)
+
+    /// The color red.
+    ///
+    /// The values for red are  (`1.0`, `0.0`, `0.0`) with an alpha value of `1.0`.
+    public static var red = ColorRepresentation(1, 0, 0)
+
+    /// The color green.
+    ///
+    /// The values for green are  (`0.0`, `1.0`, `0.0`) with an alpha value of `1.0`.
+    public static var green = ColorRepresentation(0, 1, 0)
+
+    /// The color blue.
+    ///
+    /// The values for blue are  (`0.0`, `0.0`, `1.0`) with an alpha value of `1.0`.
+    public static var blue = ColorRepresentation(0, 0, 1)
+
+    /// The color yellow.
+    ///
+    /// The values for yellow are  (`1.0`, `1.0`, `0.0`) with an alpha value of `1.0`.
+    public static let yellow = ColorRepresentation(1, 1, 0)
+
+    /// The color cyan.
+    ///
+    /// The values for cyan are  (`0.0`, `1.0`, `1.0`) with an alpha value of `1.0`.
+    public static let cyan = ColorRepresentation(0, 1, 1)
+
+    /// The color magenta.
+    ///
+    /// The values for magenta are  (`1.0`, `0.0`, `1.0`) with an alpha value of `1.0`.
+    public static let magenta = ColorRepresentation(1, 0, 1)
+
+    /// The color orange.
+    ///
+    /// The values for orange are  (`1.0`, `0.5`, `0.0`) with an alpha value of `1.0`.
+    public static let orange = ColorRepresentation(1, 0.5, 0)
 }

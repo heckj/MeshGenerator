@@ -34,6 +34,22 @@
 import Foundation
 
 /// A struct that represents a triangle in 3D space.
+///
+/// When you create a triangle, you may assign a material to it.
+/// When you create a ``MeshGenerator/Mesh`` from a collection of triangles, the materials on each triangle are preserved.
+///
+/// For example, the following snippet creates a triangle and assigns the color ``MeshGenerator/ColorRepresentation/red``:
+///
+/// ```
+/// let positions: [Vector] = [
+///     Vector(x: 0.5, y: 0, z: 0),
+///     Vector(x: -0.5, y: 0, z: 0),
+///     Vector(x: 0, y: 1, z: 0)
+/// ]
+///
+/// let back = Triangle(positions[0], positions[1], positions[2], material: ColorRepresentation.red)
+/// ```
+///
 public struct Triangle: Hashable {
     public typealias Material = AnyHashable
     /// The class for the storage of the relevant values and objects that make up the triangle.
