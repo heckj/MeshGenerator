@@ -105,12 +105,11 @@
         // static func generate(from descriptors: [MeshDescriptor]) throws -> MeshResource
         // That takes a Mesh... The Euclid pattern that Nick tended to use was making initializers
         // on the target framework.
-        
+
         // leaning into expanding on Mesh when RealityKit
         // is in play so that we can leverage RealityKit's
         // generate(from:) or generateAsync(from:)
-        
-        
+
         /// Returns a list of RealityKit mesh descriptors for use in generating a mesh resource.
         ///
         /// For example:
