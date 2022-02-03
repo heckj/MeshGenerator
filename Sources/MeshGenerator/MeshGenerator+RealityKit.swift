@@ -97,4 +97,44 @@
             return meshDescriptor
         }
     }
+
+    @available(macOS 12.0, iOS 15.0, *)
+    public extension Mesh {
+        // extend Mesh and enable something that creates a MeshResource, or ModelComponent?
+        // or extend MeshResource and implement a
+        // static func generate(from descriptors: [MeshDescriptor]) throws -> MeshResource
+        // That takes a Mesh... The Euclid pattern that Nick tended to use was making initializers
+        // on the target framework.
+        
+        // leaning into expanding on Mesh when RealityKit
+        // is in play so that we can leverage RealityKit's
+        // generate(from:) or generateAsync(from:)
+        
+        
+        /// Returns a list of RealityKit mesh descriptors for use in generating a mesh resource.
+        ///
+        /// For example:
+        /// ```
+        /// let positions: [Vector] = [
+        ///     Vector(x: 0.5, y: -0.4330127, z: -0.4330127), // 0
+        ///     Vector(x: -0.5, y: -0.4330127, z: -0.4330127), // /// 1
+        ///     Vector(x: 0, y: 0.4330127, z: 0), // 2  (peak)
+        ///     Vector(x: 0, y: -0.4330127, z: 0.4330127), // 3
+        /// ]
+        ///
+        /// let back = Triangle(positions[0], positions[1], positions[2], material: ColorRepresentation.red)
+        /// let bottom = Triangle(positions[0], positions[3], positions[1], material: ColorRepresentation.white)
+        /// let left = Triangle(positions[0], positions[2], positions[3], material: ColorRepresentation.blue)
+        /// let right = Triangle(positions[2], positions[1], positions[3], material: ColorRepresentation.green)
+        /// let mesh = Mesh([back, bottom, left, right])
+        /// ```
+        /// and then...
+        /// ```
+        /// let resource = MeshResource.generate(mesh.descriptors)
+        var descriptors: [MeshDescriptor] {
+            return polygons.map { tri in
+                tri.generateMeshDescriptor()
+            }
+        }
+    }
 #endif
