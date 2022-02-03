@@ -29,6 +29,12 @@
 //  SOFTWARE.
 //
 
+#if canImport(UIKit)
+    import UIKit
+#elseif canImport(AppKit)
+    import AppKit
+#endif
+
 #if canImport(SceneKit)
     import SceneKit
 

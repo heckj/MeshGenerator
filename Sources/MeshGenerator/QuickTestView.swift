@@ -53,7 +53,7 @@ func directionalFin() -> SCNNode {
     return SCNNode(geometry: geo)
 }
 
-@available(macOS 12.0, iOS 15.0, *)
+@available(macOS 12.0, iOS 15.0, tvOS 15.0, watchOS 8.0, *)
 struct SwiftUIView_Previews: PreviewProvider {
     struct QuickTestView: View {
         let scene: SCNScene
