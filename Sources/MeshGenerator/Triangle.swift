@@ -105,7 +105,6 @@ public struct Triangle: Hashable {
                   plane: nil,
                   sanitizeNormals: true,
                   material: material)
-
     }
 
     /// Creates a triangle from a tuple of three vector positions.

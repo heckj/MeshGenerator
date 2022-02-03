@@ -54,12 +54,12 @@ public struct ColorRepresentation: Equatable, Hashable {
         self.blue = blue
         self.alpha = alpha
     }
-    
+
     /// A clear color.
     ///
     /// The values for clear are (`0,0`, `0,0`, `00`) with an alpha value of `0.0`.
     public static var clear = ColorRepresentation(0, 0)
-    
+
     /// The color black.
     ///
     /// The values for black are (`0.0`, `0.0`, `0.0`) with an alpha value of `1.0`.

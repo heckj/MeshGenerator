@@ -22,7 +22,7 @@ let package = Package(
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
         // Swift-DocC Plugin - swift 5.6 ONLY (GitHhub Actions on 1/29/2022 only supports to 5.5)
-        //.package(url: "https://github.com/apple/swift-docc-plugin", branch: "main"),
+        // .package(url: "https://github.com/apple/swift-docc-plugin", branch: "main"),
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
