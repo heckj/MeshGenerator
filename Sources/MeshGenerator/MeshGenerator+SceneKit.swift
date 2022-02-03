@@ -44,7 +44,7 @@
         }
     }
 
-    private extension Data {
+    fileprivate extension Data {
         mutating func append(_ int: UInt32) {
             var int = int
             withUnsafeMutablePointer(to: &int) { pointer in
