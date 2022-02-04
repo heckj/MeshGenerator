@@ -35,6 +35,18 @@
                 // generating a MeshResource:
                 let resource = try MeshResource.generate(from: mesh.descriptors)
                 XCTAssertNotNil(resource)
+                XCTAssertEqual(resource.contents.instances.count, 4)
+                XCTAssertEqual(resource.contents.models.count, 4)
+                XCTAssertEqual(resource.expectedMaterialCount, 1)
+                print(resource.bounds)
+                XCTAssertEqual(resource.bounds.min.x, -0.5, accuracy: 0.0001)
+                XCTAssertEqual(resource.bounds.min.y, -0.4330127, accuracy: 0.0001)
+                XCTAssertEqual(resource.bounds.min.z, -0.4330127, accuracy: 0.0001)
+                XCTAssertEqual(resource.bounds.max.x, 0.5, accuracy: 0.0001)
+                XCTAssertEqual(resource.bounds.max.y, 0.4330127, accuracy: 0.0001)
+                XCTAssertEqual(resource.bounds.max.z, 0.4330127, accuracy: 0.0001)
+//                print(resource.contents.instances)
+//                print(resource.contents.models)
             }
         #endif
     }
