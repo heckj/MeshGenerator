@@ -8,6 +8,16 @@
 #if canImport(ModelIO)
     import MetalKit
     import ModelIO
+    import SceneKit
+    //import MetalKit
+    import SceneKit.ModelIO // <-- required to get the initialization of MDLMesh from an SCNGeometry instance...
+     
+    class WhyNotWorking {
+        init() {
+            let box = SCNBox(width: 10.0, height: 10.0, length: 10.0, chamferRadius: 0.0)
+            let mesh = MDLMesh(scnGeometry: box, bufferAllocator: nil)
+        }
+    }
 
     fileprivate extension Data {
         mutating func append(_ int: UInt32) {
