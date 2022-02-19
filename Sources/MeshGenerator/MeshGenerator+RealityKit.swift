@@ -138,7 +138,7 @@
                 tri.generateMeshDescriptor()
             }
         }
-        
+
         /// A RealityKit mesh descriptor that describes the mesh as a single MeshDescriptor instance.
         ///
         /// For example, create a mesh:
@@ -165,11 +165,11 @@
             // build a complete set of the materials within the collection of triangles
             let setOfMaterials: Set<Material> = Set(polygons.compactMap { $0.material })
             // make a map that we can use to look up the material to generate a specific material index value
-            var materialIndexLookup: [Material:UInt32] = [:]
+            var materialIndexLookup: [Material: UInt32] = [:]
             for eachMaterial in setOfMaterials {
                 materialIndexLookup[eachMaterial] = UInt32(materialIndexLookup.count)
             }
-            
+
             // flat list of all the vertices from within each triangle
             let combined_vertices = polygons.flatMap { $0.vertices }
 
@@ -185,9 +185,9 @@
             meshDescriptor.positions = MeshBuffers.Positions(positions)
             meshDescriptor.normals = MeshBuffers.Normals(normals)
             meshDescriptor.textureCoordinates = MeshBuffers.TextureCoordinates(uvs)
-            
+
             // create an array of all the vertices in the order they're provided within the triangles
-            let indexArray: [UInt32] = (0..<combined_vertices.count).map { UInt32($0) }
+            let indexArray: [UInt32] = (0 ..< combined_vertices.count).map { UInt32($0) }
             meshDescriptor.primitives = .triangles(indexArray)
 
             if materialIndexLookup.count <= 1 {
@@ -214,42 +214,42 @@
         }
     }
 
-@available(macOS 12.0, iOS 15.0, *)
-extension MeshResource {
-    /// Returns a new MeshResource from the mesh instance in you provide.
-    /// - Parameter mesh: The mesh to be converted.
-    ///
-    /// For example, create a mesh:
-    /// ```
-    /// let positions: [Vector] = [
-    ///     Vector(x: 0.5, y: -0.4330127, z: -0.4330127), // 0
-    ///     Vector(x: -0.5, y: -0.4330127, z: -0.4330127), // /// 1
-    ///     Vector(x: 0, y: 0.4330127, z: 0), // 2  (peak)
-    ///     Vector(x: 0, y: -0.4330127, z: 0.4330127), // 3
-    /// ]
-    ///
-    /// let back = Triangle(positions[0], positions[1], positions[2], material: ColorRepresentation.red)
-    /// let bottom = Triangle(positions[0], positions[3], positions[1], material: ColorRepresentation.white)
-    /// let left = Triangle(positions[0], positions[2], positions[3], material: ColorRepresentation.blue)
-    /// let right = Triangle(positions[2], positions[1], positions[3], material: ColorRepresentation.green)
-    /// let mesh = Mesh([back, bottom, left, right])
-    /// ```
-    ///
-    /// Provide the created mesh to `MeshResource.generate` to create a mesh resource from the mesh.
-    /// ```
-    /// let resource = MeshResource.generate(mesh)
-    /// ```
+    @available(macOS 12.0, iOS 15.0, *)
+    public extension MeshResource {
+        /// Returns a new MeshResource from the mesh instance in you provide.
+        /// - Parameter mesh: The mesh to be converted.
+        ///
+        /// For example, create a mesh:
+        /// ```
+        /// let positions: [Vector] = [
+        ///     Vector(x: 0.5, y: -0.4330127, z: -0.4330127), // 0
+        ///     Vector(x: -0.5, y: -0.4330127, z: -0.4330127), // /// 1
+        ///     Vector(x: 0, y: 0.4330127, z: 0), // 2  (peak)
+        ///     Vector(x: 0, y: -0.4330127, z: 0.4330127), // 3
+        /// ]
+        ///
+        /// let back = Triangle(positions[0], positions[1], positions[2], material: ColorRepresentation.red)
+        /// let bottom = Triangle(positions[0], positions[3], positions[1], material: ColorRepresentation.white)
+        /// let left = Triangle(positions[0], positions[2], positions[3], material: ColorRepresentation.blue)
+        /// let right = Triangle(positions[2], positions[1], positions[3], material: ColorRepresentation.green)
+        /// let mesh = Mesh([back, bottom, left, right])
+        /// ```
+        ///
+        /// Provide the created mesh to `MeshResource.generate` to create a mesh resource from the mesh.
+        /// ```
+        /// let resource = MeshResource.generate(mesh)
+        /// ```
 
-    public static func generate(mesh: Mesh) throws -> MeshResource {
-        precondition(mesh.polygons.count > 0, "Mesh must have more than one triangle in order to render.")
-        return try MeshResource.generate(from: [mesh.unifiedDescriptor])
+        static func generate(mesh: Mesh) throws -> MeshResource {
+            precondition(mesh.polygons.count > 0, "Mesh must have more than one triangle in order to render.")
+            return try MeshResource.generate(from: [mesh.unifiedDescriptor])
+        }
+
+        /// Returns a new MeshResource from the mesh instance in you provide.
+        /// - Parameter mesh: The mesh to be converted.
+        static func generateAsync(_ mesh: Mesh) async -> LoadRequest<MeshResource> {
+            precondition(mesh.polygons.count > 0, "Mesh must have more than one triangle in order to render.")
+            return MeshResource.generateAsync(from: [mesh.unifiedDescriptor])
+        }
     }
-    
-    /// Returns a new MeshResource from the mesh instance in you provide.
-    /// - Parameter mesh: The mesh to be converted.
-    public static func generateAsync(_ mesh: Mesh) async -> LoadRequest<MeshResource> {
-        precondition(mesh.polygons.count > 0, "Mesh must have more than one triangle in order to render.")
-        return MeshResource.generateAsync(from: [mesh.unifiedDescriptor])
-    }
-}
 #endif
