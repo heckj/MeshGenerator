@@ -99,6 +99,12 @@
 //     @param data Object containing the data to be used in the new vertex buffer
 //     @param stride The increment in bytes from the start of one data entry to
 //            the next.
+
+//        types of attributes:
+//        - MDLVertexAttributePosition
+//        - MDLVertexAttributeColor
+//        - MDLVertexAttributeNormal
+//        - MDLVertexAttributeTextureCoordinate
 //     */
 //    open func addAttribute(withName name: String, format: MDLVertexFormat, type: String, data: Data, stride: Int)
 
