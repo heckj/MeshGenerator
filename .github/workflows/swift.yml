@@ -33,7 +33,7 @@ jobs:
       run: xcodebuild -scheme '${{ matrix.run-config['scheme'] }}' -showdestinations
 
     - name: Build
-      run: xcodebuild clean test -scheme '${{ matrix.run-config['scheme'] }}' -destination '${{ matrix.run-config['destination'] }}' -showBuildTimingSummary -enableCodeCoverage
+      run: xcodebuild clean test -scheme '${{ matrix.run-config['scheme'] }}' -destination '${{ matrix.run-config['destination'] }}' -showBuildTimingSummary -enableCodeCoverage YES
 
     - name: Process Code Coverage
       run: bash <(curl -s https://codecov.io/bash)
