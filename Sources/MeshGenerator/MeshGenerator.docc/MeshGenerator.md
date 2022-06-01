@@ -1,12 +1,10 @@
 # ``MeshGenerator``
 
-API to generate 3D surface meshes for Apple platforms.
+API to generate 3D surface meshes for use on Apple platforms.
 
 ## Overview
 
 Vertices, Triangles, Meshes, and supporting geometry concepts and types to support procedurally generating 3D surface meshes to use within SceneKit or RealityKit. 
-
-![example](animated_example.gif)
 
 ## Topics
 
