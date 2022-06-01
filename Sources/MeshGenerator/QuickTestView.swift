@@ -36,9 +36,9 @@ func directionalFin() -> SCNNode {
     ]
 
     let back = Triangle(positions[0], positions[1], positions[2])
-   let bottom = Triangle(positions[0], positions[3], positions[1])
-   let left = Triangle(positions[0], positions[2], positions[3])
-   let right = Triangle(positions[2], positions[1], positions[3])
+    let bottom = Triangle(positions[0], positions[3], positions[1])
+    let left = Triangle(positions[0], positions[2], positions[3])
+    let right = Triangle(positions[2], positions[1], positions[3])
     let mesh = Mesh([back, bottom, left, right])
     // Geometry from the mesh:
     // let geo = SCNGeometry(mesh))
