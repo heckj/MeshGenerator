@@ -2,6 +2,7 @@
 
 [![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fheckj%2FMeshGenerator%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/heckj/MeshGenerator)
 [![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fheckj%2FMeshGenerator%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/heckj/MeshGenerator)
+[![codecov](https://codecov.io/gh/heckj/MeshGenerator/branch/main/graph/badge.svg?token=ESYVYJ24U1)](https://codecov.io/gh/heckj/MeshGenerator)
 
 API to generate 3D surface meshes for Apple platforms.
 
