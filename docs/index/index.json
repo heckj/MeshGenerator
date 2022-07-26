@@ -1,0 +1,1485 @@
+{
+  "interfaceLanguages" : {
+    "swift" : [
+      {
+        "children" : [
+          {
+            "title" : "Surface Meshes",
+            "type" : "groupMarker"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Creating a Mesh",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/mesh\/init(_:)",
+                "title" : "init([Triangle])",
+                "type" : "init"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/mesh\/materialprovider",
+                "title" : "Mesh.MaterialProvider",
+                "type" : "typealias"
+              },
+              {
+                "title" : "Inspecting a Mesh",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/mesh\/bounds",
+                "title" : "var bounds: Bounds",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/mesh\/iswatertight",
+                "title" : "var isWatertight: Bool",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/mesh\/materials",
+                "title" : "var materials: [Mesh.Material?]",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/mesh\/polygons",
+                "title" : "var polygons: [Triangle]",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/mesh\/polygonsbymaterial",
+                "title" : "var polygonsByMaterial: [Mesh.Material? : [Triangle]]",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/mesh\/material",
+                "title" : "Mesh.Material",
+                "type" : "typealias"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/mesh\/uniqueedges",
+                "title" : "var uniqueEdges: Set<LineSegment>",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/mesh\/unifieddescriptor",
+                "title" : "var unifiedDescriptor: MeshDescriptor",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/mesh\/descriptors",
+                "title" : "var descriptors: [MeshDescriptor]",
+                "type" : "property"
+              },
+              {
+                "title" : "Updating a Mesh",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/mesh\/inverted()",
+                "title" : "func inverted() -> Mesh",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/mesh\/replacing(_:with:)",
+                "title" : "func replacing(Mesh.Material?, with: Mesh.Material?) -> Mesh",
+                "type" : "method"
+              },
+              {
+                "title" : "Comparing Meshes",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/mesh\/!=(_:_:)",
+                "title" : "static func != (Self, Self) -> Bool",
+                "type" : "op"
+              },
+              {
+                "title" : "Default Implementations",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Operators",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/meshgenerator\/mesh\/!=(_:_:)",
+                    "title" : "static func != (Self, Self) -> Bool",
+                    "type" : "op"
+                  }
+                ],
+                "path" : "\/documentation\/meshgenerator\/mesh\/equatable-implementations",
+                "title" : "Equatable Implementations",
+                "type" : "symbol"
+              }
+            ],
+            "path" : "\/documentation\/meshgenerator\/mesh",
+            "title" : "Mesh",
+            "type" : "struct"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Creating a Triangle",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/triangle\/init(_:_:_:material:)",
+                "title" : "init(Vector, Vector, Vector, material: Triangle.Material?)",
+                "type" : "init"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/triangle\/init(_:material:)-52jcw",
+                "title" : "init((Vector, Vector, Vector), material: Triangle.Material?)",
+                "type" : "init"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/triangle\/init(_:material:)-6xdqt",
+                "title" : "init?([Vector], material: Triangle.Material?)",
+                "type" : "init"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/triangle\/init(_:material:)-8wp0v",
+                "title" : "init?([Vertex], material: Triangle.Material?)",
+                "type" : "init"
+              },
+              {
+                "title" : "Inspecting a Triangle",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/triangle\/material",
+                "title" : "Triangle.Material",
+                "type" : "typealias"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/triangle\/bounds",
+                "title" : "var bounds: Bounds",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/triangle\/vertices",
+                "title" : "var vertices: [Vertex]",
+                "type" : "property"
+              },
+              {
+                "title" : "Updating a Triangle",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/triangle\/with(material:)",
+                "title" : "func with(material: Triangle.Material?) -> Triangle",
+                "type" : "method"
+              },
+              {
+                "title" : "Generating a Mesh Descriptor",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/triangle\/generatemeshdescriptor()",
+                "title" : "func generateMeshDescriptor() -> MeshDescriptor",
+                "type" : "method"
+              },
+              {
+                "title" : "Comparing Triangles",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/triangle\/!=(_:_:)",
+                "title" : "static func != (Self, Self) -> Bool",
+                "type" : "op"
+              },
+              {
+                "title" : "Default Implementations",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Operators",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/meshgenerator\/triangle\/!=(_:_:)",
+                    "title" : "static func != (Self, Self) -> Bool",
+                    "type" : "op"
+                  }
+                ],
+                "path" : "\/documentation\/meshgenerator\/triangle\/equatable-implementations",
+                "title" : "Equatable Implementations",
+                "type" : "symbol"
+              }
+            ],
+            "path" : "\/documentation\/meshgenerator\/triangle",
+            "title" : "Triangle",
+            "type" : "struct"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Creating a Vertex",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/vertex\/init(position:normal:tex:)",
+                "title" : "init(position: Vector, normal: Vector?, tex: TextureCoordinates?)",
+                "type" : "init"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/vertex\/init(x:y:z:normal:tex:)",
+                "title" : "init(x: Double, y: Double, z: Double, normal: Vector?, tex: TextureCoordinates?)",
+                "type" : "init"
+              },
+              {
+                "title" : "Updating a Vertex",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/vertex\/with(normal:)",
+                "title" : "func with(normal: Vector) -> Vertex",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/vertex\/inverted()",
+                "title" : "func inverted() -> Vertex",
+                "type" : "method"
+              },
+              {
+                "title" : "Interpolating Vertices",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/vertex\/lerp(_:_:)",
+                "title" : "func lerp(Vertex, Double) -> Vertex",
+                "type" : "method"
+              },
+              {
+                "title" : "Inspecting a Vertex",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/vertex\/x",
+                "title" : "var x: Double",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/vertex\/y",
+                "title" : "var y: Double",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/vertex\/z",
+                "title" : "var z: Double",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/vertex\/normal",
+                "title" : "let normal: Vector",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/vertex\/position",
+                "title" : "let position: Vector",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/vertex\/tex",
+                "title" : "let tex: TextureCoordinates",
+                "type" : "property"
+              },
+              {
+                "title" : "Comparing Vertices",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/vertex\/!=(_:_:)",
+                "title" : "static func != (Self, Self) -> Bool",
+                "type" : "op"
+              },
+              {
+                "title" : "Default Implementations",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Operators",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/meshgenerator\/vertex\/!=(_:_:)",
+                    "title" : "static func != (Self, Self) -> Bool",
+                    "type" : "op"
+                  }
+                ],
+                "path" : "\/documentation\/meshgenerator\/vertex\/equatable-implementations",
+                "title" : "Equatable Implementations",
+                "type" : "symbol"
+              }
+            ],
+            "path" : "\/documentation\/meshgenerator\/vertex",
+            "title" : "Vertex",
+            "type" : "struct"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Creating a Color Representation",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/colorrepresentation\/init(_:_:)",
+                "title" : "init(Double, Double)",
+                "type" : "init"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/colorrepresentation\/init(_:_:_:)",
+                "title" : "init(Double, Double, Double)",
+                "type" : "init"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/colorrepresentation\/init(_:_:_:_:)",
+                "title" : "init(Double, Double, Double, Double)",
+                "type" : "init"
+              },
+              {
+                "title" : "Built-in Colors",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/colorrepresentation\/clear",
+                "title" : "static var clear: ColorRepresentation",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/colorrepresentation\/black",
+                "title" : "static var black: ColorRepresentation",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/colorrepresentation\/white",
+                "title" : "static var white: ColorRepresentation",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/colorrepresentation\/gray",
+                "title" : "static let gray: ColorRepresentation",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/colorrepresentation\/red",
+                "title" : "static var red: ColorRepresentation",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/colorrepresentation\/green",
+                "title" : "static var green: ColorRepresentation",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/colorrepresentation\/blue",
+                "title" : "static var blue: ColorRepresentation",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/colorrepresentation\/yellow",
+                "title" : "static let yellow: ColorRepresentation",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/colorrepresentation\/cyan",
+                "title" : "static let cyan: ColorRepresentation",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/colorrepresentation\/magenta",
+                "title" : "static let magenta: ColorRepresentation",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/colorrepresentation\/orange",
+                "title" : "static let orange: ColorRepresentation",
+                "type" : "property"
+              },
+              {
+                "title" : "Comparing a Color Representation",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/colorrepresentation\/!=(_:_:)",
+                "title" : "static func != (Self, Self) -> Bool",
+                "type" : "op"
+              },
+              {
+                "title" : "Default Implementations",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Operators",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/meshgenerator\/colorrepresentation\/!=(_:_:)",
+                    "title" : "static func != (Self, Self) -> Bool",
+                    "type" : "op"
+                  }
+                ],
+                "path" : "\/documentation\/meshgenerator\/colorrepresentation\/equatable-implementations",
+                "title" : "Equatable Implementations",
+                "type" : "symbol"
+              }
+            ],
+            "path" : "\/documentation\/meshgenerator\/colorrepresentation",
+            "title" : "ColorRepresentation",
+            "type" : "struct"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Creating Texture Coordinates",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/texturecoordinates\/init(_:_:)",
+                "title" : "init(Double, Double)",
+                "type" : "init"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/texturecoordinates\/init(u:v:)-4oz0h",
+                "title" : "init(u: Double, v: Double)",
+                "type" : "init"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/texturecoordinates\/init(u:v:)-54zdh",
+                "title" : "init(u: Float, v: Float)",
+                "type" : "init"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/texturecoordinates\/init(u:v:)-5gv31",
+                "title" : "init(u: Int, v: Int)",
+                "type" : "init"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/texturecoordinates\/one",
+                "title" : "static let one: TextureCoordinates",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/texturecoordinates\/zero",
+                "title" : "static let zero: TextureCoordinates",
+                "type" : "property"
+              },
+              {
+                "title" : "Interpolating Texture Coordinates",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/texturecoordinates\/lerp(_:_:)",
+                "title" : "func lerp(TextureCoordinates, Double) -> TextureCoordinates",
+                "type" : "method"
+              },
+              {
+                "title" : "Inspecting Texture Coordinates",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/texturecoordinates\/u",
+                "title" : "let u: Double",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/texturecoordinates\/v",
+                "title" : "let v: Double",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/texturecoordinates\/simd_double2",
+                "title" : "var simd_double2: simd_double2",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/texturecoordinates\/simd_float2",
+                "title" : "var simd_float2: simd_float2",
+                "type" : "property"
+              },
+              {
+                "title" : "Comparing Texture Coordinates",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/texturecoordinates\/!=(_:_:)",
+                "title" : "static func != (Self, Self) -> Bool",
+                "type" : "op"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/texturecoordinates\/_(_:_:)-4e23a",
+                "title" : "static func < (TextureCoordinates, TextureCoordinates) -> Bool",
+                "type" : "op"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/texturecoordinates\/_(_:_:)-5kxm3",
+                "title" : "static func > (Self, Self) -> Bool",
+                "type" : "op"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/texturecoordinates\/_=(_:_:)-38jci",
+                "title" : "static func <= (Self, Self) -> Bool",
+                "type" : "op"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/texturecoordinates\/_=(_:_:)-5s0o7",
+                "title" : "static func >= (Self, Self) -> Bool",
+                "type" : "op"
+              },
+              {
+                "title" : "Range Expressions",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/texturecoordinates\/'...(_:)-26trx",
+                "title" : "static func ... (Self) -> PartialRangeFrom<Self>",
+                "type" : "op"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/texturecoordinates\/'...(_:)-6f26z",
+                "title" : "static func ... (Self) -> PartialRangeThrough<Self>",
+                "type" : "op"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/texturecoordinates\/'...(_:_:)",
+                "title" : "static func ... (Self, Self) -> ClosedRange<Self>",
+                "type" : "op"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/texturecoordinates\/'.._(_:)",
+                "title" : "static func ..< (Self) -> PartialRangeUpTo<Self>",
+                "type" : "op"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/texturecoordinates\/'.._(_:_:)",
+                "title" : "static func ..< (Self, Self) -> Range<Self>",
+                "type" : "op"
+              },
+              {
+                "title" : "Computing with Texture Coordinates",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/texturecoordinates\/+(_:_:)",
+                "title" : "static func + (TextureCoordinates, TextureCoordinates) -> TextureCoordinates",
+                "type" : "op"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/texturecoordinates\/-(_:_:)",
+                "title" : "static func - (TextureCoordinates, TextureCoordinates) -> TextureCoordinates",
+                "type" : "op"
+              },
+              {
+                "title" : "Default Implementations",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Operators",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/meshgenerator\/texturecoordinates\/'...(_:)-26trx",
+                    "title" : "static func ... (Self) -> PartialRangeFrom<Self>",
+                    "type" : "op"
+                  },
+                  {
+                    "path" : "\/documentation\/meshgenerator\/texturecoordinates\/'...(_:)-6f26z",
+                    "title" : "static func ... (Self) -> PartialRangeThrough<Self>",
+                    "type" : "op"
+                  },
+                  {
+                    "path" : "\/documentation\/meshgenerator\/texturecoordinates\/'...(_:_:)",
+                    "title" : "static func ... (Self, Self) -> ClosedRange<Self>",
+                    "type" : "op"
+                  },
+                  {
+                    "path" : "\/documentation\/meshgenerator\/texturecoordinates\/'.._(_:)",
+                    "title" : "static func ..< (Self) -> PartialRangeUpTo<Self>",
+                    "type" : "op"
+                  },
+                  {
+                    "path" : "\/documentation\/meshgenerator\/texturecoordinates\/'.._(_:_:)",
+                    "title" : "static func ..< (Self, Self) -> Range<Self>",
+                    "type" : "op"
+                  },
+                  {
+                    "path" : "\/documentation\/meshgenerator\/texturecoordinates\/_(_:_:)-4e23a",
+                    "title" : "static func < (TextureCoordinates, TextureCoordinates) -> Bool",
+                    "type" : "op"
+                  },
+                  {
+                    "path" : "\/documentation\/meshgenerator\/texturecoordinates\/_(_:_:)-5kxm3",
+                    "title" : "static func > (Self, Self) -> Bool",
+                    "type" : "op"
+                  },
+                  {
+                    "path" : "\/documentation\/meshgenerator\/texturecoordinates\/_=(_:_:)-38jci",
+                    "title" : "static func <= (Self, Self) -> Bool",
+                    "type" : "op"
+                  },
+                  {
+                    "path" : "\/documentation\/meshgenerator\/texturecoordinates\/_=(_:_:)-5s0o7",
+                    "title" : "static func >= (Self, Self) -> Bool",
+                    "type" : "op"
+                  }
+                ],
+                "path" : "\/documentation\/meshgenerator\/texturecoordinates\/comparable-implementations",
+                "title" : "Comparable Implementations",
+                "type" : "symbol"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Operators",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/meshgenerator\/texturecoordinates\/!=(_:_:)",
+                    "title" : "static func != (Self, Self) -> Bool",
+                    "type" : "op"
+                  }
+                ],
+                "path" : "\/documentation\/meshgenerator\/texturecoordinates\/equatable-implementations",
+                "title" : "Equatable Implementations",
+                "type" : "symbol"
+              }
+            ],
+            "path" : "\/documentation\/meshgenerator\/texturecoordinates",
+            "title" : "TextureCoordinates",
+            "type" : "struct"
+          },
+          {
+            "title" : "Geometric Components",
+            "type" : "groupMarker"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Creating a Vector",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/vector\/init(_:)-3cxpa",
+                "title" : "init(SCNVector3)",
+                "type" : "init"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/vector\/init(_:)-3qgzf",
+                "title" : "init(simd_double3)",
+                "type" : "init"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/vector\/init(_:)-8m318",
+                "title" : "init(simd_float3)",
+                "type" : "init"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/vector\/init(_:_:_:)",
+                "title" : "init(Double, Double, Double)",
+                "type" : "init"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/vector\/init(x:y:z:)-44ny",
+                "title" : "init(x: Double, y: Double, z: Double)",
+                "type" : "init"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/vector\/init(x:y:z:)-5zfmr",
+                "title" : "init(x: Int, y: Int, z: Int)",
+                "type" : "init"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/vector\/init(x:y:z:)-o7gz",
+                "title" : "init(x: Float, y: Float, z: Float)",
+                "type" : "init"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/vector\/zero",
+                "title" : "static let zero: Vector",
+                "type" : "property"
+              },
+              {
+                "title" : "Interpolating Vectors",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/vector\/lerp(_:_:)",
+                "title" : "func lerp(Vector, Double) -> Vector",
+                "type" : "method"
+              },
+              {
+                "title" : "Normalizing a Vector",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/vector\/normalized()",
+                "title" : "func normalized() -> Vector",
+                "type" : "method"
+              },
+              {
+                "title" : "Inspecting a Vector",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/vector\/x",
+                "title" : "let x: Double",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/vector\/y",
+                "title" : "let y: Double",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/vector\/z",
+                "title" : "let z: Double",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/vector\/isnormalized",
+                "title" : "var isNormalized: Bool",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/vector\/length",
+                "title" : "var length: Double",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/vector\/lengthsquared",
+                "title" : "var lengthSquared: Double",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/vector\/simd_double3",
+                "title" : "var simd_double3: simd_double3",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/vector\/simd_float3",
+                "title" : "var simd_float3: simd_float3",
+                "type" : "property"
+              },
+              {
+                "title" : "Geometric Comparisons with Vectors",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/vector\/min()",
+                "title" : "func min() -> Double",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/vector\/max()",
+                "title" : "func max() -> Double",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/vector\/distance(from:)",
+                "title" : "func distance(from: Vector) -> Double",
+                "type" : "method"
+              },
+              {
+                "title" : "Computing with Vectors",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/vector\/+(_:_:)",
+                "title" : "static func + (Vector, Vector) -> Vector",
+                "type" : "op"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/vector\/-(_:_:)",
+                "title" : "static func - (Vector, Vector) -> Vector",
+                "type" : "op"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/vector\/cross(_:)",
+                "title" : "func cross(Vector) -> Vector",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/vector\/dot(_:)",
+                "title" : "func dot(Vector) -> Double",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/vector\/min(_:)",
+                "title" : "func min(Vector) -> Vector",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/vector\/max(_:)",
+                "title" : "func max(Vector) -> Vector",
+                "type" : "method"
+              },
+              {
+                "title" : "Comparing Vectors",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/vector\/!=(_:_:)",
+                "title" : "static func != (Self, Self) -> Bool",
+                "type" : "op"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/vector\/_(_:_:)-1eqab",
+                "title" : "static func < (Vector, Vector) -> Bool",
+                "type" : "op"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/vector\/_(_:_:)-7iwju",
+                "title" : "static func > (Self, Self) -> Bool",
+                "type" : "op"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/vector\/_=(_:_:)-2jef7",
+                "title" : "static func >= (Self, Self) -> Bool",
+                "type" : "op"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/vector\/_=(_:_:)-5vtsp",
+                "title" : "static func <= (Self, Self) -> Bool",
+                "type" : "op"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/vector\/isapproximatelyequal(to:withprecision:)",
+                "title" : "func isApproximatelyEqual(to: Vector, withPrecision: Double) -> Bool",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/vector\/epsilon",
+                "title" : "static let epsilon: Double",
+                "type" : "property"
+              },
+              {
+                "title" : "Range Expressions",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/vector\/'...(_:)-2fts3",
+                "title" : "static func ... (Self) -> PartialRangeThrough<Self>",
+                "type" : "op"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/vector\/'...(_:)-6s2q7",
+                "title" : "static func ... (Self) -> PartialRangeFrom<Self>",
+                "type" : "op"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/vector\/'...(_:_:)",
+                "title" : "static func ... (Self, Self) -> ClosedRange<Self>",
+                "type" : "op"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/vector\/'.._(_:)",
+                "title" : "static func ..< (Self) -> PartialRangeUpTo<Self>",
+                "type" : "op"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/vector\/'.._(_:_:)",
+                "title" : "static func ..< (Self, Self) -> Range<Self>",
+                "type" : "op"
+              },
+              {
+                "title" : "Default Implementations",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Operators",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/meshgenerator\/vector\/'...(_:)-2fts3",
+                    "title" : "static func ... (Self) -> PartialRangeThrough<Self>",
+                    "type" : "op"
+                  },
+                  {
+                    "path" : "\/documentation\/meshgenerator\/vector\/'...(_:)-6s2q7",
+                    "title" : "static func ... (Self) -> PartialRangeFrom<Self>",
+                    "type" : "op"
+                  },
+                  {
+                    "path" : "\/documentation\/meshgenerator\/vector\/'...(_:_:)",
+                    "title" : "static func ... (Self, Self) -> ClosedRange<Self>",
+                    "type" : "op"
+                  },
+                  {
+                    "path" : "\/documentation\/meshgenerator\/vector\/'.._(_:)",
+                    "title" : "static func ..< (Self) -> PartialRangeUpTo<Self>",
+                    "type" : "op"
+                  },
+                  {
+                    "path" : "\/documentation\/meshgenerator\/vector\/'.._(_:_:)",
+                    "title" : "static func ..< (Self, Self) -> Range<Self>",
+                    "type" : "op"
+                  },
+                  {
+                    "path" : "\/documentation\/meshgenerator\/vector\/_(_:_:)-1eqab",
+                    "title" : "static func < (Vector, Vector) -> Bool",
+                    "type" : "op"
+                  },
+                  {
+                    "path" : "\/documentation\/meshgenerator\/vector\/_(_:_:)-7iwju",
+                    "title" : "static func > (Self, Self) -> Bool",
+                    "type" : "op"
+                  },
+                  {
+                    "path" : "\/documentation\/meshgenerator\/vector\/_=(_:_:)-2jef7",
+                    "title" : "static func >= (Self, Self) -> Bool",
+                    "type" : "op"
+                  },
+                  {
+                    "path" : "\/documentation\/meshgenerator\/vector\/_=(_:_:)-5vtsp",
+                    "title" : "static func <= (Self, Self) -> Bool",
+                    "type" : "op"
+                  }
+                ],
+                "path" : "\/documentation\/meshgenerator\/vector\/comparable-implementations",
+                "title" : "Comparable Implementations",
+                "type" : "symbol"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Operators",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/meshgenerator\/vector\/!=(_:_:)",
+                    "title" : "static func != (Self, Self) -> Bool",
+                    "type" : "op"
+                  }
+                ],
+                "path" : "\/documentation\/meshgenerator\/vector\/equatable-implementations",
+                "title" : "Equatable Implementations",
+                "type" : "symbol"
+              }
+            ],
+            "path" : "\/documentation\/meshgenerator\/vector",
+            "title" : "Vector",
+            "type" : "struct"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Creating a Line Segment",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/linesegment\/init(_:_:)",
+                "title" : "init?(Vector, Vector)",
+                "type" : "init"
+              },
+              {
+                "title" : "Inspecting Line Segments",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/linesegment\/start",
+                "title" : "let start: Vector",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/linesegment\/end",
+                "title" : "let end: Vector",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/linesegment\/direction",
+                "title" : "var direction: Vector",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/linesegment\/length",
+                "title" : "var length: Double",
+                "type" : "property"
+              },
+              {
+                "title" : "Geometric Comparisons with Line Segments",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/linesegment\/containspoint(_:)",
+                "title" : "func containsPoint(Vector) -> Bool",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/linesegment\/intersection(with:)",
+                "title" : "func intersection(with: LineSegment) -> Vector?",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/linesegment\/intersects(_:)",
+                "title" : "func intersects(LineSegment) -> Bool",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/linesegment\/lineintersection(_:_:_:_:)",
+                "title" : "static func lineIntersection(Vector, Vector, Vector, Vector) -> Vector?",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/linesegment\/shortestlinebetween(_:_:_:_:)",
+                "title" : "static func shortestLineBetween(Vector, Vector, Vector, Vector) -> (Vector, Vector)?",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/linesegment\/vectorfrompointtoline(point:lineorigin:linedirection:)",
+                "title" : "static func vectorFromPointToLine(point: Vector, lineOrigin: Vector, lineDirection: Vector) -> Vector",
+                "type" : "method"
+              },
+              {
+                "title" : "Comparing Line Segments",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/linesegment\/!=(_:_:)",
+                "title" : "static func != (Self, Self) -> Bool",
+                "type" : "op"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/linesegment\/_(_:_:)-3x8q",
+                "title" : "static func < (LineSegment, LineSegment) -> Bool",
+                "type" : "op"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/linesegment\/_(_:_:)-6a4ag",
+                "title" : "static func > (Self, Self) -> Bool",
+                "type" : "op"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/linesegment\/_=(_:_:)-5cghw",
+                "title" : "static func <= (Self, Self) -> Bool",
+                "type" : "op"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/linesegment\/_=(_:_:)-sn39",
+                "title" : "static func >= (Self, Self) -> Bool",
+                "type" : "op"
+              },
+              {
+                "title" : "Range Expressions",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/linesegment\/'...(_:)-55rk4",
+                "title" : "static func ... (Self) -> PartialRangeThrough<Self>",
+                "type" : "op"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/linesegment\/'...(_:)-6ct9o",
+                "title" : "static func ... (Self) -> PartialRangeFrom<Self>",
+                "type" : "op"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/linesegment\/'...(_:_:)",
+                "title" : "static func ... (Self, Self) -> ClosedRange<Self>",
+                "type" : "op"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/linesegment\/'.._(_:)",
+                "title" : "static func ..< (Self) -> PartialRangeUpTo<Self>",
+                "type" : "op"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/linesegment\/'.._(_:_:)",
+                "title" : "static func ..< (Self, Self) -> Range<Self>",
+                "type" : "op"
+              },
+              {
+                "title" : "Default Implementations",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Operators",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/meshgenerator\/linesegment\/'...(_:)-55rk4",
+                    "title" : "static func ... (Self) -> PartialRangeThrough<Self>",
+                    "type" : "op"
+                  },
+                  {
+                    "path" : "\/documentation\/meshgenerator\/linesegment\/'...(_:)-6ct9o",
+                    "title" : "static func ... (Self) -> PartialRangeFrom<Self>",
+                    "type" : "op"
+                  },
+                  {
+                    "path" : "\/documentation\/meshgenerator\/linesegment\/'...(_:_:)",
+                    "title" : "static func ... (Self, Self) -> ClosedRange<Self>",
+                    "type" : "op"
+                  },
+                  {
+                    "path" : "\/documentation\/meshgenerator\/linesegment\/'.._(_:)",
+                    "title" : "static func ..< (Self) -> PartialRangeUpTo<Self>",
+                    "type" : "op"
+                  },
+                  {
+                    "path" : "\/documentation\/meshgenerator\/linesegment\/'.._(_:_:)",
+                    "title" : "static func ..< (Self, Self) -> Range<Self>",
+                    "type" : "op"
+                  },
+                  {
+                    "path" : "\/documentation\/meshgenerator\/linesegment\/_(_:_:)-3x8q",
+                    "title" : "static func < (LineSegment, LineSegment) -> Bool",
+                    "type" : "op"
+                  },
+                  {
+                    "path" : "\/documentation\/meshgenerator\/linesegment\/_(_:_:)-6a4ag",
+                    "title" : "static func > (Self, Self) -> Bool",
+                    "type" : "op"
+                  },
+                  {
+                    "path" : "\/documentation\/meshgenerator\/linesegment\/_=(_:_:)-5cghw",
+                    "title" : "static func <= (Self, Self) -> Bool",
+                    "type" : "op"
+                  },
+                  {
+                    "path" : "\/documentation\/meshgenerator\/linesegment\/_=(_:_:)-sn39",
+                    "title" : "static func >= (Self, Self) -> Bool",
+                    "type" : "op"
+                  }
+                ],
+                "path" : "\/documentation\/meshgenerator\/linesegment\/comparable-implementations",
+                "title" : "Comparable Implementations",
+                "type" : "symbol"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Operators",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/meshgenerator\/linesegment\/!=(_:_:)",
+                    "title" : "static func != (Self, Self) -> Bool",
+                    "type" : "op"
+                  }
+                ],
+                "path" : "\/documentation\/meshgenerator\/linesegment\/equatable-implementations",
+                "title" : "Equatable Implementations",
+                "type" : "symbol"
+              }
+            ],
+            "path" : "\/documentation\/meshgenerator\/linesegment",
+            "title" : "LineSegment",
+            "type" : "struct"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Creating a Plane",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/plane\/init(normal:pointonplane:)",
+                "title" : "init?(normal: Vector, pointOnPlane: Vector)",
+                "type" : "init"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/plane\/init(points:)",
+                "title" : "init?(points: [Vector])",
+                "type" : "init"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/plane\/xy",
+                "title" : "static let xy: Plane",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/plane\/xz",
+                "title" : "static let xz: Plane",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/plane\/yz",
+                "title" : "static let yz: Plane",
+                "type" : "property"
+              },
+              {
+                "title" : "Inspecting a Plane",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/plane\/normal",
+                "title" : "let normal: Vector",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/plane\/w",
+                "title" : "let w: Double",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/plane\/containspoint(_:)",
+                "title" : "func containsPoint(Vector) -> Bool",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/plane\/distance(from:)",
+                "title" : "func distance(from: Vector) -> Double",
+                "type" : "method"
+              },
+              {
+                "title" : "Updating a Plane",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/plane\/inverted()",
+                "title" : "func inverted() -> Plane",
+                "type" : "method"
+              },
+              {
+                "title" : "Comparing a Plane",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/plane\/!=(_:_:)",
+                "title" : "static func != (Self, Self) -> Bool",
+                "type" : "op"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/plane\/_(_:_:)-1fdyy",
+                "title" : "static func > (Self, Self) -> Bool",
+                "type" : "op"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/plane\/_(_:_:)-55wtv",
+                "title" : "static func < (Plane, Plane) -> Bool",
+                "type" : "op"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/plane\/_=(_:_:)-2zkex",
+                "title" : "static func <= (Self, Self) -> Bool",
+                "type" : "op"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/plane\/_=(_:_:)-4c8nh",
+                "title" : "static func >= (Self, Self) -> Bool",
+                "type" : "op"
+              },
+              {
+                "title" : "Range Expressions",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/plane\/'...(_:)-239u9",
+                "title" : "static func ... (Self) -> PartialRangeFrom<Self>",
+                "type" : "op"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/plane\/'...(_:)-26qdp",
+                "title" : "static func ... (Self) -> PartialRangeThrough<Self>",
+                "type" : "op"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/plane\/'...(_:_:)",
+                "title" : "static func ... (Self, Self) -> ClosedRange<Self>",
+                "type" : "op"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/plane\/'.._(_:)",
+                "title" : "static func ..< (Self) -> PartialRangeUpTo<Self>",
+                "type" : "op"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/plane\/'.._(_:_:)",
+                "title" : "static func ..< (Self, Self) -> Range<Self>",
+                "type" : "op"
+              },
+              {
+                "title" : "Default Implementations",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Operators",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/meshgenerator\/plane\/'...(_:)-239u9",
+                    "title" : "static func ... (Self) -> PartialRangeFrom<Self>",
+                    "type" : "op"
+                  },
+                  {
+                    "path" : "\/documentation\/meshgenerator\/plane\/'...(_:)-26qdp",
+                    "title" : "static func ... (Self) -> PartialRangeThrough<Self>",
+                    "type" : "op"
+                  },
+                  {
+                    "path" : "\/documentation\/meshgenerator\/plane\/'...(_:_:)",
+                    "title" : "static func ... (Self, Self) -> ClosedRange<Self>",
+                    "type" : "op"
+                  },
+                  {
+                    "path" : "\/documentation\/meshgenerator\/plane\/'.._(_:)",
+                    "title" : "static func ..< (Self) -> PartialRangeUpTo<Self>",
+                    "type" : "op"
+                  },
+                  {
+                    "path" : "\/documentation\/meshgenerator\/plane\/'.._(_:_:)",
+                    "title" : "static func ..< (Self, Self) -> Range<Self>",
+                    "type" : "op"
+                  },
+                  {
+                    "path" : "\/documentation\/meshgenerator\/plane\/_(_:_:)-1fdyy",
+                    "title" : "static func > (Self, Self) -> Bool",
+                    "type" : "op"
+                  },
+                  {
+                    "path" : "\/documentation\/meshgenerator\/plane\/_(_:_:)-55wtv",
+                    "title" : "static func < (Plane, Plane) -> Bool",
+                    "type" : "op"
+                  },
+                  {
+                    "path" : "\/documentation\/meshgenerator\/plane\/_=(_:_:)-2zkex",
+                    "title" : "static func <= (Self, Self) -> Bool",
+                    "type" : "op"
+                  },
+                  {
+                    "path" : "\/documentation\/meshgenerator\/plane\/_=(_:_:)-4c8nh",
+                    "title" : "static func >= (Self, Self) -> Bool",
+                    "type" : "op"
+                  }
+                ],
+                "path" : "\/documentation\/meshgenerator\/plane\/comparable-implementations",
+                "title" : "Comparable Implementations",
+                "type" : "symbol"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Operators",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/meshgenerator\/plane\/!=(_:_:)",
+                    "title" : "static func != (Self, Self) -> Bool",
+                    "type" : "op"
+                  }
+                ],
+                "path" : "\/documentation\/meshgenerator\/plane\/equatable-implementations",
+                "title" : "Equatable Implementations",
+                "type" : "symbol"
+              }
+            ],
+            "path" : "\/documentation\/meshgenerator\/plane",
+            "title" : "Plane",
+            "type" : "struct"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Creating Bounds",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/bounds\/init(_:)",
+                "title" : "init((min: SCNVector3, max: SCNVector3))",
+                "type" : "init"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/bounds\/init(_:_:)",
+                "title" : "init(Vector, Vector)",
+                "type" : "init"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/bounds\/init(min:max:)",
+                "title" : "init(min: Vector, max: Vector)",
+                "type" : "init"
+              },
+              {
+                "title" : "Inspecting Bounds",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/bounds\/min",
+                "title" : "let min: Vector",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/bounds\/max",
+                "title" : "let max: Vector",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/bounds\/size",
+                "title" : "var size: Vector",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/bounds\/hasnegativevolume",
+                "title" : "var hasNegativeVolume: Bool",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/bounds\/isempty",
+                "title" : "var isEmpty: Bool",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/bounds\/center",
+                "title" : "var center: Vector",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/meshgenerator\/bounds\/containspoint(_:)",
+                "title" : "func containsPoint(Vector) -> Bool",
+                "type" : "method"
+              },
+              {
+                "title" : "Default Implementations",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Operators",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/meshgenerator\/bounds\/!=(_:_:)",
+                    "title" : "static func != (Self, Self) -> Bool",
+                    "type" : "op"
+                  }
+                ],
+                "path" : "\/documentation\/meshgenerator\/bounds\/equatable-implementations",
+                "title" : "Equatable Implementations",
+                "type" : "symbol"
+              }
+            ],
+            "path" : "\/documentation\/meshgenerator\/bounds",
+            "title" : "Bounds",
+            "type" : "struct"
+          }
+        ],
+        "path" : "\/documentation\/meshgenerator",
+        "title" : "MeshGenerator",
+        "type" : "module"
+      }
+    ]
+  },
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 1,
+    "patch" : 0
+  }
+}

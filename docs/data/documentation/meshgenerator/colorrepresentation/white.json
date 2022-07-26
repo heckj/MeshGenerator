@@ -1,0 +1,747 @@
+{
+  "abstract" : [
+    {
+      "text" : "The color white.",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator",
+        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/ColorRepresentation"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/ColorRepresentation\/white"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "s:13MeshGenerator19ColorRepresentationV5whiteACvpZ",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "static"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "var"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "white"
+      },
+      {
+        "kind" : "text",
+        "text" : ": "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:13MeshGenerator19ColorRepresentationV",
+        "text" : "ColorRepresentation"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "MeshGenerator"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Type Property",
+    "symbolKind" : "property",
+    "title" : "white"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "macOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "static"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "var"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "white"
+            },
+            {
+              "kind" : "text",
+              "text" : ": "
+            },
+            {
+              "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/ColorRepresentation",
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:13MeshGenerator19ColorRepresentationV",
+              "text" : "ColorRepresentation"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    },
+    {
+      "content" : [
+        {
+          "anchor" : "discussion",
+          "level" : 2,
+          "text" : "Discussion",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "The values for white are (",
+              "type" : "text"
+            },
+            {
+              "code" : "1.0",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ", ",
+              "type" : "text"
+            },
+            {
+              "code" : "1.0",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ", ",
+              "type" : "text"
+            },
+            {
+              "code" : "1.0",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ") with an alpha value of ",
+              "type" : "text"
+            },
+            {
+              "code" : "1.0",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        }
+      ],
+      "kind" : "content"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "seeAlsoSections" : [
+    {
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/ColorRepresentation\/clear",
+        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/ColorRepresentation\/black",
+        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/ColorRepresentation\/gray",
+        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/ColorRepresentation\/red",
+        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/ColorRepresentation\/green",
+        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/ColorRepresentation\/blue",
+        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/ColorRepresentation\/yellow",
+        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/ColorRepresentation\/cyan",
+        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/ColorRepresentation\/magenta",
+        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/ColorRepresentation\/orange"
+      ],
+      "title" : "Built-in Colors"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/meshgenerator\/colorrepresentation\/white"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator": {
+  "abstract" : [
+    {
+      "text" : "API to generate 3D surface meshes for use on Apple platforms.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "MeshGenerator",
+  "type" : "topic",
+  "url" : "\/documentation\/meshgenerator"
+},
+"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/ColorRepresentation": {
+  "abstract" : [
+    {
+      "text" : "A struct that represents a color using red, green, blue, and alpha values.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "ColorRepresentation"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/ColorRepresentation",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "ColorRepresentation"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "ColorRepresentation",
+  "type" : "topic",
+  "url" : "\/documentation\/meshgenerator\/colorrepresentation"
+},
+"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/ColorRepresentation/black": {
+  "abstract" : [
+    {
+      "text" : "The color black.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "black"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:13MeshGenerator19ColorRepresentationV",
+      "text" : "ColorRepresentation"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/ColorRepresentation\/black",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "black",
+  "type" : "topic",
+  "url" : "\/documentation\/meshgenerator\/colorrepresentation\/black"
+},
+"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/ColorRepresentation/blue": {
+  "abstract" : [
+    {
+      "text" : "The color blue.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "blue"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:13MeshGenerator19ColorRepresentationV",
+      "text" : "ColorRepresentation"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/ColorRepresentation\/blue",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "blue",
+  "type" : "topic",
+  "url" : "\/documentation\/meshgenerator\/colorrepresentation\/blue"
+},
+"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/ColorRepresentation/clear": {
+  "abstract" : [
+    {
+      "text" : "A clear color.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "clear"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:13MeshGenerator19ColorRepresentationV",
+      "text" : "ColorRepresentation"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/ColorRepresentation\/clear",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "clear",
+  "type" : "topic",
+  "url" : "\/documentation\/meshgenerator\/colorrepresentation\/clear"
+},
+"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/ColorRepresentation/cyan": {
+  "abstract" : [
+    {
+      "text" : "The color cyan.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "cyan"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:13MeshGenerator19ColorRepresentationV",
+      "text" : "ColorRepresentation"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/ColorRepresentation\/cyan",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "cyan",
+  "type" : "topic",
+  "url" : "\/documentation\/meshgenerator\/colorrepresentation\/cyan"
+},
+"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/ColorRepresentation/gray": {
+  "abstract" : [
+    {
+      "text" : "The color gray.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "gray"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:13MeshGenerator19ColorRepresentationV",
+      "text" : "ColorRepresentation"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/ColorRepresentation\/gray",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "gray",
+  "type" : "topic",
+  "url" : "\/documentation\/meshgenerator\/colorrepresentation\/gray"
+},
+"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/ColorRepresentation/green": {
+  "abstract" : [
+    {
+      "text" : "The color green.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "green"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:13MeshGenerator19ColorRepresentationV",
+      "text" : "ColorRepresentation"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/ColorRepresentation\/green",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "green",
+  "type" : "topic",
+  "url" : "\/documentation\/meshgenerator\/colorrepresentation\/green"
+},
+"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/ColorRepresentation/magenta": {
+  "abstract" : [
+    {
+      "text" : "The color magenta.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "magenta"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:13MeshGenerator19ColorRepresentationV",
+      "text" : "ColorRepresentation"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/ColorRepresentation\/magenta",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "magenta",
+  "type" : "topic",
+  "url" : "\/documentation\/meshgenerator\/colorrepresentation\/magenta"
+},
+"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/ColorRepresentation/orange": {
+  "abstract" : [
+    {
+      "text" : "The color orange.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "orange"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:13MeshGenerator19ColorRepresentationV",
+      "text" : "ColorRepresentation"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/ColorRepresentation\/orange",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "orange",
+  "type" : "topic",
+  "url" : "\/documentation\/meshgenerator\/colorrepresentation\/orange"
+},
+"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/ColorRepresentation/red": {
+  "abstract" : [
+    {
+      "text" : "The color red.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "red"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:13MeshGenerator19ColorRepresentationV",
+      "text" : "ColorRepresentation"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/ColorRepresentation\/red",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "red",
+  "type" : "topic",
+  "url" : "\/documentation\/meshgenerator\/colorrepresentation\/red"
+},
+"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/ColorRepresentation/white": {
+  "abstract" : [
+    {
+      "text" : "The color white.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "white"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:13MeshGenerator19ColorRepresentationV",
+      "text" : "ColorRepresentation"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/ColorRepresentation\/white",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "white",
+  "type" : "topic",
+  "url" : "\/documentation\/meshgenerator\/colorrepresentation\/white"
+},
+"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/ColorRepresentation/yellow": {
+  "abstract" : [
+    {
+      "text" : "The color yellow.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "yellow"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:13MeshGenerator19ColorRepresentationV",
+      "text" : "ColorRepresentation"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/ColorRepresentation\/yellow",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "yellow",
+  "type" : "topic",
+  "url" : "\/documentation\/meshgenerator\/colorrepresentation\/yellow"
+}
+}
+}

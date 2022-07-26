@@ -1,0 +1,9 @@
+{
+  "bundleDisplayName" : "MeshGenerator",
+  "bundleIdentifier" : "com.github.heckj.MeshGenerator",
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 1,
+    "patch" : 0
+  }
+}

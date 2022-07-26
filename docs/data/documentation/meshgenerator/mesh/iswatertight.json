@@ -1,0 +1,623 @@
+{
+  "abstract" : [
+    {
+      "text" : "Indicates that the mesh is watertight.",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator",
+        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Mesh"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Mesh\/isWatertight"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "extendedModule" : "MeshGenerator",
+    "externalID" : "s:13MeshGenerator0A0V12isWatertightSbvp",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "var"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "isWatertight"
+      },
+      {
+        "kind" : "text",
+        "text" : ": "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:Sb",
+        "text" : "Bool"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "MeshGenerator"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Instance Property",
+    "symbolKind" : "property",
+    "title" : "isWatertight"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "macOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "var"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "isWatertight"
+            },
+            {
+              "kind" : "text",
+              "text" : ": "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:Sb",
+              "text" : "Bool"
+            },
+            {
+              "kind" : "text",
+              "text" : " { "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "get"
+            },
+            {
+              "kind" : "text",
+              "text" : " }"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    },
+    {
+      "content" : [
+        {
+          "anchor" : "discussion",
+          "level" : 2,
+          "text" : "Discussion",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "For example, the value is ",
+              "type" : "text"
+            },
+            {
+              "code" : "true",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " if every edge is attached to at least 2 triangles.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "A mesh being watertight doesn’t verify that mesh is not self-intersecting or inside-out.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "style" : "note",
+          "type" : "aside"
+        }
+      ],
+      "kind" : "content"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "seeAlsoSections" : [
+    {
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Mesh\/bounds",
+        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Mesh\/materials",
+        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Mesh\/polygons",
+        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Mesh\/polygonsByMaterial",
+        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Mesh\/Material",
+        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Mesh\/uniqueEdges",
+        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Mesh\/unifiedDescriptor",
+        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Mesh\/descriptors"
+      ],
+      "title" : "Inspecting a Mesh"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/meshgenerator\/mesh\/iswatertight"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator": {
+  "abstract" : [
+    {
+      "text" : "API to generate 3D surface meshes for use on Apple platforms.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "MeshGenerator",
+  "type" : "topic",
+  "url" : "\/documentation\/meshgenerator"
+},
+"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/Mesh": {
+  "abstract" : [
+    {
+      "text" : "A struct that represents a 3D object as a collection of polygons.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Mesh"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Mesh",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Mesh"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Mesh",
+  "type" : "topic",
+  "url" : "\/documentation\/meshgenerator\/mesh"
+},
+"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/Mesh/Material": {
+  "abstract" : [
+    {
+      "text" : "The type used as a material for a given polygon.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "typealias"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Material"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Mesh\/Material",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Material"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Mesh.Material",
+  "type" : "topic",
+  "url" : "\/documentation\/meshgenerator\/mesh\/material"
+},
+"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/Mesh/bounds": {
+  "abstract" : [
+    {
+      "text" : "The bounds of the mesh.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "bounds"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:13MeshGenerator6BoundsV",
+      "text" : "Bounds"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Mesh\/bounds",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "bounds",
+  "type" : "topic",
+  "url" : "\/documentation\/meshgenerator\/mesh\/bounds"
+},
+"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/Mesh/descriptors": {
+  "abstract" : [
+    {
+      "text" : "Returns a list of RealityKit mesh descriptors for every triangle face within the mesh.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "descriptors"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:17RealityFoundation14MeshDescriptorV",
+      "text" : "MeshDescriptor"
+    },
+    {
+      "kind" : "text",
+      "text" : "]"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Mesh\/descriptors",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "descriptors",
+  "type" : "topic",
+  "url" : "\/documentation\/meshgenerator\/mesh\/descriptors"
+},
+"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/Mesh/isWatertight": {
+  "abstract" : [
+    {
+      "text" : "Indicates that the mesh is watertight.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "isWatertight"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Mesh\/isWatertight",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "isWatertight",
+  "type" : "topic",
+  "url" : "\/documentation\/meshgenerator\/mesh\/iswatertight"
+},
+"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/Mesh/materials": {
+  "abstract" : [
+    {
+      "text" : "The collection of materials used for the mash.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "materials"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:13MeshGenerator0A0V",
+      "text" : "Mesh"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:13MeshGenerator0A0V8Materiala",
+      "text" : "Material"
+    },
+    {
+      "kind" : "text",
+      "text" : "?]"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Mesh\/materials",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "materials",
+  "type" : "topic",
+  "url" : "\/documentation\/meshgenerator\/mesh\/materials"
+},
+"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/Mesh/polygons": {
+  "abstract" : [
+    {
+      "text" : "The collection of triangles that make up the mesh.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "polygons"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:13MeshGenerator8TriangleV",
+      "text" : "Triangle"
+    },
+    {
+      "kind" : "text",
+      "text" : "]"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Mesh\/polygons",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "polygons",
+  "type" : "topic",
+  "url" : "\/documentation\/meshgenerator\/mesh\/polygons"
+},
+"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/Mesh/polygonsByMaterial": {
+  "abstract" : [
+    {
+      "text" : "The triangles of the mesh, grouped by material.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "polygonsByMaterial"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:13MeshGenerator0A0V",
+      "text" : "Mesh"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:13MeshGenerator0A0V8Materiala",
+      "text" : "Material"
+    },
+    {
+      "kind" : "text",
+      "text" : "? : ["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:13MeshGenerator8TriangleV",
+      "text" : "Triangle"
+    },
+    {
+      "kind" : "text",
+      "text" : "]]"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Mesh\/polygonsByMaterial",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "polygonsByMaterial",
+  "type" : "topic",
+  "url" : "\/documentation\/meshgenerator\/mesh\/polygonsbymaterial"
+},
+"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/Mesh/unifiedDescriptor": {
+  "abstract" : [
+    {
+      "text" : "A RealityKit mesh descriptor that describes the mesh as a single MeshDescriptor instance.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "unifiedDescriptor"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:17RealityFoundation14MeshDescriptorV",
+      "text" : "MeshDescriptor"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Mesh\/unifiedDescriptor",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "unifiedDescriptor",
+  "type" : "topic",
+  "url" : "\/documentation\/meshgenerator\/mesh\/unifieddescriptor"
+},
+"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/Mesh/uniqueEdges": {
+  "abstract" : [
+    {
+      "text" : "The unique triangle edges in the mesh.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "uniqueEdges"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sh",
+      "text" : "Set"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:13MeshGenerator11LineSegmentV",
+      "text" : "LineSegment"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Mesh\/uniqueEdges",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "uniqueEdges",
+  "type" : "topic",
+  "url" : "\/documentation\/meshgenerator\/mesh\/uniqueedges"
+}
+}
+}
