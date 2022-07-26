@@ -27,17 +27,13 @@ export DOCC_JSON_PRETTYPRINT=YES
 #     --transform-for-static-hosting \
 #     --hosting-base-path 'MeshGenerator'
 
-# Add the following as a dependency into your Package.swift
-#
-# // Swift-DocC Plugin - swift 5.6 ONLY (GitHhub Actions on 1/29/2022 only supports to 5.5)
-# .package(url: "https://github.com/apple/swift-docc-plugin", branch: "main"),
-
 # Swift package plugin for hosted content:
 #
 $(xcrun --find swift) package \
     --allow-writing-to-directory ./docs \
-    --target MeshGenerator \
     generate-documentation \
+    --fallback-bundle-identifier com.github.heckj.MeshGenerator \
+    --target MeshGenerator \
     --output-path ./docs \
     --emit-digest \
     --disable-indexing \
@@ -49,7 +45,7 @@ $(xcrun --find swift) package \
 
 cat docs/linkable-entities.json | jq '.[].referenceURL' -r > all_identifiers.txt
 sort all_identifiers.txt \
-    | sed -e 's/doc:\/\/MeshGenerator\/documentation\///g' \
+    | sed -e 's/doc:\/\/com\.github\.heckj\.MeshGenerator\/documentation\///g' \
     | sed -e 's/^/- ``/g' \
     | sed -e 's/$/``/g' > all_symbols.txt
 
