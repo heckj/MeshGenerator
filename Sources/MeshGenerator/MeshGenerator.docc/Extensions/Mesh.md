@@ -16,6 +16,8 @@
 - ``MeshGenerator/Mesh/polygonsByMaterial``
 - ``MeshGenerator/Mesh/Material``
 - ``MeshGenerator/Mesh/uniqueEdges``
+- ``MeshGenerator/Mesh/unifiedDescriptor``
+- ``MeshGenerator/Mesh/descriptors``
 
 ### Updating a Mesh
 

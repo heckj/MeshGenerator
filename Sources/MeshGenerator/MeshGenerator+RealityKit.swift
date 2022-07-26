@@ -110,9 +110,8 @@
         // is in play so that we can leverage RealityKit's
         // generate(from:) or generateAsync(from:)
 
-        /// Returns a list of RealityKit mesh descriptors for use in generating a mesh resource.
+        /// Returns a list of RealityKit mesh descriptors for every triangle face within the mesh.
         ///
-        /// This method returns a separate mesh descriptor for every triangle face within the mesh.
         /// For example, create a mesh:
         /// ```
         /// let positions: [Vector] = [
