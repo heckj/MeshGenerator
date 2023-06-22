@@ -110,7 +110,7 @@ public struct Vector: Hashable {
         #if canImport(simd)
             return simd_length(simd_double3)
         #else
-            return (dot(self)).squareRoot()
+            return dot(self).squareRoot()
         #endif
     }
 
@@ -121,7 +121,7 @@ public struct Vector: Hashable {
         #if canImport(simd)
             return simd_length_squared(simd_double3)
         #else
-            return (dot(self))
+            return dot(self)
         #endif
     }
 

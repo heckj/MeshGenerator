@@ -241,14 +241,14 @@
 
         static func generate(mesh: Mesh) throws -> MeshResource {
             precondition(mesh.polygons.count > 0, "Mesh must have more than one triangle in order to render.")
-            return try MeshResource.generate(from: [mesh.unifiedDescriptor])
+            return try generate(from: [mesh.unifiedDescriptor])
         }
 
         /// Returns a new MeshResource from the mesh instance in you provide.
         /// - Parameter mesh: The mesh to be converted.
         static func generateAsync(_ mesh: Mesh) async -> LoadRequest<MeshResource> {
             precondition(mesh.polygons.count > 0, "Mesh must have more than one triangle in order to render.")
-            return MeshResource.generateAsync(from: [mesh.unifiedDescriptor])
+            return generateAsync(from: [mesh.unifiedDescriptor])
         }
     }
 #endif
