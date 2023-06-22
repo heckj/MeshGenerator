@@ -24,16 +24,12 @@
 ### Comparing a Plane
 
 - ``MeshGenerator/Plane/!=(_:_:)``
-- ``MeshGenerator/Plane/_(_:_:)-1fdyy``
-- ``MeshGenerator/Plane/_(_:_:)-55wtv``
-- ``MeshGenerator/Plane/_=(_:_:)-2zkex``
-- ``MeshGenerator/Plane/_=(_:_:)-4c8nh``
 
 ### Range Expressions
 
 - ``MeshGenerator/Plane/...(_:)-239u9``
 - ``MeshGenerator/Plane/...(_:)-26qdp``
 - ``MeshGenerator/Plane/...(_:_:)``
-- ``MeshGenerator/Plane/.._(_:)``
-- ``MeshGenerator/Plane/.._(_:_:)``
+- ``MeshGenerator/Plane/..<(_:)``
+- ``MeshGenerator/Plane/<(_:_:)``
 

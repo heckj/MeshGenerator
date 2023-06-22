@@ -50,10 +50,10 @@
 ### Comparing Vectors
 
 - ``MeshGenerator/Vector/!=(_:_:)``
-- ``MeshGenerator/Vector/_(_:_:)-1eqab``
-- ``MeshGenerator/Vector/_(_:_:)-7iwju``
-- ``MeshGenerator/Vector/_=(_:_:)-2jef7``
-- ``MeshGenerator/Vector/_=(_:_:)-5vtsp``
+- ``MeshGenerator/Vector/<(_:_:)-1eqab``
+- ``MeshGenerator/Vector/>(_:_:)-7iwju``
+- ``MeshGenerator/Vector/>=(_:_:)-2jef7``
+- ``MeshGenerator/Vector/<=(_:_:)-5vtsp``
 - ``MeshGenerator/Vector/isApproximatelyEqual(to:withPrecision:)``
 - ``MeshGenerator/Vector/epsilon``
 
@@ -62,6 +62,6 @@
 - ``MeshGenerator/Vector/...(_:)-2fts3``
 - ``MeshGenerator/Vector/...(_:)-6s2q7``
 - ``MeshGenerator/Vector/...(_:_:)``
-- ``MeshGenerator/Vector/.._(_:)``
-- ``MeshGenerator/Vector/.._(_:_:)``
+- ``MeshGenerator/Vector/..<(_:)``
+- ``MeshGenerator/Vector/..>(_:_:)``
 

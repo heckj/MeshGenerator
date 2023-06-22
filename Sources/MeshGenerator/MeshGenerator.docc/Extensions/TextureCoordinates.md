@@ -25,18 +25,18 @@
 ### Comparing Texture Coordinates
 
 - ``MeshGenerator/TextureCoordinates/!=(_:_:)``
-- ``MeshGenerator/TextureCoordinates/_(_:_:)-4e23a``
-- ``MeshGenerator/TextureCoordinates/_(_:_:)-5kxm3``
-- ``MeshGenerator/TextureCoordinates/_=(_:_:)-38jci``
-- ``MeshGenerator/TextureCoordinates/_=(_:_:)-5s0o7``
+- ``MeshGenerator/TextureCoordinates/<(_:_:)-4e23a``
+- ``MeshGenerator/TextureCoordinates/>(_:_:)-5kxm3``
+- ``MeshGenerator/TextureCoordinates/<=(_:_:)-38jci``
+- ``MeshGenerator/TextureCoordinates/>=(_:_:)-5s0o7``
 
 ### Range Expressions
 
 - ``MeshGenerator/TextureCoordinates/...(_:)-26trx``
 - ``MeshGenerator/TextureCoordinates/...(_:)-6f26z``
 - ``MeshGenerator/TextureCoordinates/...(_:_:)``
-- ``MeshGenerator/TextureCoordinates/.._(_:)``
-- ``MeshGenerator/TextureCoordinates/.._(_:_:)``
+- ``MeshGenerator/TextureCoordinates/..<(_:)``
+- ``MeshGenerator/TextureCoordinates/!=(_:_:)``
 
 ### Computing with Texture Coordinates
 
