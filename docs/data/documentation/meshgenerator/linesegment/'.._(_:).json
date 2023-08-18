@@ -91,7 +91,10 @@
     ],
     "modules" : [
       {
-        "name" : "MeshGenerator"
+        "name" : "MeshGenerator",
+        "relatedModules" : [
+          "Swift"
+        ]
       }
     ],
     "role" : "symbol",
@@ -191,8 +194,7 @@
       "identifiers" : [
         "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/LineSegment\/...(_:)-55rk4",
         "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/LineSegment\/...(_:)-6ct9o",
-        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/LineSegment\/...(_:_:)",
-        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/LineSegment\/.._(_:_:)"
+        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/LineSegment\/...(_:_:)"
       ],
       "title" : "Range Expressions"
     }
@@ -530,80 +532,6 @@
   "title" : "..<(_:)",
   "type" : "topic",
   "url" : "\/documentation\/meshgenerator\/linesegment\/'.._(_:)"
-},
-"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/LineSegment/.._(_:_:)": {
-  "abstract" : [
-
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "static"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "keyword",
-      "text" : "func"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "..<"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "text",
-      "text" : "("
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Self"
-    },
-    {
-      "kind" : "text",
-      "text" : ", "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Self"
-    },
-    {
-      "kind" : "text",
-      "text" : ") -> "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:Sn",
-      "text" : "Range"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Self"
-    },
-    {
-      "kind" : "text",
-      "text" : ">"
-    }
-  ],
-  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/LineSegment\/.._(_:_:)",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "..<(_:_:)",
-  "type" : "topic",
-  "url" : "\/documentation\/meshgenerator\/linesegment\/'.._(_:_:)"
 },
 "doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/LineSegment/Comparable-Implementations": {
   "abstract" : [

@@ -91,7 +91,10 @@
     ],
     "modules" : [
       {
-        "name" : "MeshGenerator"
+        "name" : "MeshGenerator",
+        "relatedModules" : [
+          "Swift"
+        ]
       }
     ],
     "role" : "symbol",
@@ -192,7 +195,7 @@
         "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/...(_:)-239u9",
         "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/...(_:)-26qdp",
         "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/...(_:_:)",
-        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/.._(_:_:)"
+        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/_(_:_:)-55wtv"
       ],
       "title" : "Range Expressions"
     }
@@ -531,9 +534,23 @@
   "type" : "topic",
   "url" : "\/documentation\/meshgenerator\/plane\/'.._(_:)"
 },
-"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/Plane/.._(_:_:)": {
+"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/Plane/Comparable-Implementations": {
   "abstract" : [
 
+  ],
+  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/Comparable-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "Comparable Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/meshgenerator\/plane\/comparable-implementations"
+},
+"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/Plane/_(_:_:)-55wtv": {
+  "abstract" : [
+    {
+      "text" : "Provides a stable sort order for Planes",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {
@@ -554,7 +571,7 @@
     },
     {
       "kind" : "identifier",
-      "text" : "..<"
+      "text" : "<"
     },
     {
       "kind" : "text",
@@ -566,7 +583,8 @@
     },
     {
       "kind" : "typeIdentifier",
-      "text" : "Self"
+      "preciseIdentifier" : "s:13MeshGenerator5PlaneV",
+      "text" : "Plane"
     },
     {
       "kind" : "text",
@@ -574,7 +592,8 @@
     },
     {
       "kind" : "typeIdentifier",
-      "text" : "Self"
+      "preciseIdentifier" : "s:13MeshGenerator5PlaneV",
+      "text" : "Plane"
     },
     {
       "kind" : "text",
@@ -582,39 +601,16 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:Sn",
-      "text" : "Range"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Self"
-    },
-    {
-      "kind" : "text",
-      "text" : ">"
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
     }
   ],
-  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/.._(_:_:)",
+  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/_(_:_:)-55wtv",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "..<(_:_:)",
+  "title" : "<(_:_:)",
   "type" : "topic",
-  "url" : "\/documentation\/meshgenerator\/plane\/'.._(_:_:)"
-},
-"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/Plane/Comparable-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/Comparable-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Comparable Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/meshgenerator\/plane\/comparable-implementations"
+  "url" : "\/documentation\/meshgenerator\/plane\/_(_:_:)-55wtv"
 }
 }
 }

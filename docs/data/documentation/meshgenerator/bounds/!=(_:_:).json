@@ -83,7 +83,10 @@
     ],
     "modules" : [
       {
-        "name" : "MeshGenerator"
+        "name" : "MeshGenerator",
+        "relatedModules" : [
+          "Swift"
+        ]
       }
     ],
     "role" : "symbol",

@@ -184,11 +184,7 @@
     },
     {
       "identifiers" : [
-        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/!=(_:_:)",
-        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/_(_:_:)-1fdyy",
-        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/_(_:_:)-55wtv",
-        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/_=(_:_:)-2zkex",
-        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/_=(_:_:)-4c8nh"
+        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/!=(_:_:)"
       ],
       "title" : "Comparing a Plane"
     },
@@ -198,7 +194,7 @@
         "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/...(_:)-26qdp",
         "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/...(_:_:)",
         "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/.._(_:)",
-        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/.._(_:_:)"
+        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/_(_:_:)-55wtv"
       ],
       "title" : "Range Expressions"
     },
@@ -690,80 +686,6 @@
   "type" : "topic",
   "url" : "\/documentation\/meshgenerator\/plane\/'.._(_:)"
 },
-"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/Plane/.._(_:_:)": {
-  "abstract" : [
-
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "static"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "keyword",
-      "text" : "func"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "..<"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "text",
-      "text" : "("
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Self"
-    },
-    {
-      "kind" : "text",
-      "text" : ", "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Self"
-    },
-    {
-      "kind" : "text",
-      "text" : ") -> "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:Sn",
-      "text" : "Range"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Self"
-    },
-    {
-      "kind" : "text",
-      "text" : ">"
-    }
-  ],
-  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/.._(_:_:)",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "..<(_:_:)",
-  "type" : "topic",
-  "url" : "\/documentation\/meshgenerator\/plane\/'.._(_:_:)"
-},
 "doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/Plane/Comparable-Implementations": {
   "abstract" : [
 
@@ -785,68 +707,6 @@
   "title" : "Equatable Implementations",
   "type" : "topic",
   "url" : "\/documentation\/meshgenerator\/plane\/equatable-implementations"
-},
-"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/Plane/_(_:_:)-1fdyy": {
-  "abstract" : [
-
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "static"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "keyword",
-      "text" : "func"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : ">"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "text",
-      "text" : "("
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Self"
-    },
-    {
-      "kind" : "text",
-      "text" : ", "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Self"
-    },
-    {
-      "kind" : "text",
-      "text" : ") -> "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:Sb",
-      "text" : "Bool"
-    }
-  ],
-  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/_(_:_:)-1fdyy",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : ">(_:_:)",
-  "type" : "topic",
-  "url" : "\/documentation\/meshgenerator\/plane\/_(_:_:)-1fdyy"
 },
 "doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/Plane/_(_:_:)-55wtv": {
   "abstract" : [
@@ -914,130 +774,6 @@
   "title" : "<(_:_:)",
   "type" : "topic",
   "url" : "\/documentation\/meshgenerator\/plane\/_(_:_:)-55wtv"
-},
-"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/Plane/_=(_:_:)-2zkex": {
-  "abstract" : [
-
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "static"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "keyword",
-      "text" : "func"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "<="
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "text",
-      "text" : "("
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Self"
-    },
-    {
-      "kind" : "text",
-      "text" : ", "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Self"
-    },
-    {
-      "kind" : "text",
-      "text" : ") -> "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:Sb",
-      "text" : "Bool"
-    }
-  ],
-  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/_=(_:_:)-2zkex",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "<=(_:_:)",
-  "type" : "topic",
-  "url" : "\/documentation\/meshgenerator\/plane\/_=(_:_:)-2zkex"
-},
-"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/Plane/_=(_:_:)-4c8nh": {
-  "abstract" : [
-
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "static"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "keyword",
-      "text" : "func"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : ">="
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "text",
-      "text" : "("
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Self"
-    },
-    {
-      "kind" : "text",
-      "text" : ", "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Self"
-    },
-    {
-      "kind" : "text",
-      "text" : ") -> "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:Sb",
-      "text" : "Bool"
-    }
-  ],
-  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/_=(_:_:)-4c8nh",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : ">=(_:_:)",
-  "type" : "topic",
-  "url" : "\/documentation\/meshgenerator\/plane\/_=(_:_:)-4c8nh"
 },
 "doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/Plane/containsPoint(_:)": {
   "abstract" : [

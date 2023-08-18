@@ -7,1021 +7,13 @@
     "location" : {
       "reference" : {
         "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Bounds\/hasNegativeVolume"
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/TextureCoordinates\/-(_:_:)"
       },
       "type" : "topLevelPage"
     },
-    "rawIndexableTextContent" : "Whether the maximum is greater than the minimum. ",
-    "summary" : "Whether the maximum is greater than the minimum.",
-    "title" : "hasNegativeVolume"
-  },
-  {
-    "headings" : [
-      "Return Value"
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/LineSegment\/lineIntersection(_:_:_:_:)"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Returns a vector that indicates if the points that make up two line segments intersect.  Return Value A vector that describes the point of intersection, or nil if there is no intersection. The starting location of the first line segment. The ending location of the first line segment. The starting location of the second line segment. The ending location of the second line segment.",
-    "summary" : "Returns a vector that indicates if the points that make up two line segments intersect.",
-    "title" : "lineIntersection(_:_:_:_:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/zero"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "A zero-length vector. ",
-    "summary" : "A zero-length vector.",
-    "title" : "zero"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "article",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/TextureCoordinates\/Comparable-Implementations"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "",
-    "summary" : "",
-    "title" : "Comparable Implementations"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Mesh\/!=(_:_:)"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Inherited from Equatable.!=(_:_:). ",
-    "summary" : "Inherited from Equatable.!=(_:_:).",
-    "title" : "!=(_:_:)"
-  },
-  {
-    "headings" : [
-      "Discussion"
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/ColorRepresentation\/magenta"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "The color magenta.  Discussion The values for magenta are  (1.0, 0.0, 1.0) with an alpha value of 1.0.",
-    "summary" : "The color magenta.",
-    "title" : "magenta"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/init(_:)-3cxpa"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Creates a new vector from the SceneKit vector.  The SceneKit vector.",
-    "summary" : "Creates a new vector from the SceneKit vector.",
-    "title" : "init(_:)"
-  },
-  {
-    "headings" : [
-      "Discussion"
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/ColorRepresentation\/white"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "The color white.  Discussion The values for white are (1.0, 1.0, 1.0) with an alpha value of 1.0.",
-    "summary" : "The color white.",
-    "title" : "white"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/TextureCoordinates\/.._(_:)"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Inherited from Comparable...<(_:). ",
-    "summary" : "Inherited from Comparable...<(_:).",
-    "title" : "..<(_:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vertex\/init(position:normal:tex:)"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Creates a new vertex.  The position of the vertex. The direction the vertex is facing. The texture coordinates that this vertex maps to.",
-    "summary" : "Creates a new vertex.",
-    "title" : "init(position:normal:tex:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "article",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Mesh\/Equatable-Implementations"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "",
-    "summary" : "",
-    "title" : "Equatable Implementations"
-  },
-  {
-    "headings" : [
-      "Discussion"
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Triangle\/generateMeshDescriptor()"
-      },
-      "type" : "topLevelPage"
-    },
-    "platforms" : [
-      {
-        "beta" : false,
-        "deprecated" : false,
-        "introducedAt" : "15.0",
-        "name" : "iOS",
-        "unavailable" : false
-      },
-      {
-        "beta" : false,
-        "deprecated" : false,
-        "introducedAt" : "12.0",
-        "name" : "macOS",
-        "unavailable" : false
-      }
-    ],
-    "rawIndexableTextContent" : "Generates a mesh descriptor for the triangle.  Discussion The vertices of each triangle are represented individually. Using this method against a single triangle, or a collection, doesn’t consolidate the vertices by location and\/or normal.",
-    "summary" : "Generates a mesh descriptor for the triangle.",
-    "title" : "generateMeshDescriptor()"
-  },
-  {
-    "headings" : [
-      "Overview"
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Triangle"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "A struct that represents a triangle in 3D space.  Overview When you create a triangle, you may assign a material to it. When you create a Mesh from a collection of triangles, the materials on each triangle are preserved. For example, the following snippet creates a triangle and assigns the color red: ",
-    "summary" : "A struct that represents a triangle in 3D space.",
-    "title" : "Triangle"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/-(_:_:)"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Returns a vector that is the difference of the vectors you provide.  The first vector. The second vector.",
-    "summary" : "Returns a vector that is the difference of the vectors you provide.",
+    "rawIndexableTextContent" : "Returns a texture coordinate that is the difference of the coordinates you provide.  The first coordinate. The second coordinate.",
+    "summary" : "Returns a texture coordinate that is the difference of the coordinates you provide.",
     "title" : "-(_:_:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Mesh\/polygonsByMaterial"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "The triangles of the mesh, grouped by material. ",
-    "summary" : "The triangles of the mesh, grouped by material.",
-    "title" : "polygonsByMaterial"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/LineSegment\/.._(_:)"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Inherited from Comparable...<(_:). ",
-    "summary" : "Inherited from Comparable...<(_:).",
-    "title" : "..<(_:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/init(x:y:z:)-o7gz"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Creates a new vector  The x coordinate. The y coordinate. The z coordinate.",
-    "summary" : "Creates a new vector",
-    "title" : "init(x:y:z:)"
-  },
-  {
-    "headings" : [
-      "Overview"
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vertex"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "A struct that represents a vertex.  Overview A vertex is comprised of a position in space, a vector that represents the normal for the vertex, the direction its facing, and a 2D coordinate to map to a texture associated with the vertex.",
-    "summary" : "A struct that represents a vertex.",
-    "title" : "Vertex"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/TextureCoordinates\/simd_double2"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "The coordinates represented as a 2 double vector with simd from the Accelerate framework. ",
-    "summary" : "The coordinates represented as a 2 double vector with simd from the Accelerate framework.",
-    "title" : "simd_double2"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/TextureCoordinates\/simd_float2"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "The coordinates represented as a 2 float vector with simd from the Accelerate framework. ",
-    "summary" : "The coordinates represented as a 2 float vector with simd from the Accelerate framework.",
-    "title" : "simd_float2"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/max(_:)"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Returns a new vector that represents the maximum value for each of the components of the two vectors.  The vector to compare.",
-    "summary" : "Returns a new vector that represents the maximum value for each of the components of the two vectors.",
-    "title" : "max(_:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/TextureCoordinates\/init(u:v:)-4oz0h"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Creates a new texture coordinate.  The u coordinate. The v coordinate.",
-    "summary" : "Creates a new texture coordinate.",
-    "title" : "init(u:v:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "article",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Triangle\/Equatable-Implementations"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "",
-    "summary" : "",
-    "title" : "Equatable Implementations"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/_=(_:_:)-2zkex"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Inherited from Comparable.<=(_:_:). ",
-    "summary" : "Inherited from Comparable.<=(_:_:).",
-    "title" : "<=(_:_:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "A struct that represents a vector in 3D space. ",
-    "summary" : "A struct that represents a vector in 3D space.",
-    "title" : "Vector"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/LineSegment\/_=(_:_:)-5cghw"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Inherited from Comparable.<=(_:_:). ",
-    "summary" : "Inherited from Comparable.<=(_:_:).",
-    "title" : "<=(_:_:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "article",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/Comparable-Implementations"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "",
-    "summary" : "",
-    "title" : "Comparable Implementations"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Mesh\/materials"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "The collection of materials used for the mash. ",
-    "summary" : "The collection of materials used for the mash.",
-    "title" : "materials"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/max()"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Returns the maximum value for any of the coordinates within the vector. ",
-    "summary" : "Returns the maximum value for any of the coordinates within the vector.",
-    "title" : "max()"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/...(_:)-26qdp"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Inherited from Comparable....(_:). ",
-    "summary" : "Inherited from Comparable....(_:).",
-    "title" : "...(_:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/w"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "The distance from the center of the plane to the world origin coordinates. ",
-    "summary" : "The distance from the center of the plane to the world origin coordinates.",
-    "title" : "w"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/TextureCoordinates\/_(_:_:)-4e23a"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Returns a Boolean value that compares two vectors to provide a stable sort order. ",
-    "summary" : "Returns a Boolean value that compares two vectors to provide a stable sort order.",
-    "title" : "<(_:_:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "article",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Bounds\/Equatable-Implementations"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "",
-    "summary" : "",
-    "title" : "Equatable Implementations"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Bounds\/init(_:_:)"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Creates bounds by computing the max and min values from two points you provide.  The first point. The second point.",
-    "summary" : "Creates bounds by computing the max and min values from two points you provide.",
-    "title" : "init(_:_:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Triangle\/vertices"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "The collection of vertices that make up the triangle. ",
-    "summary" : "The collection of vertices that make up the triangle.",
-    "title" : "vertices"
-  },
-  {
-    "headings" : [
-      "Discussion"
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/init(points:)"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Creates a plane from a set of coplanar points describing a polygon.  Discussion The polygon must be convex, and either a trianle or quad (3 or 4 points). The direction of the plane normal is based on the assumption that the points are wind in an anti-clockwise direction.",
-    "summary" : "Creates a plane from a set of coplanar points describing a polygon.",
-    "title" : "init(points:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/ColorRepresentation\/init(_:_:_:_:)"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Creates a new color representation using the red, green, blue and alpha values you provide.  The red value, from 0 to 1.0. The green value, from 0 to 1.0. The blue value, from 0 to 1.0. The alpha value, from 0 to 1.0.",
-    "summary" : "Creates a new color representation using the red, green, blue and alpha values you provide.",
-    "title" : "init(_:_:_:_:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "article",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/ColorRepresentation\/Equatable-Implementations"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "",
-    "summary" : "",
-    "title" : "Equatable Implementations"
-  },
-  {
-    "headings" : [
-      "Discussion"
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Triangle\/init(_:material:)-52jcw"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Creates a triangle from a tuple of three vector positions.  The points making up the face of a polygon. The material to use for rendering the polygon. Discussion Vertex normals will be set to match face normal based on the positions being listed in a counter-clockwise direction.",
-    "summary" : "Creates a triangle from a tuple of three vector positions.",
-    "title" : "init(_:material:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "article",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/Comparable-Implementations"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "",
-    "summary" : "",
-    "title" : "Comparable Implementations"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/LineSegment\/!=(_:_:)"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Inherited from Equatable.!=(_:_:). ",
-    "summary" : "Inherited from Equatable.!=(_:_:).",
-    "title" : "!=(_:_:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vertex\/!=(_:_:)"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Inherited from Equatable.!=(_:_:). ",
-    "summary" : "Inherited from Equatable.!=(_:_:).",
-    "title" : "!=(_:_:)"
-  },
-  {
-    "headings" : [
-      "Return Value"
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/lerp(_:_:)"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Linearly interpolate between this vector and another you provide.  Return Value A vector interpolated to the position you provide. The vector to interpolate towards. A value, typically between 0 and 1, to indicate the position  to interpolate between the two vectors.",
-    "summary" : "Linearly interpolate between this vector and another you provide.",
-    "title" : "lerp(_:_:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Bounds\/init(_:)"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : " ",
-    "summary" : "",
-    "title" : "init(_:)"
-  },
-  {
-    "headings" : [
-      "Discussion"
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/ColorRepresentation\/gray"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "The color gray.  Discussion The values for gray are  (0.5, 0.5, 0.5) with an alpha value of 1.0.",
-    "summary" : "The color gray.",
-    "title" : "gray"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Bounds\/min"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : " ",
-    "summary" : "",
-    "title" : "min"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/LineSegment\/end"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : " ",
-    "summary" : "",
-    "title" : "end"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vertex\/with(normal:)"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Creates a new vertex with normal vector you provide.  The normal to apply to the vertex.",
-    "summary" : "Creates a new vertex with normal vector you provide.",
-    "title" : "with(normal:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/_(_:_:)-1fdyy"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Inherited from Comparable.>(_:_:). ",
-    "summary" : "Inherited from Comparable.>(_:_:).",
-    "title" : ">(_:_:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/TextureCoordinates\/!=(_:_:)"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Inherited from Equatable.!=(_:_:). ",
-    "summary" : "Inherited from Equatable.!=(_:_:).",
-    "title" : "!=(_:_:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "article",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/Equatable-Implementations"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "",
-    "summary" : "",
-    "title" : "Equatable Implementations"
-  },
-  {
-    "headings" : [
-      "Return Value"
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/dot(_:)"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Computes the dot-product of this vector and another you provide.  Return Value A double that indicates the value to which one vector applies to another. The vector against which to compute a dot product.",
-    "summary" : "Computes the dot-product of this vector and another you provide.",
-    "title" : "dot(_:)"
-  },
-  {
-    "headings" : [
-      "Discussion"
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Bounds\/isEmpty"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Whether the volume of the bounding box is zero.  Discussion A bounding volume that was created with a negative volume reports true.",
-    "summary" : "Whether the volume of the bounding box is zero.",
-    "title" : "isEmpty"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Bounds\/max"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : " ",
-    "summary" : "",
-    "title" : "max"
-  },
-  {
-    "headings" : [
-      "Discussion"
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/lengthSquared"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "The square of the length.  Discussion Use lengthSquared over length if you’re able for repeated calculations, because this is a faster computation.",
-    "summary" : "The square of the length.",
-    "title" : "lengthSquared"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vertex\/tex"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "The texture coordinates that this vertex maps to. ",
-    "summary" : "The texture coordinates that this vertex maps to.",
-    "title" : "tex"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/TextureCoordinates\/_(_:_:)-5kxm3"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Inherited from Comparable.>(_:_:). ",
-    "summary" : "Inherited from Comparable.>(_:_:).",
-    "title" : ">(_:_:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Triangle\/!=(_:_:)"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Inherited from Equatable.!=(_:_:). ",
-    "summary" : "Inherited from Equatable.!=(_:_:).",
-    "title" : "!=(_:_:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/z"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "The z coordinate. ",
-    "summary" : "The z coordinate.",
-    "title" : "z"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/...(_:)-2fts3"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Inherited from Comparable....(_:). ",
-    "summary" : "Inherited from Comparable....(_:).",
-    "title" : "...(_:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/TextureCoordinates"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "A struct that represents texture coordinates. ",
-    "summary" : "A struct that represents texture coordinates.",
-    "title" : "TextureCoordinates"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vertex\/x"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "The x coordinate position of the vertex. ",
-    "summary" : "The x coordinate position of the vertex.",
-    "title" : "x"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/TextureCoordinates\/+(_:_:)"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Returns a texture coordinate that is the sum of the coordinates you provide.  The first coordinate. The second coordinate.",
-    "summary" : "Returns a texture coordinate that is the sum of the coordinates you provide.",
-    "title" : "+(_:_:)"
   },
   {
     "headings" : [
@@ -1047,141 +39,13 @@
     "location" : {
       "reference" : {
         "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/TextureCoordinates\/_=(_:_:)-38jci"
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/...(_:)-2fts3"
       },
       "type" : "topLevelPage"
     },
-    "rawIndexableTextContent" : "Inherited from Comparable.<=(_:_:). ",
-    "summary" : "Inherited from Comparable.<=(_:_:).",
-    "title" : "<=(_:_:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/containsPoint(_:)"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Returns a Boolean value that indicates whether a point is on the plane. ",
-    "summary" : "Returns a Boolean value that indicates whether a point is on the plane.",
-    "title" : "containsPoint(_:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/LineSegment\/...(_:_:)"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Inherited from Comparable....(_:_:). ",
-    "summary" : "Inherited from Comparable....(_:_:).",
-    "title" : "...(_:_:)"
-  },
-  {
-    "headings" : [
-      "Discussion"
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/ColorRepresentation\/yellow"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "The color yellow.  Discussion The values for yellow are  (1.0, 1.0, 0.0) with an alpha value of 1.0.",
-    "summary" : "The color yellow.",
-    "title" : "yellow"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/init(_:_:_:)"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Creates a new vector  The x coordinate. The y coordinate. The z coordinate.",
-    "summary" : "Creates a new vector",
-    "title" : "init(_:_:_:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vertex\/init(x:y:z:normal:tex:)"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Creates a new vertex with the individual parameters you provide.  The x coordinate for the vertex. The y coordinate for the vertex. The z coordinate for the vertex. The direction the vertex is facing. The texture coordinates that this vertex maps to.",
-    "summary" : "Creates a new vertex with the individual parameters you provide.",
-    "title" : "init(x:y:z:normal:tex:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/x"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "The x coordinate. ",
-    "summary" : "The x coordinate.",
-    "title" : "x"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/LineSegment\/start"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : " ",
-    "summary" : "",
-    "title" : "start"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Mesh\/MaterialProvider"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : " ",
-    "summary" : "",
-    "title" : "Mesh.MaterialProvider"
+    "rawIndexableTextContent" : "Inherited from Comparable....(_:). ",
+    "summary" : "Inherited from Comparable....(_:).",
+    "title" : "...(_:)"
   },
   {
     "headings" : [
@@ -1191,13 +55,45 @@
     "location" : {
       "reference" : {
         "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/TextureCoordinates\/Equatable-Implementations"
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/Comparable-Implementations"
       },
       "type" : "topLevelPage"
     },
     "rawIndexableTextContent" : "",
     "summary" : "",
-    "title" : "Equatable Implementations"
+    "title" : "Comparable Implementations"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/LineSegment\/...(_:)-55rk4"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Inherited from Comparable....(_:). ",
+    "summary" : "Inherited from Comparable....(_:).",
+    "title" : "...(_:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/ColorRepresentation"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "A struct that represents a color using red, green, blue, and alpha values. ",
+    "summary" : "A struct that represents a color using red, green, blue, and alpha values.",
+    "title" : "ColorRepresentation"
   },
   {
     "headings" : [
@@ -1207,13 +103,13 @@
     "location" : {
       "reference" : {
         "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Triangle\/init(_:material:)-6xdqt"
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/init(points:)"
       },
       "type" : "topLevelPage"
     },
-    "rawIndexableTextContent" : "Creates a triangle from a set of vertex positions.  The points making up the face of a polygon. The material to use for rendering the polygon. Discussion Vertex normals will be set to match face normal based on the positions being listed in a counter-clockwise direction..",
-    "summary" : "Creates a triangle from a set of vertex positions.",
-    "title" : "init(_:material:)"
+    "rawIndexableTextContent" : "Creates a plane from a set of coplanar points describing a polygon.  Discussion The polygon must be convex, and either a trianle or quad (3 or 4 points). The direction of the plane normal is based on the assumption that the points are wind in an anti-clockwise direction.",
+    "summary" : "Creates a plane from a set of coplanar points describing a polygon.",
+    "title" : "init(points:)"
   },
   {
     "headings" : [
@@ -1223,285 +119,13 @@
     "location" : {
       "reference" : {
         "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/.._(_:)"
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Mesh\/Material"
       },
       "type" : "topLevelPage"
     },
-    "rawIndexableTextContent" : "Inherited from Comparable...<(_:). ",
-    "summary" : "Inherited from Comparable...<(_:).",
-    "title" : "..<(_:)"
-  },
-  {
-    "headings" : [
-      "Discussion"
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Mesh\/unifiedDescriptor"
-      },
-      "type" : "topLevelPage"
-    },
-    "platforms" : [
-      {
-        "beta" : false,
-        "deprecated" : false,
-        "introducedAt" : "15.0",
-        "name" : "iOS",
-        "unavailable" : false
-      },
-      {
-        "beta" : false,
-        "deprecated" : false,
-        "introducedAt" : "12.0",
-        "name" : "macOS",
-        "unavailable" : false
-      }
-    ],
-    "rawIndexableTextContent" : "A RealityKit mesh descriptor that describes the mesh as a single MeshDescriptor instance.  Discussion For example, create a mesh:  Provide the descriptor to MeshResource.generate to create a mesh resource from the mesh. ",
-    "summary" : "A RealityKit mesh descriptor that describes the mesh as a single MeshDescriptor instance.",
-    "title" : "unifiedDescriptor"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/min(_:)"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Returns a new vector that represents the mininum value for each of the components of the two vectors.  The vector to compare.",
-    "summary" : "Returns a new vector that represents the mininum value for each of the components of the two vectors.",
-    "title" : "min(_:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/init(normal:pointOnPlane:)"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Creates a plane from a point and surface normal ",
-    "summary" : "Creates a plane from a point and surface normal",
-    "title" : "init(normal:pointOnPlane:)"
-  },
-  {
-    "headings" : [
-      "Overview"
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Bounds"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "A struct the represents the bounding volume in 3D space.  Overview The bounds are defined as two Vector instances, that define the opposite corners of an axially aligned box.",
-    "summary" : "A struct the represents the bounding volume in 3D space.",
-    "title" : "Bounds"
-  },
-  {
-    "headings" : [
-      "Overview"
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Mesh"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "A struct that represents a 3D object as a collection of polygons.  Overview With MeshGeenerator, a mesh can be used to create a SceneKit geometry.  You can create a geometry from the bounding box of the mesh:  You can also create a geometry of the wireframe edges of the mesh: ",
-    "summary" : "A struct that represents a 3D object as a collection of polygons.",
-    "title" : "Mesh"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/LineSegment\/_=(_:_:)-sn39"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Inherited from Comparable.>=(_:_:). ",
-    "summary" : "Inherited from Comparable.>=(_:_:).",
-    "title" : ">=(_:_:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Triangle\/bounds"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "The bounds of the triangle. ",
-    "summary" : "The bounds of the triangle.",
-    "title" : "bounds"
-  },
-  {
-    "headings" : [
-      "Discussion"
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/ColorRepresentation\/green"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "The color green.  Discussion The values for green are  (0.0, 1.0, 0.0) with an alpha value of 1.0.",
-    "summary" : "The color green.",
-    "title" : "green"
-  },
-  {
-    "headings" : [
-      "Discussion"
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Bounds\/init(min:max:)"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Create a bounds with min and max points.  Discussion If max < min, the bounds is considered to be empty.",
-    "summary" : "Create a bounds with min and max points.",
-    "title" : "init(min:max:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Mesh\/replacing(_:with:)"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Replaces a material with another that you provide. ",
-    "summary" : "Replaces a material with another that you provide.",
-    "title" : "replacing(_:with:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vertex\/normal"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "The vertex’s normal. ",
-    "summary" : "The vertex’s normal.",
-    "title" : "normal"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Triangle\/Material"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : " ",
-    "summary" : "",
-    "title" : "Triangle.Material"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/TextureCoordinates\/...(_:_:)"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Inherited from Comparable....(_:_:). ",
-    "summary" : "Inherited from Comparable....(_:_:).",
-    "title" : "...(_:_:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/_=(_:_:)-5vtsp"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Inherited from Comparable.<=(_:_:). ",
-    "summary" : "Inherited from Comparable.<=(_:_:).",
-    "title" : "<=(_:_:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/LineSegment\/init(_:_:)"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Creates a line segment from a start and end point.  The start of the line segment. The end of the line segment.",
-    "summary" : "Creates a line segment from a start and end point.",
-    "title" : "init(_:_:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/.._(_:)"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Inherited from Comparable...<(_:). ",
-    "summary" : "Inherited from Comparable...<(_:).",
-    "title" : "..<(_:)"
+    "rawIndexableTextContent" : "The type used as a material for a given polygon. ",
+    "summary" : "The type used as a material for a given polygon.",
+    "title" : "Mesh.Material"
   },
   {
     "headings" : [
@@ -1543,76 +167,12 @@
     "location" : {
       "reference" : {
         "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/init(_:)-3qgzf"
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/z"
       },
       "type" : "topLevelPage"
     },
-    "rawIndexableTextContent" : "Creates a new vector  The coordinate values..",
-    "summary" : "Creates a new vector",
-    "title" : "init(_:)"
-  },
-  {
-    "headings" : [
-      "Discussion"
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/ColorRepresentation\/red"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "The color red.  Discussion The values for red are  (1.0, 0.0, 0.0) with an alpha value of 1.0.",
-    "summary" : "The color red.",
-    "title" : "red"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/ColorRepresentation"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "A struct that represents a color using red, green, blue, and alpha values. ",
-    "summary" : "A struct that represents a color using red, green, blue, and alpha values.",
-    "title" : "ColorRepresentation"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/_=(_:_:)-4c8nh"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Inherited from Comparable.>=(_:_:). ",
-    "summary" : "Inherited from Comparable.>=(_:_:).",
-    "title" : ">=(_:_:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vertex\/z"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "The z coordinate position of the vertex. ",
-    "summary" : "The z coordinate position of the vertex.",
+    "rawIndexableTextContent" : "The z coordinate. ",
+    "summary" : "The z coordinate.",
     "title" : "z"
   },
   {
@@ -1623,13 +183,13 @@
     "location" : {
       "reference" : {
         "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/isApproximatelyEqual(to:withPrecision:)"
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/.._(_:)"
       },
       "type" : "topLevelPage"
     },
-    "rawIndexableTextContent" : "Returns a Boolean value that indicates whether the two vectors are equivalent within a known level of precision.  The vector to compare. The precision to use in determining if the values are close enough to be considered equal, defaulting to epsilon.",
-    "summary" : "Returns a Boolean value that indicates whether the two vectors are equivalent within a known level of precision.",
-    "title" : "isApproximatelyEqual(to:withPrecision:)"
+    "rawIndexableTextContent" : "Inherited from Comparable...<(_:). ",
+    "summary" : "Inherited from Comparable...<(_:).",
+    "title" : "..<(_:)"
   },
   {
     "headings" : [
@@ -1639,878 +199,13 @@
     "location" : {
       "reference" : {
         "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/simd_double3"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "The coordinates represented as a 3 double vector with with simd from the Accelerate framework. ",
-    "summary" : "The coordinates represented as a 3 double vector with with simd from the Accelerate framework.",
-    "title" : "simd_double3"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/TextureCoordinates\/init(u:v:)-54zdh"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Creates a new texture coordinate.  The u coordinate. The v coordinate.",
-    "summary" : "Creates a new texture coordinate.",
-    "title" : "init(u:v:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Bounds\/!=(_:_:)"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Inherited from Equatable.!=(_:_:). ",
-    "summary" : "Inherited from Equatable.!=(_:_:).",
-    "title" : "!=(_:_:)"
-  },
-  {
-    "headings" : [
-      "Discussion"
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Bounds\/center"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "A vector that represents the center of the bounding box.  Discussion A bounding volume that was created with negative volume is zero.",
-    "summary" : "A vector that represents the center of the bounding box.",
-    "title" : "center"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/inverted()"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Returns the flip-side of the plane. ",
-    "summary" : "Returns the flip-side of the plane.",
-    "title" : "inverted()"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/min()"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Returns the minimum value for any of the coordinates within the vector. ",
-    "summary" : "Returns the minimum value for any of the coordinates within the vector.",
-    "title" : "min()"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/...(_:)-6s2q7"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Inherited from Comparable....(_:). ",
-    "summary" : "Inherited from Comparable....(_:).",
-    "title" : "...(_:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/_=(_:_:)-2jef7"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Inherited from Comparable.>=(_:_:). ",
-    "summary" : "Inherited from Comparable.>=(_:_:).",
-    "title" : ">=(_:_:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/LineSegment\/...(_:)-55rk4"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Inherited from Comparable....(_:). ",
-    "summary" : "Inherited from Comparable....(_:).",
-    "title" : "...(_:)"
-  },
-  {
-    "headings" : [
-      "Return Value"
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/TextureCoordinates\/lerp(_:_:)"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Linearly interpolate between this texture coordinate and another you provide.  Return Value A texture coordinate interpolated to the position you provide. The coordinate to interpolate towards. A value, typically between 0 and 1, to indicate the position  to interpolate between the two coordinates.",
-    "summary" : "Linearly interpolate between this texture coordinate and another you provide.",
-    "title" : "lerp(_:_:)"
-  },
-  {
-    "headings" : [
-      "Discussion"
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Triangle\/init(_:_:_:material:)"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Creates a triangle from a tuple of three vector positions.  The points making up the face of a polygon. The material to use for rendering the polygon. Discussion Vertex normals will be set to match face normal based on the positions being listed in a counter-clockwise direction.",
-    "summary" : "Creates a triangle from a tuple of three vector positions.",
-    "title" : "init(_:_:_:material:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/init(_:)-8m318"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Creates a new vector  The coordinate values..",
-    "summary" : "Creates a new vector",
-    "title" : "init(_:)"
-  },
-  {
-    "headings" : [
-      "Discussion"
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/ColorRepresentation\/black"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "The color black.  Discussion The values for black are (0.0, 0.0, 0.0) with an alpha value of 1.0.",
-    "summary" : "The color black.",
-    "title" : "black"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/xz"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "A plane at the origin, aligned with the X and Z coordinates. ",
-    "summary" : "A plane at the origin, aligned with the X and Z coordinates.",
-    "title" : "xz"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/TextureCoordinates\/zero"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "A texture coordinate at the position (0,0) ",
-    "summary" : "A texture coordinate at the position (0,0)",
-    "title" : "zero"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/yz"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "A plane at the origin, aligned with the Y and Z coordinates. ",
-    "summary" : "A plane at the origin, aligned with the Y and Z coordinates.",
-    "title" : "yz"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/TextureCoordinates\/-(_:_:)"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Returns a texture coordinate that is the difference of the coordinates you provide.  The first coordinate. The second coordinate.",
-    "summary" : "Returns a texture coordinate that is the difference of the coordinates you provide.",
-    "title" : "-(_:_:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "article",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/Equatable-Implementations"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "",
-    "summary" : "",
-    "title" : "Equatable Implementations"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/LineSegment\/containsPoint(_:)"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Returns a Boolean value that indicates whether the point is on the line segment.  The point to compare.",
-    "summary" : "Returns a Boolean value that indicates whether the point is on the line segment.",
-    "title" : "containsPoint(_:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/LineSegment\/_(_:_:)-6a4ag"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Inherited from Comparable.>(_:_:). ",
-    "summary" : "Inherited from Comparable.>(_:_:).",
-    "title" : ">(_:_:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/LineSegment\/intersects(_:)"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Returns a Boolean value that indicates whether line segement intersects.  The line segment to compare.",
-    "summary" : "Returns a Boolean value that indicates whether line segement intersects.",
-    "title" : "intersects(_:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/...(_:_:)"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Inherited from Comparable....(_:_:). ",
-    "summary" : "Inherited from Comparable....(_:_:).",
-    "title" : "...(_:_:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/isNormalized"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "A Boolean value indicating that the length of the vector is 1. ",
-    "summary" : "A Boolean value indicating that the length of the vector is 1.",
-    "title" : "isNormalized"
-  },
-  {
-    "headings" : [
-      "Discussion"
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/epsilon"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Tolerance for determining minimum or nearly-equivalent lengths for vectors.  Discussion The built-in value for this library is 1e-8.",
-    "summary" : "Tolerance for determining minimum or nearly-equivalent lengths for vectors.",
-    "title" : "epsilon"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Mesh\/uniqueEdges"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "The unique triangle edges in the mesh. ",
-    "summary" : "The unique triangle edges in the mesh.",
-    "title" : "uniqueEdges"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/_(_:_:)-55wtv"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Provides a stable sort order for Planes ",
-    "summary" : "Provides a stable sort order for Planes",
-    "title" : "<(_:_:)"
-  },
-  {
-    "headings" : [
-      "Discussion"
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/ColorRepresentation\/cyan"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "The color cyan.  Discussion The values for cyan are  (0.0, 1.0, 1.0) with an alpha value of 1.0.",
-    "summary" : "The color cyan.",
-    "title" : "cyan"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Mesh\/bounds"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "The bounds of the mesh. ",
-    "summary" : "The bounds of the mesh.",
-    "title" : "bounds"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/_(_:_:)-1eqab"
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/TextureCoordinates\/_(_:_:)-4e23a"
       },
       "type" : "topLevelPage"
     },
     "rawIndexableTextContent" : "Returns a Boolean value that compares two vectors to provide a stable sort order. ",
     "summary" : "Returns a Boolean value that compares two vectors to provide a stable sort order.",
     "title" : "<(_:_:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "article",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/LineSegment\/Equatable-Implementations"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "",
-    "summary" : "",
-    "title" : "Equatable Implementations"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/TextureCoordinates\/one"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "A texture coordinate at the position (1,1) ",
-    "summary" : "A texture coordinate at the position (1,1)",
-    "title" : "one"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/xy"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "A plane at the origin, aligned with the X and Y coordinates. ",
-    "summary" : "A plane at the origin, aligned with the X and Y coordinates.",
-    "title" : "xy"
-  },
-  {
-    "headings" : [
-      "Discussion"
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vertex\/lerp(_:_:)"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Linearly interpolate between two vertices.  Discussion Interpolation is applied to the position, texture coordinate and normal.",
-    "summary" : "Linearly interpolate between two vertices.",
-    "title" : "lerp(_:_:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Mesh\/Material"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "The type used as a material for a given polygon. ",
-    "summary" : "The type used as a material for a given polygon.",
-    "title" : "Mesh.Material"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/...(_:)-239u9"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Inherited from Comparable....(_:). ",
-    "summary" : "Inherited from Comparable....(_:).",
-    "title" : "...(_:)"
-  },
-  {
-    "headings" : [
-      "Return Value",
-      "Discussion"
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/LineSegment\/shortestLineBetween(_:_:_:_:)"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Calculates the shortest distance between two lines within 3D space.  Return Value A tuple of vectors that represents the endpoints of the shortest line, or nil if the lines are coincident or parallel. The starting location of the first line segment. The ending location of the first line segment. The starting location of the second line segment. The ending location of the second line segment. Discussion If the lines are intersecting, the points returned will be identical. For more information about the technique used, see The shortest line between two lines in 3D by Paul Bourke",
-    "summary" : "Calculates the shortest distance between two lines within 3D space.",
-    "title" : "shortestLineBetween(_:_:_:_:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/_(_:_:)-7iwju"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Inherited from Comparable.>(_:_:). ",
-    "summary" : "Inherited from Comparable.>(_:_:).",
-    "title" : ">(_:_:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Bounds\/containsPoint(_:)"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Returns a Boolean value that indicates whether the point you provide is within the bounding box volume.  The point to compare to the bounds.",
-    "summary" : "Returns a Boolean value that indicates whether the point you provide is within the bounding box volume.",
-    "title" : "containsPoint(_:)"
-  },
-  {
-    "headings" : [
-      "Discussion"
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Bounds\/size"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "A vector that represents the size of the bounding volume.  Discussion A bounding volume that was created with negative volume is zero.",
-    "summary" : "A vector that represents the size of the bounding volume.",
-    "title" : "size"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/TextureCoordinates\/...(_:)-6f26z"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Inherited from Comparable....(_:). ",
-    "summary" : "Inherited from Comparable....(_:).",
-    "title" : "...(_:)"
-  },
-  {
-    "headings" : [
-      "Discussion"
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/distance(from:)"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Returns the distance of the point from a plane.  Discussion A positive value is returned if the point lies in front of the plane. A negative value is returned if the point lies behind the plane.",
-    "summary" : "Returns the distance of the point from a plane.",
-    "title" : "distance(from:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vertex\/y"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "The y coordinate position of the vertex. ",
-    "summary" : "The y coordinate position of the vertex.",
-    "title" : "y"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/LineSegment\/direction"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "The direction of the line segment as a normalized vector. ",
-    "summary" : "The direction of the line segment as a normalized vector.",
-    "title" : "direction"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/LineSegment\/.._(_:_:)"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Inherited from Comparable...<(_:_:). ",
-    "summary" : "Inherited from Comparable...<(_:_:).",
-    "title" : "..<(_:_:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/TextureCoordinates\/.._(_:_:)"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Inherited from Comparable...<(_:_:). ",
-    "summary" : "Inherited from Comparable...<(_:_:).",
-    "title" : "..<(_:_:)"
-  },
-  {
-    "headings" : [
-      "Discussion"
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/simd_float3"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "The coordinates represented as a 3 float vector with simd from the Accelerate framework.  Discussion This value may loose precision from the Vector’s internal values, which are stored and processed as Double.",
-    "summary" : "The coordinates represented as a 3 float vector with simd from the Accelerate framework.",
-    "title" : "simd_float3"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/y"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "The y coordinate. ",
-    "summary" : "The y coordinate.",
-    "title" : "y"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Mesh\/inverted()"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Flips face direction of polygons within the mesh. ",
-    "summary" : "Flips face direction of polygons within the mesh.",
-    "title" : "inverted()"
-  },
-  {
-    "headings" : [
-      "Overview"
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "API to generate 3D surface meshes for use on Apple platforms. Overview Vertices, Triangles, Meshes, and supporting geometry concepts and types to support procedurally generating 3D surface meshes to use within SceneKit or RealityKit.",
-    "summary" : "API to generate 3D surface meshes for use on Apple platforms.",
-    "title" : "MeshGenerator"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/...(_:_:)"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Inherited from Comparable....(_:_:). ",
-    "summary" : "Inherited from Comparable....(_:_:).",
-    "title" : "...(_:_:)"
-  },
-  {
-    "headings" : [
-      "Overview"
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "A struct that represents an infinite 2D plane in 3D space.  Overview A plane is defined by a normal, a surface normal Vector, and w,  the distance from the the center of the plane from the world origin coordinates.",
-    "summary" : "A struct that represents an infinite 2D plane in 3D space.",
-    "title" : "Plane"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/TextureCoordinates\/v"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "The v coordinate. ",
-    "summary" : "The v coordinate.",
-    "title" : "v"
-  },
-  {
-    "headings" : [
-      "Discussion"
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/ColorRepresentation\/clear"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "A clear color.  Discussion The values for clear are (0,0, 0,0, 00) with an alpha value of 0.0.",
-    "summary" : "A clear color.",
-    "title" : "clear"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/TextureCoordinates\/u"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "The u coordinate. ",
-    "summary" : "The u coordinate.",
-    "title" : "u"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/ColorRepresentation\/init(_:_:)"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Creates a new gray color representation with the alpha value you provide  The grey tone value, from 0 to 1.0. The alpha value, from 0 to 1.0.",
-    "summary" : "Creates a new gray color representation with the alpha value you provide",
-    "title" : "init(_:_:)"
   },
   {
     "headings" : [
@@ -2536,22 +231,6 @@
     "location" : {
       "reference" : {
         "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/length"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "The length of the vector. ",
-    "summary" : "The length of the vector.",
-    "title" : "length"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
         "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/TextureCoordinates\/init(u:v:)-5gv31"
       },
       "type" : "topLevelPage"
@@ -2562,19 +241,83 @@
   },
   {
     "headings" : [
-
+      "Discussion"
     ],
     "kind" : "symbol",
     "location" : {
       "reference" : {
         "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/ColorRepresentation\/init(_:_:_:)"
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Triangle\/init(_:material:)-52jcw"
       },
       "type" : "topLevelPage"
     },
-    "rawIndexableTextContent" : "Creates a new color representation using the RGB values you provide.  The red value, from 0 to 1.0. The green value, from 0 to 1.0 The blue value, from 0 to 1.0",
-    "summary" : "Creates a new color representation using the RGB values you provide.",
-    "title" : "init(_:_:_:)"
+    "rawIndexableTextContent" : "Creates a triangle from a tuple of three vector positions.  The points making up the face of a polygon. The material to use for rendering the polygon. Discussion Vertex normals will be set to match face normal based on the positions being listed in a counter-clockwise direction.",
+    "summary" : "Creates a triangle from a tuple of three vector positions.",
+    "title" : "init(_:material:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "article",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/Equatable-Implementations"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "",
+    "summary" : "",
+    "title" : "Equatable Implementations"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "article",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Mesh\/Equatable-Implementations"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "",
+    "summary" : "",
+    "title" : "Equatable Implementations"
+  },
+  {
+    "headings" : [
+      "Discussion"
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Triangle\/init(_:material:)-6xdqt"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Creates a triangle from a set of vertex positions.  The points making up the face of a polygon. The material to use for rendering the polygon. Discussion Vertex normals will be set to match face normal based on the positions being listed in a counter-clockwise direction..",
+    "summary" : "Creates a triangle from a set of vertex positions.",
+    "title" : "init(_:material:)"
+  },
+  {
+    "headings" : [
+      "Overview"
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "A struct that represents an infinite 2D plane in 3D space.  Overview A plane is defined by a normal, a surface normal Vector, and w,  the distance from the the center of the plane from the world origin coordinates.",
+    "summary" : "A struct that represents an infinite 2D plane in 3D space.",
+    "title" : "Plane"
   },
   {
     "headings" : [
@@ -2584,29 +327,13 @@
     "location" : {
       "reference" : {
         "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/.._(_:_:)"
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/TextureCoordinates"
       },
       "type" : "topLevelPage"
     },
-    "rawIndexableTextContent" : "Inherited from Comparable...<(_:_:). ",
-    "summary" : "Inherited from Comparable...<(_:_:).",
-    "title" : "..<(_:_:)"
-  },
-  {
-    "headings" : [
-      "Return Value"
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/LineSegment\/vectorFromPointToLine(point:lineOrigin:lineDirection:)"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Returns a vector that represents the point on the infinite line you define that results in the shortest length.  Return Value A vector that represents the point nearest to the point you provide. The point to calculate from. A point on an infinite line A normalized vector describing the direction of the line.",
-    "summary" : "Returns a vector that represents the point on the infinite line you define that results in the shortest length.",
-    "title" : "vectorFromPointToLine(point:lineOrigin:lineDirection:)"
+    "rawIndexableTextContent" : "A struct that represents texture coordinates. ",
+    "summary" : "A struct that represents texture coordinates.",
+    "title" : "TextureCoordinates"
   },
   {
     "headings" : [
@@ -2616,29 +343,29 @@
     "location" : {
       "reference" : {
         "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/ColorRepresentation\/!=(_:_:)"
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/init(normal:pointOnPlane:)"
       },
       "type" : "topLevelPage"
     },
-    "rawIndexableTextContent" : "Inherited from Equatable.!=(_:_:). ",
-    "summary" : "Inherited from Equatable.!=(_:_:).",
-    "title" : "!=(_:_:)"
+    "rawIndexableTextContent" : "Creates a plane from a point and surface normal ",
+    "summary" : "Creates a plane from a point and surface normal",
+    "title" : "init(normal:pointOnPlane:)"
   },
   {
     "headings" : [
-
+      "Overview"
     ],
     "kind" : "symbol",
     "location" : {
       "reference" : {
         "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Mesh\/polygons"
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vertex"
       },
       "type" : "topLevelPage"
     },
-    "rawIndexableTextContent" : "The collection of triangles that make up the mesh. ",
-    "summary" : "The collection of triangles that make up the mesh.",
-    "title" : "polygons"
+    "rawIndexableTextContent" : "A struct that represents a vertex.  Overview A vertex is comprised of a position in space, a vector that represents the normal for the vertex, the direction its facing, and a 2D coordinate to map to a texture associated with the vertex.",
+    "summary" : "A struct that represents a vertex.",
+    "title" : "Vertex"
   },
   {
     "headings" : [
@@ -2660,17 +387,17 @@
     "headings" : [
 
     ],
-    "kind" : "symbol",
+    "kind" : "article",
     "location" : {
       "reference" : {
         "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/distance(from:)"
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/Equatable-Implementations"
       },
       "type" : "topLevelPage"
     },
-    "rawIndexableTextContent" : "Returns the distance to another point in space.  The point in space to compare.",
-    "summary" : "Returns the distance to another point in space.",
-    "title" : "distance(from:)"
+    "rawIndexableTextContent" : "",
+    "summary" : "",
+    "title" : "Equatable Implementations"
   },
   {
     "headings" : [
@@ -2680,13 +407,13 @@
     "location" : {
       "reference" : {
         "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Triangle\/with(material:)"
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/TextureCoordinates\/init(u:v:)-54zdh"
       },
       "type" : "topLevelPage"
     },
-    "rawIndexableTextContent" : "Creates a new triangle with material you provide.  The normal to apply to the vertex.",
-    "summary" : "Creates a new triangle with material you provide.",
-    "title" : "with(material:)"
+    "rawIndexableTextContent" : "Creates a new texture coordinate.  The u coordinate. The v coordinate.",
+    "summary" : "Creates a new texture coordinate.",
+    "title" : "init(u:v:)"
   },
   {
     "headings" : [
@@ -2696,13 +423,13 @@
     "location" : {
       "reference" : {
         "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/TextureCoordinates\/...(_:)-26trx"
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/containsPoint(_:)"
       },
       "type" : "topLevelPage"
     },
-    "rawIndexableTextContent" : "Inherited from Comparable....(_:). ",
-    "summary" : "Inherited from Comparable....(_:).",
-    "title" : "...(_:)"
+    "rawIndexableTextContent" : "Returns a Boolean value that indicates whether a point is on the plane. ",
+    "summary" : "Returns a Boolean value that indicates whether a point is on the plane.",
+    "title" : "containsPoint(_:)"
   },
   {
     "headings" : [
@@ -2712,109 +439,29 @@
     "location" : {
       "reference" : {
         "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/normalized()"
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/_(_:_:)-55wtv"
       },
       "type" : "topLevelPage"
     },
-    "rawIndexableTextContent" : "Returns a normalized vector with a length of one. ",
-    "summary" : "Returns a normalized vector with a length of one.",
-    "title" : "normalized()"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/TextureCoordinates\/_=(_:_:)-5s0o7"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Inherited from Comparable.>=(_:_:). ",
-    "summary" : "Inherited from Comparable.>=(_:_:).",
-    "title" : ">=(_:_:)"
-  },
-  {
-    "headings" : [
-      "Overview"
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/LineSegment"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "A struct that represents a finite-length line segment in 3D space.  Overview A line sgement is defined by a start point and an end point.",
-    "summary" : "A struct that represents a finite-length line segment in 3D space.",
-    "title" : "LineSegment"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/LineSegment\/_(_:_:)-3x8q"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Returns a Boolean value that compares two line segments to provide a stable sort order.  The first line segment to compare. The second line segment to compare.",
-    "summary" : "Returns a Boolean value that compares two line segments to provide a stable sort order.",
+    "rawIndexableTextContent" : "Provides a stable sort order for Planes ",
+    "summary" : "Provides a stable sort order for Planes",
     "title" : "<(_:_:)"
   },
   {
     "headings" : [
-      "Discussion"
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Mesh\/isWatertight"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Indicates that the mesh is watertight.  Discussion For example, the value is true if every edge is attached to at least 2 triangles. A mesh being watertight doesn’t verify that mesh is not self-intersecting or inside-out.",
-    "summary" : "Indicates that the mesh is watertight.",
-    "title" : "isWatertight"
-  },
-  {
-    "headings" : [
 
     ],
     "kind" : "symbol",
     "location" : {
       "reference" : {
         "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/+(_:_:)"
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/TextureCoordinates\/!=(_:_:)"
       },
       "type" : "topLevelPage"
     },
-    "rawIndexableTextContent" : "Returns a vector that is the sum of the vectors you provide.  The first vector. The second vector.",
-    "summary" : "Returns a vector that is the sum of the vectors you provide.",
-    "title" : "+(_:_:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/init(x:y:z:)-5zfmr"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Creates a new vector  The x coordinate. The y coordinate. The z coordinate.",
-    "summary" : "Creates a new vector",
-    "title" : "init(x:y:z:)"
+    "rawIndexableTextContent" : "Inherited from Equatable.!=(_:_:). ",
+    "summary" : "Inherited from Equatable.!=(_:_:).",
+    "title" : "!=(_:_:)"
   },
   {
     "headings" : [
@@ -2840,13 +487,13 @@
     "location" : {
       "reference" : {
         "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/.._(_:_:)"
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/LineSegment\/containsPoint(_:)"
       },
       "type" : "topLevelPage"
     },
-    "rawIndexableTextContent" : "Inherited from Comparable...<(_:_:). ",
-    "summary" : "Inherited from Comparable...<(_:_:).",
-    "title" : "..<(_:_:)"
+    "rawIndexableTextContent" : "Returns a Boolean value that indicates whether the point is on the line segment.  The point to compare.",
+    "summary" : "Returns a Boolean value that indicates whether the point is on the line segment.",
+    "title" : "containsPoint(_:)"
   },
   {
     "headings" : [
@@ -2856,61 +503,29 @@
     "location" : {
       "reference" : {
         "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/ColorRepresentation\/blue"
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Triangle\/generateMeshDescriptor()"
       },
       "type" : "topLevelPage"
     },
-    "rawIndexableTextContent" : "The color blue.  Discussion The values for blue are  (0.0, 0.0, 1.0) with an alpha value of 1.0.",
-    "summary" : "The color blue.",
-    "title" : "blue"
-  },
-  {
-    "headings" : [
-
+    "platforms" : [
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "15.0",
+        "name" : "iOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "12.0",
+        "name" : "macOS",
+        "unavailable" : false
+      }
     ],
-    "kind" : "article",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vertex\/Equatable-Implementations"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "",
-    "summary" : "",
-    "title" : "Equatable Implementations"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/!=(_:_:)"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Inherited from Equatable.!=(_:_:). ",
-    "summary" : "Inherited from Equatable.!=(_:_:).",
-    "title" : "!=(_:_:)"
-  },
-  {
-    "headings" : [
-      "Return Value"
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/cross(_:)"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Computes the cross-product of this vector and another you provide.  Return Value Returns a vector that is orthogonal to the two vectors used to compute the cross product. The vector against which to compute a cross product.",
-    "summary" : "Computes the cross-product of this vector and another you provide.",
-    "title" : "cross(_:)"
+    "rawIndexableTextContent" : "Generates a mesh descriptor for the triangle.  Discussion The vertices of each triangle are represented individually. Using this method against a single triangle, or a collection, doesn’t consolidate the vertices by location and\/or normal.",
+    "summary" : "Generates a mesh descriptor for the triangle.",
+    "title" : "generateMeshDescriptor()"
   },
   {
     "headings" : [
@@ -2920,13 +535,13 @@
     "location" : {
       "reference" : {
         "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/!=(_:_:)"
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Mesh\/polygons"
       },
       "type" : "topLevelPage"
     },
-    "rawIndexableTextContent" : "Inherited from Equatable.!=(_:_:). ",
-    "summary" : "Inherited from Equatable.!=(_:_:).",
-    "title" : "!=(_:_:)"
+    "rawIndexableTextContent" : "The collection of triangles that make up the mesh. ",
+    "summary" : "The collection of triangles that make up the mesh.",
+    "title" : "polygons"
   },
   {
     "headings" : [
@@ -2936,13 +551,93 @@
     "location" : {
       "reference" : {
         "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Triangle\/init(_:material:)-8wp0v"
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/ColorRepresentation\/black"
       },
       "type" : "topLevelPage"
     },
-    "rawIndexableTextContent" : "Creates a triangle from a set of vertices.  Discussion A polygon can be convex or concave, but vertices must be coplanar and non-degenerate. Vertices are assumed to be in anti-clockwise order for the purpose of deriving the plane.",
-    "summary" : "Creates a triangle from a set of vertices.",
-    "title" : "init(_:material:)"
+    "rawIndexableTextContent" : "The color black.  Discussion The values for black are (0.0, 0.0, 0.0) with an alpha value of 1.0.",
+    "summary" : "The color black.",
+    "title" : "black"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/_=(_:_:)-5vtsp"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Inherited from Comparable.<=(_:_:). ",
+    "summary" : "Inherited from Comparable.<=(_:_:).",
+    "title" : "<=(_:_:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/TextureCoordinates\/_=(_:_:)-38jci"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Inherited from Comparable.<=(_:_:). ",
+    "summary" : "Inherited from Comparable.<=(_:_:).",
+    "title" : "<=(_:_:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/LineSegment\/_(_:_:)-3x8q"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Returns a Boolean value that compares two line segments to provide a stable sort order.  The first line segment to compare. The second line segment to compare.",
+    "summary" : "Returns a Boolean value that compares two line segments to provide a stable sort order.",
+    "title" : "<(_:_:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/init(_:)-3qgzf"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Creates a new vector  The coordinate values..",
+    "summary" : "Creates a new vector",
+    "title" : "init(_:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/TextureCoordinates\/_=(_:_:)-5s0o7"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Inherited from Comparable.>=(_:_:). ",
+    "summary" : "Inherited from Comparable.>=(_:_:).",
+    "title" : ">=(_:_:)"
   },
   {
     "headings" : [
@@ -2952,45 +647,13 @@
     "location" : {
       "reference" : {
         "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vertex\/inverted()"
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Mesh\/isWatertight"
       },
       "type" : "topLevelPage"
     },
-    "rawIndexableTextContent" : "Creates a new vertex with the value for the normal inverted.  Discussion Call to flip the orientation of the face of the polygon.",
-    "summary" : "Creates a new vertex with the value for the normal inverted.",
-    "title" : "inverted()"
-  },
-  {
-    "headings" : [
-      "Return Value"
-    ],
-    "kind" : "symbol",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/LineSegment\/intersection(with:)"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "Returns a point that indicates the intersection of the line segement you provide.  Return Value The point of intersection, or nil if the segments don’t intersect. The line segment to compare.",
-    "summary" : "Returns a point that indicates the intersection of the line segement you provide.",
-    "title" : "intersection(with:)"
-  },
-  {
-    "headings" : [
-
-    ],
-    "kind" : "article",
-    "location" : {
-      "reference" : {
-        "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/LineSegment\/Comparable-Implementations"
-      },
-      "type" : "topLevelPage"
-    },
-    "rawIndexableTextContent" : "",
-    "summary" : "",
-    "title" : "Comparable Implementations"
+    "rawIndexableTextContent" : "Indicates that the mesh is watertight.  Discussion For example, the value is true if every edge is attached to at least 2 triangles. A mesh being watertight doesn’t verify that mesh is not self-intersecting or inside-out.",
+    "summary" : "Indicates that the mesh is watertight.",
+    "title" : "isWatertight"
   },
   {
     "headings" : [
@@ -3016,13 +679,1629 @@
     "location" : {
       "reference" : {
         "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/LineSegment\/...(_:)-6ct9o"
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Bounds\/max"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : " ",
+    "summary" : "",
+    "title" : "max"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/LineSegment\/start"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : " ",
+    "summary" : "",
+    "title" : "start"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "article",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/LineSegment\/Comparable-Implementations"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "",
+    "summary" : "",
+    "title" : "Comparable Implementations"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Mesh\/MaterialProvider"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : " ",
+    "summary" : "",
+    "title" : "Mesh.MaterialProvider"
+  },
+  {
+    "headings" : [
+      "Discussion"
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/distance(from:)"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Returns the distance of the point from a plane.  Discussion A positive value is returned if the point lies in front of the plane. A negative value is returned if the point lies behind the plane.",
+    "summary" : "Returns the distance of the point from a plane.",
+    "title" : "distance(from:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/init(_:_:_:)"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Creates a new vector  The x coordinate. The y coordinate. The z coordinate.",
+    "summary" : "Creates a new vector",
+    "title" : "init(_:_:_:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/+(_:_:)"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Returns a vector that is the sum of the vectors you provide.  The first vector. The second vector.",
+    "summary" : "Returns a vector that is the sum of the vectors you provide.",
+    "title" : "+(_:_:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vertex\/init(position:normal:tex:)"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Creates a new vertex.  The position of the vertex. The direction the vertex is facing. The texture coordinates that this vertex maps to.",
+    "summary" : "Creates a new vertex.",
+    "title" : "init(position:normal:tex:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/TextureCoordinates\/_(_:_:)-5kxm3"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Inherited from Comparable.>(_:_:). ",
+    "summary" : "Inherited from Comparable.>(_:_:).",
+    "title" : ">(_:_:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/...(_:)-239u9"
       },
       "type" : "topLevelPage"
     },
     "rawIndexableTextContent" : "Inherited from Comparable....(_:). ",
     "summary" : "Inherited from Comparable....(_:).",
     "title" : "...(_:)"
+  },
+  {
+    "headings" : [
+      "Overview"
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/LineSegment"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "A struct that represents a finite-length line segment in 3D space.  Overview A line sgement is defined by a start point and an end point.",
+    "summary" : "A struct that represents a finite-length line segment in 3D space.",
+    "title" : "LineSegment"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/TextureCoordinates\/...(_:)-26trx"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Inherited from Comparable....(_:). ",
+    "summary" : "Inherited from Comparable....(_:).",
+    "title" : "...(_:)"
+  },
+  {
+    "headings" : [
+      "Overview"
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Mesh"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "A struct that represents a 3D object as a collection of polygons.  Overview With MeshGeenerator, a mesh can be used to create a SceneKit geometry.  You can create a geometry from the bounding box of the mesh:  You can also create a geometry of the wireframe edges of the mesh: ",
+    "summary" : "A struct that represents a 3D object as a collection of polygons.",
+    "title" : "Mesh"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Triangle\/Material"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : " ",
+    "summary" : "",
+    "title" : "Triangle.Material"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/ColorRepresentation\/init(_:_:_:_:)"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Creates a new color representation using the red, green, blue and alpha values you provide.  The red value, from 0 to 1.0. The green value, from 0 to 1.0. The blue value, from 0 to 1.0. The alpha value, from 0 to 1.0.",
+    "summary" : "Creates a new color representation using the red, green, blue and alpha values you provide.",
+    "title" : "init(_:_:_:_:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/TextureCoordinates\/one"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "A texture coordinate at the position (1,1) ",
+    "summary" : "A texture coordinate at the position (1,1)",
+    "title" : "one"
+  },
+  {
+    "headings" : [
+      "Discussion"
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Bounds\/size"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "A vector that represents the size of the bounding volume.  Discussion A bounding volume that was created with negative volume is zero.",
+    "summary" : "A vector that represents the size of the bounding volume.",
+    "title" : "size"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Mesh\/polygonsByMaterial"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "The triangles of the mesh, grouped by material. ",
+    "summary" : "The triangles of the mesh, grouped by material.",
+    "title" : "polygonsByMaterial"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/...(_:)-6s2q7"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Inherited from Comparable....(_:). ",
+    "summary" : "Inherited from Comparable....(_:).",
+    "title" : "...(_:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/!=(_:_:)"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Inherited from Equatable.!=(_:_:). ",
+    "summary" : "Inherited from Equatable.!=(_:_:).",
+    "title" : "!=(_:_:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Triangle\/bounds"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "The bounds of the triangle. ",
+    "summary" : "The bounds of the triangle.",
+    "title" : "bounds"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/LineSegment\/.._(_:)"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Inherited from Comparable...<(_:). ",
+    "summary" : "Inherited from Comparable...<(_:).",
+    "title" : "..<(_:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/inverted()"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Returns the flip-side of the plane. ",
+    "summary" : "Returns the flip-side of the plane.",
+    "title" : "inverted()"
+  },
+  {
+    "headings" : [
+      "Discussion"
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Bounds\/center"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "A vector that represents the center of the bounding box.  Discussion A bounding volume that was created with negative volume is zero.",
+    "summary" : "A vector that represents the center of the bounding box.",
+    "title" : "center"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/x"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "The x coordinate. ",
+    "summary" : "The x coordinate.",
+    "title" : "x"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/init(_:)-3cxpa"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Creates a new vector from the SceneKit vector.  The SceneKit vector.",
+    "summary" : "Creates a new vector from the SceneKit vector.",
+    "title" : "init(_:)"
+  },
+  {
+    "headings" : [
+      "Return Value"
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/TextureCoordinates\/lerp(_:_:)"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Linearly interpolate between this texture coordinate and another you provide.  The coordinate to interpolate towards. A value, typically between 0 and 1, to indicate the position  to interpolate between the two coordinates. Return Value A texture coordinate interpolated to the position you provide.",
+    "summary" : "Linearly interpolate between this texture coordinate and another you provide.",
+    "title" : "lerp(_:_:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vertex\/init(x:y:z:normal:tex:)"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Creates a new vertex with the individual parameters you provide.  The x coordinate for the vertex. The y coordinate for the vertex. The z coordinate for the vertex. The direction the vertex is facing. The texture coordinates that this vertex maps to.",
+    "summary" : "Creates a new vertex with the individual parameters you provide.",
+    "title" : "init(x:y:z:normal:tex:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Bounds\/containsPoint(_:)"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Returns a Boolean value that indicates whether the point you provide is within the bounding box volume.  The point to compare to the bounds.",
+    "summary" : "Returns a Boolean value that indicates whether the point you provide is within the bounding box volume.",
+    "title" : "containsPoint(_:)"
+  },
+  {
+    "headings" : [
+      "Overview"
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Triangle"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "A struct that represents a triangle in 3D space.  Overview When you create a triangle, you may assign a material to it. When you create a Mesh from a collection of triangles, the materials on each triangle are preserved. For example, the following snippet creates a triangle and assigns the color red: ",
+    "summary" : "A struct that represents a triangle in 3D space.",
+    "title" : "Triangle"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "A struct that represents a vector in 3D space. ",
+    "summary" : "A struct that represents a vector in 3D space.",
+    "title" : "Vector"
+  },
+  {
+    "headings" : [
+      "Discussion"
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/ColorRepresentation\/cyan"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "The color cyan.  Discussion The values for cyan are  (0.0, 1.0, 1.0) with an alpha value of 1.0.",
+    "summary" : "The color cyan.",
+    "title" : "cyan"
+  },
+  {
+    "headings" : [
+      "Overview"
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "API to generate 3D surface meshes for use on Apple platforms. Overview Vertices, Triangles, Meshes, and supporting geometry concepts and types to support procedurally generating 3D surface meshes to use within SceneKit or RealityKit.",
+    "summary" : "API to generate 3D surface meshes for use on Apple platforms.",
+    "title" : "MeshGenerator"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/init(_:)-8m318"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Creates a new vector  The coordinate values..",
+    "summary" : "Creates a new vector",
+    "title" : "init(_:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/ColorRepresentation\/init(_:_:)"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Creates a new gray color representation with the alpha value you provide  The grey tone value, from 0 to 1.0. The alpha value, from 0 to 1.0.",
+    "summary" : "Creates a new gray color representation with the alpha value you provide",
+    "title" : "init(_:_:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/normalized()"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Returns a normalized vector with a length of one. ",
+    "summary" : "Returns a normalized vector with a length of one.",
+    "title" : "normalized()"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/ColorRepresentation\/init(_:_:_:)"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Creates a new color representation using the RGB values you provide.  The red value, from 0 to 1.0. The green value, from 0 to 1.0 The blue value, from 0 to 1.0",
+    "summary" : "Creates a new color representation using the RGB values you provide.",
+    "title" : "init(_:_:_:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/yz"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "A plane at the origin, aligned with the Y and Z coordinates. ",
+    "summary" : "A plane at the origin, aligned with the Y and Z coordinates.",
+    "title" : "yz"
+  },
+  {
+    "headings" : [
+      "Discussion"
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/ColorRepresentation\/green"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "The color green.  Discussion The values for green are  (0.0, 1.0, 0.0) with an alpha value of 1.0.",
+    "summary" : "The color green.",
+    "title" : "green"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Mesh\/!=(_:_:)"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Inherited from Equatable.!=(_:_:). ",
+    "summary" : "Inherited from Equatable.!=(_:_:).",
+    "title" : "!=(_:_:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/TextureCoordinates\/simd_double2"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "The coordinates represented as a 2 double vector with simd from the Accelerate framework. ",
+    "summary" : "The coordinates represented as a 2 double vector with simd from the Accelerate framework.",
+    "title" : "simd_double2"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Mesh\/replacing(_:with:)"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Replaces a material with another that you provide. ",
+    "summary" : "Replaces a material with another that you provide.",
+    "title" : "replacing(_:with:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "article",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Triangle\/Equatable-Implementations"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "",
+    "summary" : "",
+    "title" : "Equatable Implementations"
+  },
+  {
+    "headings" : [
+      "Discussion"
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/ColorRepresentation\/white"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "The color white.  Discussion The values for white are (1.0, 1.0, 1.0) with an alpha value of 1.0.",
+    "summary" : "The color white.",
+    "title" : "white"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/y"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "The y coordinate. ",
+    "summary" : "The y coordinate.",
+    "title" : "y"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "article",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/Comparable-Implementations"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "",
+    "summary" : "",
+    "title" : "Comparable Implementations"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/LineSegment\/intersects(_:)"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Returns a Boolean value that indicates whether line segement intersects.  The line segment to compare.",
+    "summary" : "Returns a Boolean value that indicates whether line segement intersects.",
+    "title" : "intersects(_:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/simd_double3"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "The coordinates represented as a 3 double vector with with simd from the Accelerate framework. ",
+    "summary" : "The coordinates represented as a 3 double vector with with simd from the Accelerate framework.",
+    "title" : "simd_double3"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/min(_:)"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Returns a new vector that represents the mininum value for each of the components of the two vectors.  The vector to compare.",
+    "summary" : "Returns a new vector that represents the mininum value for each of the components of the two vectors.",
+    "title" : "min(_:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/.._(_:_:)"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Inherited from Comparable...<(_:_:). ",
+    "summary" : "Inherited from Comparable...<(_:_:).",
+    "title" : "..<(_:_:)"
+  },
+  {
+    "headings" : [
+      "Discussion"
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/ColorRepresentation\/red"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "The color red.  Discussion The values for red are  (1.0, 0.0, 0.0) with an alpha value of 1.0.",
+    "summary" : "The color red.",
+    "title" : "red"
+  },
+  {
+    "headings" : [
+      "Return Value"
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/lerp(_:_:)"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Linearly interpolate between this vector and another you provide.  The vector to interpolate towards. A value, typically between 0 and 1, to indicate the position  to interpolate between the two vectors. Return Value A vector interpolated to the position you provide.",
+    "summary" : "Linearly interpolate between this vector and another you provide.",
+    "title" : "lerp(_:_:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Triangle\/vertices"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "The collection of vertices that make up the triangle. ",
+    "summary" : "The collection of vertices that make up the triangle.",
+    "title" : "vertices"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/init(x:y:z:)-o7gz"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Creates a new vector  The x coordinate. The y coordinate. The z coordinate.",
+    "summary" : "Creates a new vector",
+    "title" : "init(x:y:z:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/_(_:_:)-7iwju"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Inherited from Comparable.>(_:_:). ",
+    "summary" : "Inherited from Comparable.>(_:_:).",
+    "title" : ">(_:_:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/TextureCoordinates\/...(_:_:)"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Inherited from Comparable....(_:_:). ",
+    "summary" : "Inherited from Comparable....(_:_:).",
+    "title" : "...(_:_:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vertex\/z"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "The z coordinate position of the vertex. ",
+    "summary" : "The z coordinate position of the vertex.",
+    "title" : "z"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/TextureCoordinates\/u"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "The u coordinate. ",
+    "summary" : "The u coordinate.",
+    "title" : "u"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/isApproximatelyEqual(to:withPrecision:)"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Returns a Boolean value that indicates whether the two vectors are equivalent within a known level of precision.  The vector to compare. The precision to use in determining if the values are close enough to be considered equal, defaulting to epsilon.",
+    "summary" : "Returns a Boolean value that indicates whether the two vectors are equivalent within a known level of precision.",
+    "title" : "isApproximatelyEqual(to:withPrecision:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/LineSegment\/init(_:_:)"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Creates a line segment from a start and end point.  The start of the line segment. The end of the line segment.",
+    "summary" : "Creates a line segment from a start and end point.",
+    "title" : "init(_:_:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/LineSegment\/...(_:_:)"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Inherited from Comparable....(_:_:). ",
+    "summary" : "Inherited from Comparable....(_:_:).",
+    "title" : "...(_:_:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Mesh\/materials"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "The collection of materials used for the mash. ",
+    "summary" : "The collection of materials used for the mash.",
+    "title" : "materials"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "article",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Bounds\/Equatable-Implementations"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "",
+    "summary" : "",
+    "title" : "Equatable Implementations"
+  },
+  {
+    "headings" : [
+      "Discussion"
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/ColorRepresentation\/orange"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "The color orange.  Discussion The values for orange are  (1.0, 0.5, 0.0) with an alpha value of 1.0.",
+    "summary" : "The color orange.",
+    "title" : "orange"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Bounds\/hasNegativeVolume"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Whether the maximum is greater than the minimum. ",
+    "summary" : "Whether the maximum is greater than the minimum.",
+    "title" : "hasNegativeVolume"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vertex\/x"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "The x coordinate position of the vertex. ",
+    "summary" : "The x coordinate position of the vertex.",
+    "title" : "x"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/TextureCoordinates\/.._(_:)"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Inherited from Comparable...<(_:). ",
+    "summary" : "Inherited from Comparable...<(_:).",
+    "title" : "..<(_:)"
+  },
+  {
+    "headings" : [
+      "Discussion"
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/ColorRepresentation\/magenta"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "The color magenta.  Discussion The values for magenta are  (1.0, 0.0, 1.0) with an alpha value of 1.0.",
+    "summary" : "The color magenta.",
+    "title" : "magenta"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "article",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/LineSegment\/Equatable-Implementations"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "",
+    "summary" : "",
+    "title" : "Equatable Implementations"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/LineSegment\/!=(_:_:)"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Inherited from Equatable.!=(_:_:). ",
+    "summary" : "Inherited from Equatable.!=(_:_:).",
+    "title" : "!=(_:_:)"
+  },
+  {
+    "headings" : [
+      "Return Value"
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/LineSegment\/vectorFromPointToLine(point:lineOrigin:lineDirection:)"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Returns a vector that represents the point on the infinite line you define that results in the shortest length.  The point to calculate from. A point on an infinite line A normalized vector describing the direction of the line. Return Value A vector that represents the point nearest to the point you provide.",
+    "summary" : "Returns a vector that represents the point on the infinite line you define that results in the shortest length.",
+    "title" : "vectorFromPointToLine(point:lineOrigin:lineDirection:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vertex\/with(normal:)"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Creates a new vertex with normal vector you provide.  The normal to apply to the vertex.",
+    "summary" : "Creates a new vertex with normal vector you provide.",
+    "title" : "with(normal:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/init(x:y:z:)-5zfmr"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Creates a new vector  The x coordinate. The y coordinate. The z coordinate.",
+    "summary" : "Creates a new vector",
+    "title" : "init(x:y:z:)"
+  },
+  {
+    "headings" : [
+      "Discussion"
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Mesh\/unifiedDescriptor"
+      },
+      "type" : "topLevelPage"
+    },
+    "platforms" : [
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "15.0",
+        "name" : "iOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "12.0",
+        "name" : "macOS",
+        "unavailable" : false
+      }
+    ],
+    "rawIndexableTextContent" : "A RealityKit mesh descriptor that describes the mesh as a single MeshDescriptor instance.  Discussion For example, create a mesh:  Provide the descriptor to MeshResource.generate to create a mesh resource from the mesh. ",
+    "summary" : "A RealityKit mesh descriptor that describes the mesh as a single MeshDescriptor instance.",
+    "title" : "unifiedDescriptor"
+  },
+  {
+    "headings" : [
+      "Discussion"
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/ColorRepresentation\/yellow"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "The color yellow.  Discussion The values for yellow are  (1.0, 1.0, 0.0) with an alpha value of 1.0.",
+    "summary" : "The color yellow.",
+    "title" : "yellow"
+  },
+  {
+    "headings" : [
+      "Discussion"
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/epsilon"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Tolerance for determining minimum or nearly-equivalent lengths for vectors.  Discussion The built-in value for this library is 1e-8.",
+    "summary" : "Tolerance for determining minimum or nearly-equivalent lengths for vectors.",
+    "title" : "epsilon"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/min()"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Returns the minimum value for any of the coordinates within the vector. ",
+    "summary" : "Returns the minimum value for any of the coordinates within the vector.",
+    "title" : "min()"
+  },
+  {
+    "headings" : [
+      "Discussion"
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vertex\/inverted()"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Creates a new vertex with the value for the normal inverted.  Discussion Call to flip the orientation of the face of the polygon.",
+    "summary" : "Creates a new vertex with the value for the normal inverted.",
+    "title" : "inverted()"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/...(_:_:)"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Inherited from Comparable....(_:_:). ",
+    "summary" : "Inherited from Comparable....(_:_:).",
+    "title" : "...(_:_:)"
+  },
+  {
+    "headings" : [
+      "Discussion"
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/ColorRepresentation\/blue"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "The color blue.  Discussion The values for blue are  (0.0, 0.0, 1.0) with an alpha value of 1.0.",
+    "summary" : "The color blue.",
+    "title" : "blue"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Triangle\/with(material:)"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Creates a new triangle with material you provide.  The normal to apply to the vertex.",
+    "summary" : "Creates a new triangle with material you provide.",
+    "title" : "with(material:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vertex\/!=(_:_:)"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Inherited from Equatable.!=(_:_:). ",
+    "summary" : "Inherited from Equatable.!=(_:_:).",
+    "title" : "!=(_:_:)"
+  },
+  {
+    "headings" : [
+      "Discussion"
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Bounds\/isEmpty"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Whether the volume of the bounding box is zero.  Discussion A bounding volume that was created with a negative volume reports true.",
+    "summary" : "Whether the volume of the bounding box is zero.",
+    "title" : "isEmpty"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Mesh\/bounds"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "The bounds of the mesh. ",
+    "summary" : "The bounds of the mesh.",
+    "title" : "bounds"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/TextureCoordinates\/v"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "The v coordinate. ",
+    "summary" : "The v coordinate.",
+    "title" : "v"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/_=(_:_:)-4c8nh"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Inherited from Comparable.>=(_:_:). ",
+    "summary" : "Inherited from Comparable.>=(_:_:).",
+    "title" : ">=(_:_:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/xz"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "A plane at the origin, aligned with the X and Z coordinates. ",
+    "summary" : "A plane at the origin, aligned with the X and Z coordinates.",
+    "title" : "xz"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/LineSegment\/.._(_:_:)"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Inherited from Comparable...<(_:_:). ",
+    "summary" : "Inherited from Comparable...<(_:_:).",
+    "title" : "..<(_:_:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/_=(_:_:)-2jef7"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Inherited from Comparable.>=(_:_:). ",
+    "summary" : "Inherited from Comparable.>=(_:_:).",
+    "title" : ">=(_:_:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/TextureCoordinates\/simd_float2"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "The coordinates represented as a 2 float vector with simd from the Accelerate framework. ",
+    "summary" : "The coordinates represented as a 2 float vector with simd from the Accelerate framework.",
+    "title" : "simd_float2"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Triangle\/!=(_:_:)"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Inherited from Equatable.!=(_:_:). ",
+    "summary" : "Inherited from Equatable.!=(_:_:).",
+    "title" : "!=(_:_:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "article",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vertex\/Equatable-Implementations"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "",
+    "summary" : "",
+    "title" : "Equatable Implementations"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Bounds\/init(_:)"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : " ",
+    "summary" : "",
+    "title" : "init(_:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/.._(_:_:)"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Inherited from Comparable...<(_:_:). ",
+    "summary" : "Inherited from Comparable...<(_:_:).",
+    "title" : "..<(_:_:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vertex\/normal"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "The vertex’s normal. ",
+    "summary" : "The vertex’s normal.",
+    "title" : "normal"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/max()"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Returns the maximum value for any of the coordinates within the vector. ",
+    "summary" : "Returns the maximum value for any of the coordinates within the vector.",
+    "title" : "max()"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vertex\/y"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "The y coordinate position of the vertex. ",
+    "summary" : "The y coordinate position of the vertex.",
+    "title" : "y"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/TextureCoordinates\/.._(_:_:)"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Inherited from Comparable...<(_:_:). ",
+    "summary" : "Inherited from Comparable...<(_:_:).",
+    "title" : "..<(_:_:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/distance(from:)"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Returns the distance to another point in space.  The point in space to compare.",
+    "summary" : "Returns the distance to another point in space.",
+    "title" : "distance(from:)"
+  },
+  {
+    "headings" : [
+      "Overview"
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Bounds"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "A struct the represents the bounding volume in 3D space.  Overview The bounds are defined as two Vector instances, that define the opposite corners of an axially aligned box.",
+    "summary" : "A struct the represents the bounding volume in 3D space.",
+    "title" : "Bounds"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/LineSegment\/_=(_:_:)-sn39"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Inherited from Comparable.>=(_:_:). ",
+    "summary" : "Inherited from Comparable.>=(_:_:).",
+    "title" : ">=(_:_:)"
   },
   {
     "headings" : [
@@ -3042,18 +2321,739 @@
   },
   {
     "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/TextureCoordinates\/...(_:)-6f26z"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Inherited from Comparable....(_:). ",
+    "summary" : "Inherited from Comparable....(_:).",
+    "title" : "...(_:)"
+  },
+  {
+    "headings" : [
       "Discussion"
     ],
     "kind" : "symbol",
     "location" : {
       "reference" : {
         "interfaceLanguage" : "swift",
-        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/ColorRepresentation\/orange"
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/ColorRepresentation\/gray"
       },
       "type" : "topLevelPage"
     },
-    "rawIndexableTextContent" : "The color orange.  Discussion The values for orange are  (1.0, 0.5, 0.0) with an alpha value of 1.0.",
-    "summary" : "The color orange.",
-    "title" : "orange"
+    "rawIndexableTextContent" : "The color gray.  Discussion The values for gray are  (0.5, 0.5, 0.5) with an alpha value of 1.0.",
+    "summary" : "The color gray.",
+    "title" : "gray"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/_(_:_:)-1eqab"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Returns a Boolean value that compares two vectors to provide a stable sort order. ",
+    "summary" : "Returns a Boolean value that compares two vectors to provide a stable sort order.",
+    "title" : "<(_:_:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/_=(_:_:)-2zkex"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Inherited from Comparable.<=(_:_:). ",
+    "summary" : "Inherited from Comparable.<=(_:_:).",
+    "title" : "<=(_:_:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/TextureCoordinates\/init(u:v:)-4oz0h"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Creates a new texture coordinate.  The u coordinate. The v coordinate.",
+    "summary" : "Creates a new texture coordinate.",
+    "title" : "init(u:v:)"
+  },
+  {
+    "headings" : [
+      "Discussion"
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vertex\/lerp(_:_:)"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Linearly interpolate between two vertices.  Discussion Interpolation is applied to the position, texture coordinate and normal.",
+    "summary" : "Linearly interpolate between two vertices.",
+    "title" : "lerp(_:_:)"
+  },
+  {
+    "headings" : [
+      "Return Value"
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/cross(_:)"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Computes the cross-product of this vector and another you provide.  The vector against which to compute a cross product. Return Value Returns a vector that is orthogonal to the two vectors used to compute the cross product.",
+    "summary" : "Computes the cross-product of this vector and another you provide.",
+    "title" : "cross(_:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "article",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/TextureCoordinates\/Comparable-Implementations"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "",
+    "summary" : "",
+    "title" : "Comparable Implementations"
+  },
+  {
+    "headings" : [
+      "Discussion"
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Bounds\/init(min:max:)"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Create a bounds with min and max points.  Discussion If max < min, the bounds is considered to be empty.",
+    "summary" : "Create a bounds with min and max points.",
+    "title" : "init(min:max:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/max(_:)"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Returns a new vector that represents the maximum value for each of the components of the two vectors.  The vector to compare.",
+    "summary" : "Returns a new vector that represents the maximum value for each of the components of the two vectors.",
+    "title" : "max(_:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/-(_:_:)"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Returns a vector that is the difference of the vectors you provide.  The first vector. The second vector.",
+    "summary" : "Returns a vector that is the difference of the vectors you provide.",
+    "title" : "-(_:_:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/...(_:_:)"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Inherited from Comparable....(_:_:). ",
+    "summary" : "Inherited from Comparable....(_:_:).",
+    "title" : "...(_:_:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vertex\/tex"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "The texture coordinates that this vertex maps to. ",
+    "summary" : "The texture coordinates that this vertex maps to.",
+    "title" : "tex"
+  },
+  {
+    "headings" : [
+      "Discussion"
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/ColorRepresentation\/clear"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "A clear color.  Discussion The values for clear are (0,0, 0,0, 00) with an alpha value of 0.0.",
+    "summary" : "A clear color.",
+    "title" : "clear"
+  },
+  {
+    "headings" : [
+      "Discussion"
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Triangle\/init(_:material:)-8wp0v"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Creates a triangle from a set of vertices.  Discussion A polygon can be convex or concave, but vertices must be coplanar and non-degenerate. Vertices are assumed to be in anti-clockwise order for the purpose of deriving the plane.",
+    "summary" : "Creates a triangle from a set of vertices.",
+    "title" : "init(_:material:)"
+  },
+  {
+    "headings" : [
+      "Return Value"
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/LineSegment\/intersection(with:)"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Returns a point that indicates the intersection of the line segement you provide.  The line segment to compare. Return Value The point of intersection, or nil if the segments don’t intersect.",
+    "summary" : "Returns a point that indicates the intersection of the line segement you provide.",
+    "title" : "intersection(with:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Bounds\/min"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : " ",
+    "summary" : "",
+    "title" : "min"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/TextureCoordinates\/zero"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "A texture coordinate at the position (0,0) ",
+    "summary" : "A texture coordinate at the position (0,0)",
+    "title" : "zero"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Bounds\/!=(_:_:)"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Inherited from Equatable.!=(_:_:). ",
+    "summary" : "Inherited from Equatable.!=(_:_:).",
+    "title" : "!=(_:_:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/LineSegment\/...(_:)-6ct9o"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Inherited from Comparable....(_:). ",
+    "summary" : "Inherited from Comparable....(_:).",
+    "title" : "...(_:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/zero"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "A zero-length vector. ",
+    "summary" : "A zero-length vector.",
+    "title" : "zero"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/LineSegment\/end"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : " ",
+    "summary" : "",
+    "title" : "end"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/length"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "The length of the vector. ",
+    "summary" : "The length of the vector.",
+    "title" : "length"
+  },
+  {
+    "headings" : [
+      "Return Value"
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/LineSegment\/lineIntersection(_:_:_:_:)"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Returns a vector that indicates if the points that make up two line segments intersect.  The starting location of the first line segment. The ending location of the first line segment. The starting location of the second line segment. The ending location of the second line segment. Return Value A vector that describes the point of intersection, or nil if there is no intersection.",
+    "summary" : "Returns a vector that indicates if the points that make up two line segments intersect.",
+    "title" : "lineIntersection(_:_:_:_:)"
+  },
+  {
+    "headings" : [
+      "Discussion"
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/simd_float3"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "The coordinates represented as a 3 float vector with simd from the Accelerate framework.  Discussion This value may loose precision from the Vector’s internal values, which are stored and processed as Double.",
+    "summary" : "The coordinates represented as a 3 float vector with simd from the Accelerate framework.",
+    "title" : "simd_float3"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/LineSegment\/_=(_:_:)-5cghw"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Inherited from Comparable.<=(_:_:). ",
+    "summary" : "Inherited from Comparable.<=(_:_:).",
+    "title" : "<=(_:_:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/TextureCoordinates\/+(_:_:)"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Returns a texture coordinate that is the sum of the coordinates you provide.  The first coordinate. The second coordinate.",
+    "summary" : "Returns a texture coordinate that is the sum of the coordinates you provide.",
+    "title" : "+(_:_:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/LineSegment\/direction"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "The direction of the line segment as a normalized vector. ",
+    "summary" : "The direction of the line segment as a normalized vector.",
+    "title" : "direction"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Bounds\/init(_:_:)"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Creates bounds by computing the max and min values from two points you provide.  The first point. The second point.",
+    "summary" : "Creates bounds by computing the max and min values from two points you provide.",
+    "title" : "init(_:_:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/_(_:_:)-1fdyy"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Inherited from Comparable.>(_:_:). ",
+    "summary" : "Inherited from Comparable.>(_:_:).",
+    "title" : ">(_:_:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/ColorRepresentation\/!=(_:_:)"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Inherited from Equatable.!=(_:_:). ",
+    "summary" : "Inherited from Equatable.!=(_:_:).",
+    "title" : "!=(_:_:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "article",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/TextureCoordinates\/Equatable-Implementations"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "",
+    "summary" : "",
+    "title" : "Equatable Implementations"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/...(_:)-26qdp"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Inherited from Comparable....(_:). ",
+    "summary" : "Inherited from Comparable....(_:).",
+    "title" : "...(_:)"
+  },
+  {
+    "headings" : [
+      "Discussion"
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Triangle\/init(_:_:_:material:)"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Creates a triangle from a tuple of three vector positions.  The points making up the face of a polygon. The material to use for rendering the polygon. Discussion Vertex normals will be set to match face normal based on the positions being listed in a counter-clockwise direction.",
+    "summary" : "Creates a triangle from a tuple of three vector positions.",
+    "title" : "init(_:_:_:material:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/LineSegment\/_(_:_:)-6a4ag"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Inherited from Comparable.>(_:_:). ",
+    "summary" : "Inherited from Comparable.>(_:_:).",
+    "title" : ">(_:_:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/.._(_:)"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Inherited from Comparable...<(_:). ",
+    "summary" : "Inherited from Comparable...<(_:).",
+    "title" : "..<(_:)"
+  },
+  {
+    "headings" : [
+      "Discussion"
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/lengthSquared"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "The square of the length.  Discussion Use lengthSquared over length if you’re able for repeated calculations, because this is a faster computation.",
+    "summary" : "The square of the length.",
+    "title" : "lengthSquared"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/!=(_:_:)"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Inherited from Equatable.!=(_:_:). ",
+    "summary" : "Inherited from Equatable.!=(_:_:).",
+    "title" : "!=(_:_:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Mesh\/inverted()"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Flips face direction of polygons within the mesh. ",
+    "summary" : "Flips face direction of polygons within the mesh.",
+    "title" : "inverted()"
+  },
+  {
+    "headings" : [
+      "Return Value",
+      "Discussion"
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/LineSegment\/shortestLineBetween(_:_:_:_:)"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Calculates the shortest distance between two lines within 3D space.  The starting location of the first line segment. The ending location of the first line segment. The starting location of the second line segment. The ending location of the second line segment. Return Value A tuple of vectors that represents the endpoints of the shortest line, or nil if the lines are coincident or parallel. Discussion If the lines are intersecting, the points returned will be identical. For more information about the technique used, see The shortest line between two lines in 3D by Paul Bourke",
+    "summary" : "Calculates the shortest distance between two lines within 3D space.",
+    "title" : "shortestLineBetween(_:_:_:_:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Mesh\/uniqueEdges"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "The unique triangle edges in the mesh. ",
+    "summary" : "The unique triangle edges in the mesh.",
+    "title" : "uniqueEdges"
+  },
+  {
+    "headings" : [
+      "Return Value"
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/dot(_:)"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "Computes the dot-product of this vector and another you provide.  The vector against which to compute a dot product. Return Value A double that indicates the value to which one vector applies to another.",
+    "summary" : "Computes the dot-product of this vector and another you provide.",
+    "title" : "dot(_:)"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/xy"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "A plane at the origin, aligned with the X and Y coordinates. ",
+    "summary" : "A plane at the origin, aligned with the X and Y coordinates.",
+    "title" : "xy"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "article",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/ColorRepresentation\/Equatable-Implementations"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "",
+    "summary" : "",
+    "title" : "Equatable Implementations"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/isNormalized"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "A Boolean value indicating that the length of the vector is 1. ",
+    "summary" : "A Boolean value indicating that the length of the vector is 1.",
+    "title" : "isNormalized"
+  },
+  {
+    "headings" : [
+
+    ],
+    "kind" : "symbol",
+    "location" : {
+      "reference" : {
+        "interfaceLanguage" : "swift",
+        "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Plane\/w"
+      },
+      "type" : "topLevelPage"
+    },
+    "rawIndexableTextContent" : "The distance from the center of the plane to the world origin coordinates. ",
+    "summary" : "The distance from the center of the plane to the world origin coordinates.",
+    "title" : "w"
   }
 ]

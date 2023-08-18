@@ -91,7 +91,10 @@
     ],
     "modules" : [
       {
-        "name" : "MeshGenerator"
+        "name" : "MeshGenerator",
+        "relatedModules" : [
+          "Swift"
+        ]
       }
     ],
     "role" : "symbol",
@@ -191,8 +194,7 @@
       "identifiers" : [
         "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/...(_:)-6s2q7",
         "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/...(_:_:)",
-        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/.._(_:)",
-        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/.._(_:_:)"
+        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/.._(_:)"
       ],
       "title" : "Range Expressions"
     }
@@ -530,80 +532,6 @@
   "title" : "..<(_:)",
   "type" : "topic",
   "url" : "\/documentation\/meshgenerator\/vector\/'.._(_:)"
-},
-"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/Vector/.._(_:_:)": {
-  "abstract" : [
-
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "static"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "keyword",
-      "text" : "func"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "..<"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "text",
-      "text" : "("
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Self"
-    },
-    {
-      "kind" : "text",
-      "text" : ", "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Self"
-    },
-    {
-      "kind" : "text",
-      "text" : ") -> "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:Sn",
-      "text" : "Range"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Self"
-    },
-    {
-      "kind" : "text",
-      "text" : ">"
-    }
-  ],
-  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector\/.._(_:_:)",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "..<(_:_:)",
-  "type" : "topic",
-  "url" : "\/documentation\/meshgenerator\/vector\/'.._(_:_:)"
 },
 "doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/Vector/Comparable-Implementations": {
   "abstract" : [
