@@ -63,5 +63,3 @@
 - ``MeshGenerator/Vector/...(_:)-6s2q7``
 - ``MeshGenerator/Vector/...(_:_:)``
 - ``MeshGenerator/Vector/..<(_:)``
-- ``MeshGenerator/Vector/..>(_:_:)``
-
