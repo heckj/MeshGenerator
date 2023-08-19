@@ -1,0 +1,185 @@
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/SceneKit"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "s:m:s:e:s:So10SCNVector3V13MeshGeneratorEyAbC6VectorVcfc",
+    "modules" : [
+      {
+        "name" : "MeshGenerator"
+      }
+    ],
+    "role" : "collection",
+    "roleHeading" : "Extended Module",
+    "symbolKind" : "extension",
+    "title" : "SceneKit"
+  },
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "topicSections" : [
+    {
+      "identifiers" : [
+        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/SceneKit\/SCNGeometry",
+        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/SceneKit\/SCNMaterial"
+      ],
+      "title" : "Extended Classes"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/SceneKit\/SCNVector3"
+      ],
+      "title" : "Extended Structures"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/meshgenerator\/scenekit"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator": {
+  "abstract" : [
+    {
+      "text" : "API to generate 3D surface meshes for use on Apple platforms.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "MeshGenerator",
+  "type" : "topic",
+  "url" : "\/documentation\/meshgenerator"
+},
+"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/SceneKit": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/SceneKit",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "SceneKit",
+  "type" : "topic",
+  "url" : "\/documentation\/meshgenerator\/scenekit"
+},
+"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/SceneKit/SCNGeometry": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "extension"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "preciseIdentifier" : "c:objc(cs)SCNGeometry",
+      "text" : "SCNGeometry"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/SceneKit\/SCNGeometry",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "SCNGeometry"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "SCNGeometry",
+  "type" : "topic",
+  "url" : "\/documentation\/meshgenerator\/scenekit\/scngeometry"
+},
+"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/SceneKit/SCNMaterial": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "extension"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "preciseIdentifier" : "c:objc(cs)SCNMaterial",
+      "text" : "SCNMaterial"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/SceneKit\/SCNMaterial",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "SCNMaterial"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "SCNMaterial",
+  "type" : "topic",
+  "url" : "\/documentation\/meshgenerator\/scenekit\/scnmaterial"
+},
+"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/SceneKit/SCNVector3": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "extension"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "preciseIdentifier" : "c:@S@SCNVector3",
+      "text" : "SCNVector3"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/SceneKit\/SCNVector3",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "SCNVector3"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "SCNVector3",
+  "type" : "topic",
+  "url" : "\/documentation\/meshgenerator\/scenekit\/scnvector3"
+}
+}
+}

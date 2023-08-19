@@ -1039,59 +1039,6 @@
                 "type" : "method"
               },
               {
-                "title" : "Comparing Line Segments",
-                "type" : "groupMarker"
-              },
-              {
-                "path" : "\/documentation\/meshgenerator\/linesegment\/!=(_:_:)",
-                "title" : "static func != (Self, Self) -> Bool",
-                "type" : "op"
-              },
-              {
-                "path" : "\/documentation\/meshgenerator\/linesegment\/_(_:_:)-3x8q",
-                "title" : "static func < (LineSegment, LineSegment) -> Bool",
-                "type" : "op"
-              },
-              {
-                "path" : "\/documentation\/meshgenerator\/linesegment\/_(_:_:)-6a4ag",
-                "title" : "static func > (Self, Self) -> Bool",
-                "type" : "op"
-              },
-              {
-                "path" : "\/documentation\/meshgenerator\/linesegment\/_=(_:_:)-5cghw",
-                "title" : "static func <= (Self, Self) -> Bool",
-                "type" : "op"
-              },
-              {
-                "path" : "\/documentation\/meshgenerator\/linesegment\/_=(_:_:)-sn39",
-                "title" : "static func >= (Self, Self) -> Bool",
-                "type" : "op"
-              },
-              {
-                "title" : "Range Expressions",
-                "type" : "groupMarker"
-              },
-              {
-                "path" : "\/documentation\/meshgenerator\/linesegment\/'...(_:)-55rk4",
-                "title" : "static func ... (Self) -> PartialRangeThrough<Self>",
-                "type" : "op"
-              },
-              {
-                "path" : "\/documentation\/meshgenerator\/linesegment\/'...(_:)-6ct9o",
-                "title" : "static func ... (Self) -> PartialRangeFrom<Self>",
-                "type" : "op"
-              },
-              {
-                "path" : "\/documentation\/meshgenerator\/linesegment\/'...(_:_:)",
-                "title" : "static func ... (Self, Self) -> ClosedRange<Self>",
-                "type" : "op"
-              },
-              {
-                "path" : "\/documentation\/meshgenerator\/linesegment\/'.._(_:)",
-                "title" : "static func ..< (Self) -> PartialRangeUpTo<Self>",
-                "type" : "op"
-              },
-              {
                 "title" : "Default Implementations",
                 "type" : "groupMarker"
               },
@@ -1439,6 +1386,161 @@
             "path" : "\/documentation\/meshgenerator\/bounds",
             "title" : "Bounds",
             "type" : "struct"
+          },
+          {
+            "title" : "Extended Modules",
+            "type" : "groupMarker"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Extended Classes",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Initializers",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/meshgenerator\/appkit\/nscolor\/init(_:)",
+                    "title" : "convenience init(ColorRepresentation)",
+                    "type" : "init"
+                  }
+                ],
+                "path" : "\/documentation\/meshgenerator\/appkit\/nscolor",
+                "title" : "NSColor",
+                "type" : "extension"
+              }
+            ],
+            "path" : "\/documentation\/meshgenerator\/appkit",
+            "title" : "AppKit",
+            "type" : "extension"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Extended Classes",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Type Methods",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/meshgenerator\/realityfoundation\/meshresource\/generate(_:)",
+                    "title" : "static func generate(Mesh) async throws -> MeshResource",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/meshgenerator\/realityfoundation\/meshresource\/generate(mesh:)",
+                    "title" : "static func generate(mesh: Mesh) throws -> MeshResource",
+                    "type" : "method"
+                  }
+                ],
+                "path" : "\/documentation\/meshgenerator\/realityfoundation\/meshresource",
+                "title" : "MeshResource",
+                "type" : "extension"
+              }
+            ],
+            "path" : "\/documentation\/meshgenerator\/realityfoundation",
+            "title" : "RealityFoundation",
+            "type" : "extension"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Extended Classes",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Initializers",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/meshgenerator\/scenekit\/scngeometry\/init(_:)-1uq",
+                    "title" : "convenience init(Bounds)",
+                    "type" : "init"
+                  },
+                  {
+                    "path" : "\/documentation\/meshgenerator\/scenekit\/scngeometry\/init(_:)-47qko",
+                    "title" : "convenience init<T>(T)",
+                    "type" : "init"
+                  },
+                  {
+                    "path" : "\/documentation\/meshgenerator\/scenekit\/scngeometry\/init(_:materiallookup:)",
+                    "title" : "convenience init(Mesh, materialLookup: SCNGeometry.SCNMaterialProvider?)",
+                    "type" : "init"
+                  },
+                  {
+                    "path" : "\/documentation\/meshgenerator\/scenekit\/scngeometry\/init(normals:scale:)",
+                    "title" : "convenience init(normals: Mesh, scale: Double)",
+                    "type" : "init"
+                  },
+                  {
+                    "path" : "\/documentation\/meshgenerator\/scenekit\/scngeometry\/init(wireframe:)",
+                    "title" : "convenience init(wireframe: Mesh)",
+                    "type" : "init"
+                  },
+                  {
+                    "title" : "Type Aliases",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/meshgenerator\/scenekit\/scngeometry\/scnmaterialprovider",
+                    "title" : "SCNGeometry.SCNMaterialProvider",
+                    "type" : "typealias"
+                  }
+                ],
+                "path" : "\/documentation\/meshgenerator\/scenekit\/scngeometry",
+                "title" : "SCNGeometry",
+                "type" : "extension"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Initializers",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/meshgenerator\/scenekit\/scnmaterial\/init(_:)",
+                    "title" : "convenience init(ColorRepresentation)",
+                    "type" : "init"
+                  }
+                ],
+                "path" : "\/documentation\/meshgenerator\/scenekit\/scnmaterial",
+                "title" : "SCNMaterial",
+                "type" : "extension"
+              },
+              {
+                "title" : "Extended Structures",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Initializers",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/meshgenerator\/scenekit\/scnvector3\/init(_:)",
+                    "title" : "init(Vector)",
+                    "type" : "init"
+                  }
+                ],
+                "path" : "\/documentation\/meshgenerator\/scenekit\/scnvector3",
+                "title" : "SCNVector3",
+                "type" : "extension"
+              }
+            ],
+            "path" : "\/documentation\/meshgenerator\/scenekit",
+            "title" : "SceneKit",
+            "type" : "extension"
           }
         ],
         "path" : "\/documentation\/meshgenerator",

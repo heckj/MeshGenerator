@@ -1,26 +1,3 @@
 [
-  {
-    "notes" : [
 
-    ],
-    "severity" : 2,
-    "source" : "..\/Vector.swift",
-    "start" : {
-      "column" : 30,
-      "line" : 79
-    },
-    "summary" : "'..>(_:_:)' doesn't exist at '\/MeshGenerator\/Vector'"
-  },
-  {
-    "notes" : [
-
-    ],
-    "severity" : 2,
-    "source" : "Extensions\/Vector.md",
-    "start" : {
-      "column" : 26,
-      "line" : 66
-    },
-    "summary" : "'..>(_:_:)' doesn't exist at '\/MeshGenerator\/Vector'"
-  }
 ]

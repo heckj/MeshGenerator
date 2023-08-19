@@ -1,0 +1,208 @@
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator",
+        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/AppKit"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/AppKit\/NSColor"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "extendedModule" : "AppKit",
+    "externalID" : "s:e:s:So7NSColorC13MeshGeneratorEyAbC19ColorRepresentationVcfc",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "extension"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "preciseIdentifier" : "c:objc(cs)NSColor",
+        "text" : "NSColor"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "MeshGenerator",
+        "relatedModules" : [
+          "AppKit"
+        ]
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "NSColor"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Extended Class",
+    "symbolKind" : "extension",
+    "title" : "NSColor"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "macOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "extension"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:objc(cs)NSColor",
+              "text" : "NSColor"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "topicSections" : [
+    {
+      "identifiers" : [
+        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/AppKit\/NSColor\/init(_:)"
+      ],
+      "title" : "Initializers"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/meshgenerator\/appkit\/nscolor"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator": {
+  "abstract" : [
+    {
+      "text" : "API to generate 3D surface meshes for use on Apple platforms.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "MeshGenerator",
+  "type" : "topic",
+  "url" : "\/documentation\/meshgenerator"
+},
+"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/AppKit": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/AppKit",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "AppKit",
+  "type" : "topic",
+  "url" : "\/documentation\/meshgenerator\/appkit"
+},
+"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/AppKit/NSColor": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "extension"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "preciseIdentifier" : "c:objc(cs)NSColor",
+      "text" : "NSColor"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/AppKit\/NSColor",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "NSColor"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "NSColor",
+  "type" : "topic",
+  "url" : "\/documentation\/meshgenerator\/appkit\/nscolor"
+},
+"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/AppKit/NSColor/init(_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "convenience"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:13MeshGenerator19ColorRepresentationV",
+      "text" : "ColorRepresentation"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/AppKit\/NSColor\/init(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/meshgenerator\/appkit\/nscolor\/init(_:)"
+}
+}
+}

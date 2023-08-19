@@ -1,0 +1,447 @@
+{
+  "abstract" : [
+    {
+      "text" : "Returns a new MeshResource from the mesh instance in you provide.",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator",
+        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/RealityFoundation",
+        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/RealityFoundation\/MeshResource"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/RealityFoundation\/MeshResource\/generate(mesh:)"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "extendedModule" : "RealityFoundation",
+    "externalID" : "s:17RealityFoundation12MeshResourceC0C9GeneratorE8generate4meshAcD0C0V_tKFZ",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "static"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "func"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "generate"
+      },
+      {
+        "kind" : "text",
+        "text" : "("
+      },
+      {
+        "kind" : "externalParam",
+        "text" : "mesh"
+      },
+      {
+        "kind" : "text",
+        "text" : ": "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:13MeshGenerator0A0V",
+        "text" : "Mesh"
+      },
+      {
+        "kind" : "text",
+        "text" : ") "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "throws"
+      },
+      {
+        "kind" : "text",
+        "text" : " -> "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:17RealityFoundation12MeshResourceC",
+        "text" : "MeshResource"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "MeshGenerator",
+        "relatedModules" : [
+          "RealityFoundation"
+        ]
+      }
+    ],
+    "platforms" : [
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "15.0",
+        "name" : "iOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "12.0",
+        "name" : "macOS",
+        "unavailable" : false
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Type Method",
+    "symbolKind" : "method",
+    "title" : "generate(mesh:)"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "macOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "static"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "func"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "generate"
+            },
+            {
+              "kind" : "text",
+              "text" : "("
+            },
+            {
+              "kind" : "externalParam",
+              "text" : "mesh"
+            },
+            {
+              "kind" : "text",
+              "text" : ": "
+            },
+            {
+              "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Mesh",
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:13MeshGenerator0A0V",
+              "text" : "Mesh"
+            },
+            {
+              "kind" : "text",
+              "text" : ") "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "throws"
+            },
+            {
+              "kind" : "text",
+              "text" : " -> "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:17RealityFoundation12MeshResourceC",
+              "text" : "MeshResource"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    },
+    {
+      "kind" : "parameters",
+      "parameters" : [
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "The mesh to be converted.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "mesh"
+        }
+      ]
+    },
+    {
+      "content" : [
+        {
+          "anchor" : "discussion",
+          "level" : 2,
+          "text" : "Discussion",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "For example, create a mesh:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "let positions: [Vector] = [",
+            "    Vector(x: 0.5, y: -0.4330127, z: -0.4330127), \/\/ 0",
+            "    Vector(x: -0.5, y: -0.4330127, z: -0.4330127), \/\/ \/\/\/ 1",
+            "    Vector(x: 0, y: 0.4330127, z: 0), \/\/ 2  (peak)",
+            "    Vector(x: 0, y: -0.4330127, z: 0.4330127), \/\/ 3",
+            "]",
+            "",
+            "let back = Triangle(positions[0], positions[1], positions[2], material: ColorRepresentation.red)",
+            "let bottom = Triangle(positions[0], positions[3], positions[1], material: ColorRepresentation.white)",
+            "let left = Triangle(positions[0], positions[2], positions[3], material: ColorRepresentation.blue)",
+            "let right = Triangle(positions[2], positions[1], positions[3], material: ColorRepresentation.green)",
+            "let mesh = Mesh([back, bottom, left, right])"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Provide the created mesh to ",
+              "type" : "text"
+            },
+            {
+              "code" : "MeshResource.generate",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " to create a mesh resource from the mesh.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "let resource = MeshResource.generate(mesh)"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        }
+      ],
+      "kind" : "content"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/meshgenerator\/realityfoundation\/meshresource\/generate(mesh:)"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator": {
+  "abstract" : [
+    {
+      "text" : "API to generate 3D surface meshes for use on Apple platforms.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "MeshGenerator",
+  "type" : "topic",
+  "url" : "\/documentation\/meshgenerator"
+},
+"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/Mesh": {
+  "abstract" : [
+    {
+      "text" : "A struct that represents a 3D object as a collection of polygons.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Mesh"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Mesh",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Mesh"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Mesh",
+  "type" : "topic",
+  "url" : "\/documentation\/meshgenerator\/mesh"
+},
+"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/RealityFoundation": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/RealityFoundation",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "RealityFoundation",
+  "type" : "topic",
+  "url" : "\/documentation\/meshgenerator\/realityfoundation"
+},
+"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/RealityFoundation/MeshResource": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "extension"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "preciseIdentifier" : "s:17RealityFoundation12MeshResourceC",
+      "text" : "MeshResource"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/RealityFoundation\/MeshResource",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "MeshResource"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "MeshResource",
+  "type" : "topic",
+  "url" : "\/documentation\/meshgenerator\/realityfoundation\/meshresource"
+},
+"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/RealityFoundation/MeshResource/generate(mesh:)": {
+  "abstract" : [
+    {
+      "text" : "Returns a new MeshResource from the mesh instance in you provide.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "generate"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "mesh"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:13MeshGenerator0A0V",
+      "text" : "Mesh"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "throws"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:17RealityFoundation12MeshResourceC",
+      "text" : "MeshResource"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/RealityFoundation\/MeshResource\/generate(mesh:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "generate(mesh:)",
+  "type" : "topic",
+  "url" : "\/documentation\/meshgenerator\/realityfoundation\/meshresource\/generate(mesh:)"
+}
+}
+}

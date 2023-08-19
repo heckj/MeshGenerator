@@ -1,0 +1,114 @@
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/RealityFoundation"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "s:m:s:e:s:17RealityFoundation12MeshResourceC0C9GeneratorE8generate4meshAcD0C0V_tKFZ",
+    "modules" : [
+      {
+        "name" : "MeshGenerator"
+      }
+    ],
+    "role" : "collection",
+    "roleHeading" : "Extended Module",
+    "symbolKind" : "extension",
+    "title" : "RealityFoundation"
+  },
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "topicSections" : [
+    {
+      "identifiers" : [
+        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/RealityFoundation\/MeshResource"
+      ],
+      "title" : "Extended Classes"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/meshgenerator\/realityfoundation"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator": {
+  "abstract" : [
+    {
+      "text" : "API to generate 3D surface meshes for use on Apple platforms.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "MeshGenerator",
+  "type" : "topic",
+  "url" : "\/documentation\/meshgenerator"
+},
+"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/RealityFoundation": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/RealityFoundation",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "RealityFoundation",
+  "type" : "topic",
+  "url" : "\/documentation\/meshgenerator\/realityfoundation"
+},
+"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/RealityFoundation/MeshResource": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "extension"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "preciseIdentifier" : "s:17RealityFoundation12MeshResourceC",
+      "text" : "MeshResource"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/RealityFoundation\/MeshResource",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "MeshResource"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "MeshResource",
+  "type" : "topic",
+  "url" : "\/documentation\/meshgenerator\/realityfoundation\/meshresource"
+}
+}
+}

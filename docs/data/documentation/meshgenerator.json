@@ -78,6 +78,14 @@
         "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Bounds"
       ],
       "title" : "Geometric Components"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/AppKit",
+        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/RealityFoundation",
+        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/SceneKit"
+      ],
+      "title" : "Extended Modules"
     }
   ],
   "variants" : [
@@ -107,6 +115,17 @@
   "title" : "MeshGenerator",
   "type" : "topic",
   "url" : "\/documentation\/meshgenerator"
+},
+"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/AppKit": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/AppKit",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "AppKit",
+  "type" : "topic",
+  "url" : "\/documentation\/meshgenerator\/appkit"
 },
 "doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/Bounds": {
   "abstract" : [
@@ -277,6 +296,28 @@
   "title" : "Plane",
   "type" : "topic",
   "url" : "\/documentation\/meshgenerator\/plane"
+},
+"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/RealityFoundation": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/RealityFoundation",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "RealityFoundation",
+  "type" : "topic",
+  "url" : "\/documentation\/meshgenerator\/realityfoundation"
+},
+"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/SceneKit": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/SceneKit",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "SceneKit",
+  "type" : "topic",
+  "url" : "\/documentation\/meshgenerator\/scenekit"
 },
 "doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/TextureCoordinates": {
   "abstract" : [

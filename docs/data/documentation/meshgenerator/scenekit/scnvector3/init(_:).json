@@ -1,0 +1,246 @@
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator",
+        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/SceneKit",
+        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/SceneKit\/SCNVector3"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/SceneKit\/SCNVector3\/init(_:)"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "extendedModule" : "SceneKit",
+    "externalID" : "s:So10SCNVector3V13MeshGeneratorEyAbC6VectorVcfc",
+    "fragments" : [
+      {
+        "kind" : "identifier",
+        "text" : "init"
+      },
+      {
+        "kind" : "text",
+        "text" : "("
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:13MeshGenerator6VectorV",
+        "text" : "Vector"
+      },
+      {
+        "kind" : "text",
+        "text" : ")"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "MeshGenerator",
+        "relatedModules" : [
+          "SceneKit"
+        ]
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Initializer",
+    "symbolKind" : "init",
+    "title" : "init(_:)"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "macOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "init"
+            },
+            {
+              "kind" : "text",
+              "text" : "("
+            },
+            {
+              "kind" : "externalParam",
+              "text" : "_"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "internalParam",
+              "text" : "v"
+            },
+            {
+              "kind" : "text",
+              "text" : ": "
+            },
+            {
+              "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector",
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:13MeshGenerator6VectorV",
+              "text" : "Vector"
+            },
+            {
+              "kind" : "text",
+              "text" : ")"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/meshgenerator\/scenekit\/scnvector3\/init(_:)"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator": {
+  "abstract" : [
+    {
+      "text" : "API to generate 3D surface meshes for use on Apple platforms.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "MeshGenerator",
+  "type" : "topic",
+  "url" : "\/documentation\/meshgenerator"
+},
+"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/SceneKit": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/SceneKit",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "SceneKit",
+  "type" : "topic",
+  "url" : "\/documentation\/meshgenerator\/scenekit"
+},
+"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/SceneKit/SCNVector3": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "extension"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "preciseIdentifier" : "c:@S@SCNVector3",
+      "text" : "SCNVector3"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/SceneKit\/SCNVector3",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "SCNVector3"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "SCNVector3",
+  "type" : "topic",
+  "url" : "\/documentation\/meshgenerator\/scenekit\/scnvector3"
+},
+"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/SceneKit/SCNVector3/init(_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:13MeshGenerator6VectorV",
+      "text" : "Vector"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/SceneKit\/SCNVector3\/init(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/meshgenerator\/scenekit\/scnvector3\/init(_:)"
+},
+"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/Vector": {
+  "abstract" : [
+    {
+      "text" : "A struct that represents a vector in 3D space.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Vector"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/Vector",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Vector"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Vector",
+  "type" : "topic",
+  "url" : "\/documentation\/meshgenerator\/vector"
+}
+}
+}

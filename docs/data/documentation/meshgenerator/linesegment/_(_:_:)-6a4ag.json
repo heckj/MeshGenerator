@@ -17,10 +17,6 @@
     "paths" : [
       [
         "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator",
-        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/LineSegment"
-      ],
-      [
-        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator",
         "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/LineSegment",
         "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/LineSegment\/Comparable-Implementations"
       ]
@@ -188,18 +184,6 @@
   "sections" : [
 
   ],
-  "seeAlsoSections" : [
-    {
-      "generated" : true,
-      "identifiers" : [
-        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/LineSegment\/!=(_:_:)",
-        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/LineSegment\/_(_:_:)-3x8q",
-        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/LineSegment\/_=(_:_:)-5cghw",
-        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/LineSegment\/_=(_:_:)-sn39"
-      ],
-      "title" : "Comparing Line Segments"
-    }
-  ],
   "variants" : [
     {
       "paths" : [
@@ -262,68 +246,6 @@
   "type" : "topic",
   "url" : "\/documentation\/meshgenerator\/linesegment"
 },
-"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/LineSegment/!=(_:_:)": {
-  "abstract" : [
-
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "static"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "keyword",
-      "text" : "func"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "!="
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "text",
-      "text" : "("
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Self"
-    },
-    {
-      "kind" : "text",
-      "text" : ", "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Self"
-    },
-    {
-      "kind" : "text",
-      "text" : ") -> "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:Sb",
-      "text" : "Bool"
-    }
-  ],
-  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/LineSegment\/!=(_:_:)",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "!=(_:_:)",
-  "type" : "topic",
-  "url" : "\/documentation\/meshgenerator\/linesegment\/!=(_:_:)"
-},
 "doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/LineSegment/Comparable-Implementations": {
   "abstract" : [
 
@@ -334,73 +256,6 @@
   "title" : "Comparable Implementations",
   "type" : "topic",
   "url" : "\/documentation\/meshgenerator\/linesegment\/comparable-implementations"
-},
-"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/LineSegment/_(_:_:)-3x8q": {
-  "abstract" : [
-    {
-      "text" : "Returns a Boolean value that compares two line segments to provide a stable sort order.",
-      "type" : "text"
-    }
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "static"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "keyword",
-      "text" : "func"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "<"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "text",
-      "text" : "("
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:13MeshGenerator11LineSegmentV",
-      "text" : "LineSegment"
-    },
-    {
-      "kind" : "text",
-      "text" : ", "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:13MeshGenerator11LineSegmentV",
-      "text" : "LineSegment"
-    },
-    {
-      "kind" : "text",
-      "text" : ") -> "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:Sb",
-      "text" : "Bool"
-    }
-  ],
-  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/LineSegment\/_(_:_:)-3x8q",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "<(_:_:)",
-  "type" : "topic",
-  "url" : "\/documentation\/meshgenerator\/linesegment\/_(_:_:)-3x8q"
 },
 "doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/LineSegment/_(_:_:)-6a4ag": {
   "abstract" : [
@@ -463,130 +318,6 @@
   "title" : ">(_:_:)",
   "type" : "topic",
   "url" : "\/documentation\/meshgenerator\/linesegment\/_(_:_:)-6a4ag"
-},
-"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/LineSegment/_=(_:_:)-5cghw": {
-  "abstract" : [
-
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "static"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "keyword",
-      "text" : "func"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "<="
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "text",
-      "text" : "("
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Self"
-    },
-    {
-      "kind" : "text",
-      "text" : ", "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Self"
-    },
-    {
-      "kind" : "text",
-      "text" : ") -> "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:Sb",
-      "text" : "Bool"
-    }
-  ],
-  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/LineSegment\/_=(_:_:)-5cghw",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "<=(_:_:)",
-  "type" : "topic",
-  "url" : "\/documentation\/meshgenerator\/linesegment\/_=(_:_:)-5cghw"
-},
-"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/LineSegment/_=(_:_:)-sn39": {
-  "abstract" : [
-
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "static"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "keyword",
-      "text" : "func"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : ">="
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "text",
-      "text" : "("
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Self"
-    },
-    {
-      "kind" : "text",
-      "text" : ", "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Self"
-    },
-    {
-      "kind" : "text",
-      "text" : ") -> "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:Sb",
-      "text" : "Bool"
-    }
-  ],
-  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/LineSegment\/_=(_:_:)-sn39",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : ">=(_:_:)",
-  "type" : "topic",
-  "url" : "\/documentation\/meshgenerator\/linesegment\/_=(_:_:)-sn39"
 }
 }
 }

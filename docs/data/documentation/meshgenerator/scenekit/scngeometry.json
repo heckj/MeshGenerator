@@ -1,0 +1,482 @@
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator",
+        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/SceneKit"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/SceneKit\/SCNGeometry"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "extendedModule" : "SceneKit",
+    "externalID" : "s:e:s:So11SCNGeometryC13MeshGeneratorE19SCNMaterialProvidera",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "extension"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "preciseIdentifier" : "c:objc(cs)SCNGeometry",
+        "text" : "SCNGeometry"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "MeshGenerator",
+        "relatedModules" : [
+          "SceneKit"
+        ]
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "SCNGeometry"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Extended Class",
+    "symbolKind" : "extension",
+    "title" : "SCNGeometry"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "macOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "extension"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "c:objc(cs)SCNGeometry",
+              "text" : "SCNGeometry"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "topicSections" : [
+    {
+      "identifiers" : [
+        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/SceneKit\/SCNGeometry\/init(_:)-1uq",
+        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/SceneKit\/SCNGeometry\/init(_:)-47qko",
+        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/SceneKit\/SCNGeometry\/init(_:materialLookup:)",
+        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/SceneKit\/SCNGeometry\/init(normals:scale:)",
+        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/SceneKit\/SCNGeometry\/init(wireframe:)"
+      ],
+      "title" : "Initializers"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/SceneKit\/SCNGeometry\/SCNMaterialProvider"
+      ],
+      "title" : "Type Aliases"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/meshgenerator\/scenekit\/scngeometry"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator": {
+  "abstract" : [
+    {
+      "text" : "API to generate 3D surface meshes for use on Apple platforms.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "MeshGenerator",
+  "type" : "topic",
+  "url" : "\/documentation\/meshgenerator"
+},
+"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/SceneKit": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/SceneKit",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "SceneKit",
+  "type" : "topic",
+  "url" : "\/documentation\/meshgenerator\/scenekit"
+},
+"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/SceneKit/SCNGeometry": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "extension"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "preciseIdentifier" : "c:objc(cs)SCNGeometry",
+      "text" : "SCNGeometry"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/SceneKit\/SCNGeometry",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "SCNGeometry"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "SCNGeometry",
+  "type" : "topic",
+  "url" : "\/documentation\/meshgenerator\/scenekit\/scngeometry"
+},
+"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/SceneKit/SCNGeometry/SCNMaterialProvider": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "typealias"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "SCNMaterialProvider"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/SceneKit\/SCNGeometry\/SCNMaterialProvider",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "SCNMaterialProvider"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "SCNGeometry.SCNMaterialProvider",
+  "type" : "topic",
+  "url" : "\/documentation\/meshgenerator\/scenekit\/scngeometry\/scnmaterialprovider"
+},
+"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/SceneKit/SCNGeometry/init(_:)-1uq": {
+  "abstract" : [
+    {
+      "text" : "Creates a line-segment bounding-box SCNGeometry from a Bounds",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "convenience"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:13MeshGenerator6BoundsV",
+      "text" : "Bounds"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/SceneKit\/SCNGeometry\/init(_:)-1uq",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/meshgenerator\/scenekit\/scngeometry\/init(_:)-1uq"
+},
+"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/SceneKit/SCNGeometry/init(_:)-47qko": {
+  "abstract" : [
+    {
+      "text" : "Creates a wireframe SCNGeometry from a collection of LineSegments",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "convenience"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/SceneKit\/SCNGeometry\/init(_:)-47qko",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/meshgenerator\/scenekit\/scngeometry\/init(_:)-47qko"
+},
+"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/SceneKit/SCNGeometry/init(_:materialLookup:)": {
+  "abstract" : [
+    {
+      "text" : "Creates an SCNGeometry using the default tessellation method",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "convenience"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:13MeshGenerator0A0V",
+      "text" : "Mesh"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "materialLookup"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "c:objc(cs)SCNGeometry",
+      "text" : "SCNGeometry"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:So11SCNGeometryC13MeshGeneratorE19SCNMaterialProvidera",
+      "text" : "SCNMaterialProvider"
+    },
+    {
+      "kind" : "text",
+      "text" : "?)"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/SceneKit\/SCNGeometry\/init(_:materialLookup:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init(_:materialLookup:)",
+  "type" : "topic",
+  "url" : "\/documentation\/meshgenerator\/scenekit\/scngeometry\/init(_:materiallookup:)"
+},
+"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/SceneKit/SCNGeometry/init(normals:scale:)": {
+  "abstract" : [
+    {
+      "text" : "Creates line-segment SCNGeometry representing the vertex normals of a Mesh",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "convenience"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "normals"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:13MeshGenerator0A0V",
+      "text" : "Mesh"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "scale"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sd",
+      "text" : "Double"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/SceneKit\/SCNGeometry\/init(normals:scale:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init(normals:scale:)",
+  "type" : "topic",
+  "url" : "\/documentation\/meshgenerator\/scenekit\/scngeometry\/init(normals:scale:)"
+},
+"doc://com.github.heckj.MeshGenerator/documentation/MeshGenerator/SceneKit/SCNGeometry/init(wireframe:)": {
+  "abstract" : [
+    {
+      "text" : "Creates a wireframe SCNGeometry from a Mesh using line segments",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "convenience"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "wireframe"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:13MeshGenerator0A0V",
+      "text" : "Mesh"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/com.github.heckj.MeshGenerator\/documentation\/MeshGenerator\/SceneKit\/SCNGeometry\/init(wireframe:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init(wireframe:)",
+  "type" : "topic",
+  "url" : "\/documentation\/meshgenerator\/scenekit\/scngeometry\/init(wireframe:)"
+}
+}
+}
