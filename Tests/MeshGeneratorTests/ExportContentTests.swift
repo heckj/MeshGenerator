@@ -9,7 +9,7 @@ import MeshGenerator
 import SceneKit
 import XCTest
 
-#if os(macOS) || os(iOS)
+#if os(macOS) || os(iOS) || os(visionOS)
     // scene.write doesn't exist on watchOS, and it's probably silly to do on tvOS as well
     class ExportContentTests: XCTestCase {
         func testExportTetrahedronSceneKit() throws {
