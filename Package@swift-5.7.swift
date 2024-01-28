@@ -1,7 +1,7 @@
 // swift-tools-version: 5.6
 
 // This is a legacy Package.swift structure to continue to maintain
-// support for Swift 5.6 toolchains
+// support for Swift 5.7 toolchains
 import PackageDescription
 
 let package = Package(
