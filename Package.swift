@@ -2,6 +2,10 @@
 
 import PackageDescription
 
+let globalSwiftSettings: [PackageDescription.SwiftSetting] = [
+    .enableExperimentalFeature("StrictConcurrency"),
+]
+
 let package = Package(
     name: "MeshGenerator",
     platforms: [
@@ -9,7 +13,7 @@ let package = Package(
         .iOS(.v13),
         .tvOS(.v13),
         .watchOS(.v6),
-        .visionOS(.v1)
+        .visionOS(.v1),
     ],
     products: [
         .library(
@@ -18,12 +22,13 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/apple/swift-docc-plugin", from: "1.0.0")
+        .package(url: "https://github.com/apple/swift-docc-plugin", from: "1.0.0"),
     ],
     targets: [
         .target(
             name: "MeshGenerator",
-            dependencies: []
+            dependencies: [],
+            swiftSettings: globalSwiftSettings
         ),
         .testTarget(
             name: "MeshGeneratorTests",

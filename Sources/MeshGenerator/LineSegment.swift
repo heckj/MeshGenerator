@@ -53,7 +53,7 @@ public struct LineSegment: Hashable {
     }
 }
 
-internal extension LineSegment {
+extension LineSegment {
     init(unchecked start: Vector, _ end: Vector) {
         assert(start != end)
         self.start = start

@@ -10,7 +10,7 @@ import Foundation
 
 /// A struct that represents a color using red, green, blue, and alpha values.
 ///
-public struct ColorRepresentation: Equatable, Hashable {
+public struct ColorRepresentation: Equatable, Hashable, Sendable {
     let red: Double
     let green: Double
     let blue: Double
@@ -58,17 +58,17 @@ public struct ColorRepresentation: Equatable, Hashable {
     /// A clear color.
     ///
     /// The values for clear are (`0,0`, `0,0`, `00`) with an alpha value of `0.0`.
-    public static var clear = ColorRepresentation(0, 0)
+    public static let clear = ColorRepresentation(0, 0)
 
     /// The color black.
     ///
     /// The values for black are (`0.0`, `0.0`, `0.0`) with an alpha value of `1.0`.
-    public static var black = ColorRepresentation(0, 1)
+    public static let black = ColorRepresentation(0, 1)
 
     /// The color white.
     ///
     /// The values for white are (`1.0`, `1.0`, `1.0`) with an alpha value of `1.0`.
-    public static var white = ColorRepresentation(1, 0)
+    public static let white = ColorRepresentation(1, 0)
 
     /// The color gray.
     ///
@@ -78,17 +78,17 @@ public struct ColorRepresentation: Equatable, Hashable {
     /// The color red.
     ///
     /// The values for red are  (`1.0`, `0.0`, `0.0`) with an alpha value of `1.0`.
-    public static var red = ColorRepresentation(1, 0, 0)
+    public static let red = ColorRepresentation(1, 0, 0)
 
     /// The color green.
     ///
     /// The values for green are  (`0.0`, `1.0`, `0.0`) with an alpha value of `1.0`.
-    public static var green = ColorRepresentation(0, 1, 0)
+    public static let green = ColorRepresentation(0, 1, 0)
 
     /// The color blue.
     ///
     /// The values for blue are  (`0.0`, `0.0`, `1.0`) with an alpha value of `1.0`.
-    public static var blue = ColorRepresentation(0, 0, 1)
+    public static let blue = ColorRepresentation(0, 0, 1)
 
     /// The color yellow.
     ///

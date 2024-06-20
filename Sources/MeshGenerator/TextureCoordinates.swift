@@ -12,7 +12,7 @@ import Foundation
 #endif
 
 /// A struct that represents texture coordinates.
-public struct TextureCoordinates: Hashable {
+public struct TextureCoordinates: Hashable, Sendable {
     /// The `u` coordinate.
     public let u: Double
     /// The `v` coordinate.

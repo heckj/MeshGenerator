@@ -1,5 +1,5 @@
 //
-//  MeshGenerationTests.swift
+//  RealityKitTests.swift
 //
 //
 //  Created by Joseph Heck on 2/3/22.

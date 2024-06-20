@@ -158,7 +158,7 @@ public struct Triangle: Hashable {
     }
 }
 
-internal extension Triangle {
+extension Triangle {
     /// Creates a triangle from vertices with no validation.
     ///
     /// Vertices are assumed to be in counter-clockwise order for the purpose of deriving the plane.
@@ -210,7 +210,7 @@ internal extension Triangle {
     }
 }
 
-internal extension Collection where Element == Triangle {
+extension Collection where Element == Triangle {
     /// Return a set of all unique edges across all the polygons
     var uniqueEdges: Set<LineSegment> {
         var edges = Set<LineSegment>()
