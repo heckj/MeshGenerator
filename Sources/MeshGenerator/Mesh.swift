@@ -133,7 +133,7 @@ public extension Mesh {
     }
 }
 
-internal extension Mesh {
+extension Mesh {
     init(
         unchecked polygons: [Triangle],
         bounds: Bounds?,
@@ -158,12 +158,14 @@ private extension Mesh {
         let polygons: [Triangle]
         let isConvex: Bool
 
-        static let empty = Storage(
-            polygons: [],
-            bounds: .empty,
-            isConvex: true,
-            isWatertight: true
-        )
+        static var empty: Storage {
+            Storage(
+                polygons: [],
+                bounds: .empty,
+                isConvex: true,
+                isWatertight: true
+            )
+        }
 
         private(set) var materialsIfSet: [Material?]?
         var materials: [Material?] {

@@ -12,7 +12,7 @@ import Foundation
 #endif
 
 /// A struct that represents a vector in 3D space.
-public struct Vector: Hashable {
+public struct Vector: Hashable, Sendable {
     /// The `x` coordinate.
     public let x: Double
     /// The `y` coordinate.

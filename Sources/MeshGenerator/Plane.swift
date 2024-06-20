@@ -32,7 +32,7 @@
 /// A struct that represents an infinite 2D plane in 3D space.
 ///
 /// A plane is defined by a ``Plane/normal``, a surface normal ``Vector``, and ``Plane/w``,  the distance from the the center of the plane from the world origin coordinates.
-public struct Plane: Hashable {
+public struct Plane: Hashable, Sendable {
     /// The surface normal vector.
     ///
     /// A surface normal vector is perpendicular to the plane.
@@ -113,7 +113,7 @@ public extension Plane {
     }
 }
 
-internal extension Plane {
+extension Plane {
     init(unchecked normal: Vector, w: Double) {
         assert(normal.isNormalized)
         self.normal = normal
